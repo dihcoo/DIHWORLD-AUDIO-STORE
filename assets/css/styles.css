@@ -590,6 +590,44 @@ h1 {
   text-transform: uppercase;
 }
 
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1120px;
+  margin: 28px auto 0;
+}
+
+.value-grid article {
+  min-height: 190px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #151515;
+  color: var(--cream);
+}
+
+.value-grid span {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.value-grid h3 {
+  margin: 8px 0 10px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.value-grid p {
+  margin: 0;
+  color: #d8d1c6;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 .canon-map {
   background: #ffffff;
 }
@@ -742,6 +780,10 @@ h1 {
   .release-strip,
   .family-price-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .value-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .hero {

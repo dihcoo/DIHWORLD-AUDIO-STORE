@@ -599,6 +599,44 @@ h1 {
   text-transform: uppercase;
 }
 
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1120px;
+  margin: 28px auto 0;
+}
+
+.value-grid article {
+  min-height: 190px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #151515;
+  color: var(--cream);
+}
+
+.value-grid span {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.value-grid h3 {
+  margin: 8px 0 10px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.value-grid p {
+  margin: 0;
+  color: #d8d1c6;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 .canon-map {
   background: #ffffff;
 }
@@ -751,6 +789,10 @@ h1 {
   .release-strip,
   .family-price-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .value-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .hero {
@@ -1166,6 +1208,23 @@ h1 {
           <span>Mastering $299</span>
           <span>Master Field $79</span>
           <span>Utility $29</span>
+        </div>
+        <div class="value-grid" aria-label="Pricing value anchors">
+          <article>
+            <span>Live products</span>
+            <h3>Real Interfaces</h3>
+            <p>SacredVerb, Cathedral, DEBO, and Mariana are running in-session with finished visual systems, controls, presets, and meters.</p>
+          </article>
+          <article>
+            <span>Release depth</span>
+            <h3>42 Deployed Plugins</h3>
+            <p>The catalog is organized into 13 current families with signed, notarized macOS artifacts and a Windows bulk installer.</p>
+          </article>
+          <article>
+            <span>Bundle logic</span>
+            <h3>Workflow Pricing</h3>
+            <p>Families and bundles are priced by role: flagship spatial, signature Core tools, full mix workflows, and lifetime access.</p>
+          </article>
         </div>
       </section>
 
