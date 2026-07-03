@@ -14,6 +14,7 @@ This folder is the local build package for DIHWorldAudio.com.
 - `data/woocommerce-products-draft.csv` - companion bundle and future catalog draft import.
 - `data/plugin-catalog-42-current-canon.csv` - current 42-plugin catalog reference for future imports.
 - `data/dihworld-price-list-20260703.csv` - launch price list for individual plugins, families, workflow bundles, bulk collection, and legacy membership.
+- `data/fulfillment-map-20260703.csv` - operational fulfillment map connecting storefront SKUs to release artifacts, checksums, prices, and publish blockers.
 - `data/image-cache-manifest.csv` - image-cache inventory with dimensions and upload status.
 - `data/wordpress-media-upload-plan.csv` - first-pass media upload plan for WordPress.
 - `docs/GODADDY_LAUNCH_CHECKLIST.md` - GoDaddy + WordPress launch sequence.
@@ -26,9 +27,11 @@ This folder is the local build package for DIHWorldAudio.com.
 - `docs/IMAGE_ASSET_GUIDE.md` - image upload guidance for the full source asset pack.
 - `docs/DIHWORLD_IDEAL_SHORT_DEMOS_HANDOFF_20260703.md` - family-based short demo slate with special functions and combo chains.
 - `docs/DIHWORLD_PRICE_LIST_20260703.md` - launch pricing strategy and public price list.
+- `docs/FULFILLMENT_MAP_HANDOFF_20260703.md` - team handoff for fulfillment-map status codes and publishing use.
 - `output/pdf/DIHWorld_Ideal_Short_Demos_Handoff_20260703.pdf` - team-ready PDF version of the short demo handoff.
 - `tools/build_static_index.py` - generator for the self-contained GitHub Pages `index.html`.
 - `tools/build_demo_handoff_pdf.py` - generator for the short demo handoff PDF.
+- `tools/build_fulfillment_map.py` - generator for `data/fulfillment-map-20260703.csv`.
 
 ## Preview
 
@@ -42,6 +45,6 @@ The clean path is:
 2. Install or confirm WooCommerce.
 3. Import `data/woocommerce-core-system-draft.csv` as the first draft product CSV.
 4. Upload only the first-pass media assets from `data/wordpress-media-upload-plan.csv`.
-5. Add prices, product images, final download URLs, manuals, audio demos, video, and FAQ.
+5. Use `data/fulfillment-map-20260703.csv` to connect protected installer downloads, checksums, manuals, product images, audio demos, video, and FAQ.
 6. Connect Stripe, PayPal, analytics, and customer account flows.
 7. Publish only after final installer packages are signed, notarized, stapled, and Gatekeeper verified.

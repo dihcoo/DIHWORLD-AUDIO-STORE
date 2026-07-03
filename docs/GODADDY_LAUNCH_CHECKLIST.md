@@ -28,7 +28,9 @@ Import path in WordPress:
 5. Confirm `SKU`, `Name`, `Published`, `Short description`, `Description`, `Categories`, `Tags`, `Download limit`, and `Download expiry days` map correctly.
 6. Run the importer.
 
-The CSV intentionally sets products to draft using `Published = -1`. Add prices, product images, final installer download URLs, manual links, demos, and FAQs before publishing.
+The CSV intentionally sets products to draft using `Published = -1`. Prices are drafted in `/Users/hakeemsalaam/Development/DIHWorldAudio_Storefront/data/dihworld-price-list-20260703.csv`; fulfillment status is drafted in `/Users/hakeemsalaam/Development/DIHWorldAudio_Storefront/data/fulfillment-map-20260703.csv`.
+
+Before publishing, add product images, protected installer download URLs, manual links, demos, and FAQs. Use the fulfillment map to verify release paths, SHA-256 values, manual attachment, and remaining publish blockers.
 
 ## Media Upload
 
