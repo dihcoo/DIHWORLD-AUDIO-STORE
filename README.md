@@ -4,7 +4,8 @@ This folder is the local build package for DIHWorldAudio.com.
 
 ## Files
 
-- `index.html` - static storefront preview for the current 42-plugin suite and bundle strategy.
+- `index.html` - self-contained GitHub Pages storefront for the current 42-plugin suite, demo slate, and bundle strategy.
+- `index.with-assets.html` - editable storefront source that uses external CSS, JS, and images.
 - `assets/images/` - storefront-ready preview images, including the Core Bundle product art.
 - `assets/source/_image_cache.zip` - full source image cache archive copied from the launch package.
 - `assets/css/styles.css` - responsive storefront styling.
@@ -22,10 +23,14 @@ This folder is the local build package for DIHWorldAudio.com.
 - `docs/BETTER_BUSES_TUTORIAL_PAGE.md` - tutorial/download page draft from the Better Buses archive.
 - `docs/RELEASE_GATES.md` - current storefront release gate and publication safety rules.
 - `docs/IMAGE_ASSET_GUIDE.md` - image upload guidance for the full source asset pack.
+- `docs/DIHWORLD_IDEAL_SHORT_DEMOS_HANDOFF_20260703.md` - family-based short demo slate with special functions and combo chains.
+- `output/pdf/DIHWorld_Ideal_Short_Demos_Handoff_20260703.pdf` - team-ready PDF version of the short demo handoff.
+- `tools/build_static_index.py` - generator for the self-contained GitHub Pages `index.html`.
+- `tools/build_demo_handoff_pdf.py` - generator for the short demo handoff PDF.
 
 ## Preview
 
-Open `/Users/hakeemsalaam/Development/DIHWorldAudio_Storefront/index.html` in a browser.
+Open `/Users/hakeemsalaam/Development/DIHWorldAudio_Storefront/index.html` in a browser. This is also the file GitHub Pages should serve.
 
 ## Publish Path
 
