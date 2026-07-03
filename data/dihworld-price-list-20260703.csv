@@ -1,0 +1,29 @@
+Product Type,SKU,Offer,Count,Launch Price,Regular Price,Includes,Notes
+Individual,DIH-INDIVIDUAL-STANDARD,Standard Individual Plugin,1,49,79,Any standard DIHWorld Audio processor,Launch all standard singles at this price
+Individual,DIH-INDIVIDUAL-UTILITY,Utility Individual Plugin,1,29,49,SESHAT or utility-only single,Use for observation/metering support products
+Primary Family,DIH-FAM-VOCAL-MIC-SOURCE,VOCAL_MIC_SOURCE Family,6,199,349,"GOLD, SILVER, WPR, AEGIS_NOVA, TRIPLER, EchoLocate",Current primary family
+Primary Family,DIH-FAM-DYNAMICS-GUARD,DYNAMICS_GUARD Family,5,179,299,"ANUBIS, OTIS, DEBO, LOOKOUT, DRUMKRUSHGLUE",Current primary family
+Primary Family,DIH-FAM-BASS-LOW-END,BASS_LOW_END Family,4,129,229,"MARIANA, MONOLITH, DEPTH_BOOST_PRO, NTRPL",Current primary family
+Primary Family,DIH-FAM-DRUM-INSTRUMENT,DRUM_INSTRUMENT Family,2,79,129,"DIH_DRUM_MORPHER, BALLPARK",Current primary family
+Primary Family,DIH-FAM-COLOR-AMP-TAPE,COLOR_AMP_TAPE Family,4,129,229,"APIS, PTAHTUBE, KHEPRI, SOVEREIGN",Platinum is not primary Color
+Primary Family,DIH-FAM-FIELD-TONE-BALANCE,FIELD_TONE_BALANCE Family,2,79,129,"AUSET, AUSAR",Current primary family
+Primary Family,DIH-FAM-DIMENSIONAL-IMPACT-MOVE,DIMENSIONAL_IMPACT_MOVE Family,3,99,179,"DEPTH_IMPACT_HYBRID_X, PARALLAX, NSR",Current primary family
+Primary Family,DIH-FAM-FX-SPATIAL,FX_SPATIAL Family,3,99,179,"NTRSTLLR, Cathedral, SacredVerb",Current primary family
+Primary Family,DIH-FAM-HARMONICS-PITCH,HARMONICS_PITCH Family,3,99,179,"THOTH, TEHUTI, AU",Current primary family
+Primary Family,DIH-FAM-CREATIVE-TRANSFORM,CREATIVE_TRANSFORM Family,3,99,179,"SLOTMACHINE, ARCHAEOLOGIST_X, SERQET",Current primary family
+Primary Family,DIH-FAM-MASTERING-CORE,MASTERING_CORE Family,5,179,299,"ANKH, SPHYNX, MAAT, HORIZON_X, PLATINUM",Platinum primary family
+Primary Family,DIH-FAM-MASTER-FIELD,MASTER_FIELD Family,1,49,79,IMHOTEP,Current primary family
+Primary Family,DIH-FAM-UTILITY-OBSERVATION,UTILITY_OBSERVATION Family,1,29,49,SESHAT,Observation utility
+Workflow Bundle,DIH-CORE-BUNDLE,DIH Core Bundle,5,149,249,"SacredVerb, Cathedral, DEBO, DrumKrushGlue, Mariana",First public entry bundle
+Workflow Bundle,DIH-BUNDLE-VOCAL-CAPTURE,Vocal Capture Bundle,6,199,349,"GOLD, SILVER, WPR, AEGIS_NOVA, TRIPLER, EchoLocate",Storefront companion bundle
+Workflow Bundle,DIH-BUNDLE-BASS-FOUNDATION,Bass Foundation Bundle,4,129,229,"Mariana, Monolith, Depth Boost Pro, NTRPL",Storefront companion bundle
+Workflow Bundle,DIH-BUNDLE-MASTER-BUS,Master Bus Bundle,7,249,399,"SPHYNX, MAAT, PLATINUM, HORIZON_X, IMHOTEP, ANKH, SESHAT",Storefront companion bundle
+Workflow Bundle,DIH-BUNDLE-COLOR-AMP-TAPE,Color Amp Tape Bundle,4,129,229,"APIS, PTAHTUBE, KHEPRI, SOVEREIGN",Storefront companion bundle
+Workflow Bundle,DIH-BUNDLE-SPATIAL-MOTION,Spatial Motion Bundle,6,199,349,"DEPTH_IMPACT_HYBRID_X, PARALLAX, NSR, NTRSTLLR, Cathedral, SacredVerb",Storefront companion bundle
+Workflow Bundle,DIH-BUNDLE-BEAT-BUILDER,Beat Builder Bundle,7,249,399,"DIH_DRUM_MORPHER, BALLPARK, DRUMKRUSHGLUE, ANUBIS, OTIS, DEBO, LOOKOUT",Storefront companion bundle
+Workflow Bundle,DIH-BUNDLE-CREATIVE-LAB,Creative Lab Bundle,6,199,349,"THOTH, TEHUTI, AU, SLOTMACHINE, ARCHAEOLOGIST_X, SERQET",Storefront companion bundle
+Bulk,DIH-COMPLETE-COLLECTION,Complete Collection,42,699,1299,All current 42 DIHWorld Audio plugins,Mac AU/VST3 plus Windows VST3 bulk release path
+Download,DIH-BETTER-BUSES,DIHWorld Better Buses,1,0,0,Logic channel-strip starter set,Use as free/gated lead magnet
+Membership,DIH-LEGACY-FOUNDER-LIFETIME,Legacy Founder Lifetime,42+,999,1499,Complete Collection plus future DIHWorld Audio main-line plugin releases,Limited founder window / first 100 customers
+Membership,DIH-LEGACY-LIFETIME,Legacy Lifetime Membership,42+,1499,1999,Complete Collection plus future DIHWorld Audio main-line plugin releases,Standard lifetime offer
+Membership,DIH-LEGACY-STUDIO-LIFETIME,Legacy Studio Lifetime,42+,2499,2999,Legacy lifetime terms for up to 5 seats,Draft studio/team tier

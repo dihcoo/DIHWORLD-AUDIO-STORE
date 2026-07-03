@@ -480,6 +480,76 @@ h1 {
   background: #e7efeb;
 }
 
+.pricing-band {
+  background: #ffffff;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1320px;
+  margin: 0 auto 26px;
+}
+
+.price-card {
+  min-height: 232px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f7f8f4;
+  box-shadow: 0 12px 30px rgba(40, 30, 18, 0.08);
+}
+
+.price-card.featured-price {
+  border-color: rgba(201, 163, 72, 0.75);
+  background: #fff8df;
+}
+
+.price-card span {
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.price-card h3 {
+  margin: 10px 0;
+  font-size: 42px;
+  line-height: 46px;
+}
+
+.price-card p {
+  color: #4f463b;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.family-price-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.family-price-grid span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #edf4f1;
+  color: #26302b;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .canon-map {
   background: #ffffff;
 }
@@ -623,11 +693,13 @@ h1 {
 @media (max-width: 1120px) {
   .product-grid,
   .bundle-grid,
-  .proof-grid {
+  .proof-grid,
+  .price-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .release-strip {
+  .release-strip,
+  .family-price-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -693,7 +765,9 @@ h1 {
   .product-grid,
   .bundle-grid,
   .proof-grid,
-  .release-strip {
+  .release-strip,
+  .price-grid,
+  .family-price-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -733,6 +807,7 @@ h1 {
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#plugins">Plugins</a>
         <a href="#bundles">Bundles</a>
+        <a href="#pricing">Pricing</a>
         <a href="#demos">Demos</a>
         <a href="#tutorials">Tutorials</a>
         <a href="#support">Support</a>
@@ -956,6 +1031,56 @@ h1 {
             <h3>Transform + Harmonics</h3>
             <p>THOTH, TEHUTI, AU, SLOTMACHINE, ARCHAEOLOGIST_X, and SERQET. For harmonic writing, recovery, width contour, and intentional transformation.</p>
           </article>
+        </div>
+      </section>
+
+      <section class="section pricing-band" id="pricing" aria-labelledby="pricing-title">
+        <div class="section-heading">
+          <p class="eyebrow">Launch pricing</p>
+          <h2 id="pricing-title">Individual, Family, Bulk, Legacy</h2>
+          <p>Start with one processor, build by family, unlock the full 42-plugin system, or join as a Legacy member for long-term access.</p>
+        </div>
+        <div class="price-grid" aria-label="DIHWorld Audio launch price ladder">
+          <article class="price-card">
+            <span>Individual</span>
+            <h3>$49</h3>
+            <p>Standard single-plugin launch price. Utility-only singles start at $29.</p>
+          </article>
+          <article class="price-card featured-price">
+            <span>Core Bundle</span>
+            <h3>$149</h3>
+            <p>SacredVerb, Cathedral, DEBO, DrumKrushGlue, and Mariana.</p>
+          </article>
+          <article class="price-card">
+            <span>Families</span>
+            <h3>$79-$199</h3>
+            <p>Current 13-family pricing based on plugin count and workflow depth.</p>
+          </article>
+          <article class="price-card">
+            <span>Complete Bulk</span>
+            <h3>$699</h3>
+            <p>All 42 current DIHWorld Audio plugins in one complete collection.</p>
+          </article>
+          <article class="price-card">
+            <span>Legacy Lifetime</span>
+            <h3>$999+</h3>
+            <p>Founder lifetime starts at $999, with standard and studio legacy tiers above it.</p>
+          </article>
+        </div>
+        <div class="family-price-grid" aria-label="Primary family launch prices">
+          <span>Vocal $199</span>
+          <span>Dynamics $179</span>
+          <span>Bass $129</span>
+          <span>Drum $79</span>
+          <span>Color $129</span>
+          <span>Field $79</span>
+          <span>Dimensional $99</span>
+          <span>FX $99</span>
+          <span>Harmonics $99</span>
+          <span>Creative $99</span>
+          <span>Mastering $179</span>
+          <span>Master Field $49</span>
+          <span>Utility $29</span>
         </div>
       </section>
 

@@ -13,6 +13,7 @@ This folder is the local build package for DIHWorldAudio.com.
 - `data/woocommerce-core-system-draft.csv` - primary WooCommerce draft import for SacredVerb, Cathedral, DEBO, DrumKrushGlue, Mariana, and the DIH Core Bundle.
 - `data/woocommerce-products-draft.csv` - companion bundle and future catalog draft import.
 - `data/plugin-catalog-42-current-canon.csv` - current 42-plugin catalog reference for future imports.
+- `data/dihworld-price-list-20260703.csv` - launch price list for individual plugins, families, workflow bundles, bulk collection, and legacy membership.
 - `data/image-cache-manifest.csv` - image-cache inventory with dimensions and upload status.
 - `data/wordpress-media-upload-plan.csv` - first-pass media upload plan for WordPress.
 - `docs/GODADDY_LAUNCH_CHECKLIST.md` - GoDaddy + WordPress launch sequence.
@@ -24,6 +25,7 @@ This folder is the local build package for DIHWorldAudio.com.
 - `docs/RELEASE_GATES.md` - current storefront release gate and publication safety rules.
 - `docs/IMAGE_ASSET_GUIDE.md` - image upload guidance for the full source asset pack.
 - `docs/DIHWORLD_IDEAL_SHORT_DEMOS_HANDOFF_20260703.md` - family-based short demo slate with special functions and combo chains.
+- `docs/DIHWORLD_PRICE_LIST_20260703.md` - launch pricing strategy and public price list.
 - `output/pdf/DIHWorld_Ideal_Short_Demos_Handoff_20260703.pdf` - team-ready PDF version of the short demo handoff.
 - `tools/build_static_index.py` - generator for the self-contained GitHub Pages `index.html`.
 - `tools/build_demo_handoff_pdf.py` - generator for the short demo handoff PDF.
