@@ -189,9 +189,15 @@ def build() -> list[dict[str, str]]:
         family_products.setdefault(item["Primary family"], []).append(item["Name"])
 
     # Individual plugin products.
-    individual_price = price_rows["DIH-INDIVIDUAL-STANDARD"]
+    standard_individual_price = price_rows["DIH-INDIVIDUAL-STANDARD"]
+    flagship_spatial_price = price_rows["DIH-INDIVIDUAL-FLAGSHIP-SPATIAL"]
     for item in catalog:
         family = item["Primary family"]
+        individual_price = (
+            flagship_spatial_price
+            if item["SKU"] in {"DIH-SACREDVERB", "DIH-CATHEDRAL"}
+            else standard_individual_price
+        )
         release_dir = family_dirs[family]
         details = artifact_details(release_dir, artifact_target(item["Name"]), "Individual")
         gate = "READY_FOR_UPLOAD_URL" if details["Mac DMG Path"] and details["Mac PKG Path"] else "ARTIFACT_MATCH_NEEDED"

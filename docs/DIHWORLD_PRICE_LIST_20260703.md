@@ -25,10 +25,12 @@ That puts DIHWorld in a strong launch lane if the complete 42-plugin collection 
 | Offer | Regular price | Launch price | Storefront use |
 |---|---:|---:|---|
 | Individual plugin | $79 | $49 | Entry price for one processor |
+| Flagship spatial individual | $129 | $79 | SacredVerb or Cathedral |
 | Utility individual | $49 | $29 | SESHAT or utility-only single |
 | Small family, 1 plugin | $79 | $49 | Single-plugin family installer |
 | Small family, 2 plugins | $129 | $79 | Two-plugin focused family |
 | Family, 3 plugins | $179 | $99 | Compact workflow family |
+| Premium spatial family, 3 plugins | $249 | $149 | FX_SPATIAL with SacredVerb and Cathedral |
 | Family, 4 plugins | $229 | $129 | Main workflow family |
 | Family, 5 plugins | $299 | $179 | Advanced family |
 | Family, 6 plugins | $349 | $199 | Large family |
@@ -40,7 +42,9 @@ That puts DIHWorld in a strong launch lane if the complete 42-plugin collection 
 
 ## Individual Plugins
 
-Launch all standard individual processors at $49. Regular public price is $79.
+Launch standard individual processors at $49. Regular public price is $79.
+
+SacredVerb and Cathedral are flagship spatial processors. Launch each at $79 with a $129 regular reference so the two-tool value never implies a bundle below $149.
 
 Use $29 launch and $49 regular only for utility-only singles where the product is primarily observation, metering, or support.
 
@@ -55,7 +59,7 @@ Use $29 launch and $49 regular only for utility-only singles where the product i
 | COLOR_AMP_TAPE | 4 | $129 | $229 | APIS, PTAHTUBE, KHEPRI, SOVEREIGN |
 | FIELD_TONE_BALANCE | 2 | $79 | $129 | AUSET, AUSAR |
 | DIMENSIONAL_IMPACT_MOVE | 3 | $99 | $179 | DEPTH_IMPACT_HYBRID_X, PARALLAX, NSR |
-| FX_SPATIAL | 3 | $99 | $179 | NTRSTLLR, Cathedral, SacredVerb |
+| FX_SPATIAL | 3 | $149 | $249 | NTRSTLLR, Cathedral, SacredVerb |
 | HARMONICS_PITCH | 3 | $99 | $179 | THOTH, TEHUTI, AU |
 | CREATIVE_TRANSFORM | 3 | $99 | $179 | SLOTMACHINE, ARCHAEOLOGIST_X, SERQET |
 | MASTERING_CORE | 5 | $179 | $299 | ANKH, SPHYNX, MAAT, HORIZON_X, PLATINUM |
@@ -68,12 +72,12 @@ These are the storefront-facing companion bundles already mapped in the catalog.
 
 | Bundle | Launch price | Regular price | Included plugins |
 |---|---:|---:|---|
-| DIH Core Bundle | $149 | $249 | SacredVerb, Cathedral, DEBO, DrumKrushGlue, Mariana |
+| DIH Core Bundle | $249 | $399 | SacredVerb, Cathedral, DEBO, DrumKrushGlue, Mariana |
 | Vocal Capture Bundle | $199 | $349 | GOLD, SILVER, WPR, AEGIS_NOVA, TRIPLER, EchoLocate |
 | Bass Foundation Bundle | $129 | $229 | Mariana, Monolith, Depth Boost Pro, NTRPL |
 | Master Bus Bundle | $249 | $399 | SPHYNX, MAAT, PLATINUM, HORIZON_X, IMHOTEP, ANKH, SESHAT |
 | Color Amp Tape Bundle | $129 | $229 | APIS, PTAHTUBE, KHEPRI, SOVEREIGN |
-| Spatial Motion Bundle | $199 | $349 | DEPTH_IMPACT_HYBRID_X, PARALLAX, NSR, NTRSTLLR, Cathedral, SacredVerb |
+| Spatial Motion Bundle | $299 | $499 | DEPTH_IMPACT_HYBRID_X, PARALLAX, NSR, NTRSTLLR, Cathedral, SacredVerb |
 | Beat Builder Bundle | $249 | $399 | DIH_DRUM_MORPHER, BALLPARK, DRUMKRUSHGLUE, ANUBIS, OTIS, DEBO, LOOKOUT |
 | Creative Lab Bundle | $199 | $349 | THOTH, TEHUTI, AU, SLOTMACHINE, ARCHAEOLOGIST_X, SERQET |
 
@@ -116,6 +120,7 @@ Use for studios, production rooms, churches, schools, and teams. Draft terms: up
 ## Discount Rules
 
 - Do not discount individual plugins below $29.
+- Do not price SacredVerb + Cathedral, alone or inside an obvious spatial offer, below a $149 value floor.
 - Do not discount the Complete Collection below $499 without a dated campaign note.
 - Do not discount lifetime below $999.
 - Keep lifetime above the Complete Collection so the membership feels premium.
@@ -125,4 +130,3 @@ Use for studios, production rooms, churches, schools, and teams. Draft terms: up
 ## WooCommerce Draft Implementation
 
 Set initial WooCommerce `Regular price` fields to the launch prices while the launch window is active. If sale-price columns are added later, move these launch prices to `Sale price` and use the regular prices above as `Regular price`.
-
