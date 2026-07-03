@@ -22,6 +22,10 @@ IMAGE_MAP = {
     "assets/images/debo.png": INLINE_IMAGE_ROOT / "debo.jpg",
     "assets/images/drumkrushglue.png": INLINE_IMAGE_ROOT / "drumkrushglue.jpg",
     "assets/images/mariana.png": INLINE_IMAGE_ROOT / "mariana.jpg",
+    "assets/images/ui-sacredverb.jpg": ROOT / "assets" / "images" / "ui-sacredverb.jpg",
+    "assets/images/ui-cathedral.jpg": ROOT / "assets" / "images" / "ui-cathedral.jpg",
+    "assets/images/ui-debo.jpg": ROOT / "assets" / "images" / "ui-debo.jpg",
+    "assets/images/ui-mariana.jpg": ROOT / "assets" / "images" / "ui-mariana.jpg",
 }
 
 

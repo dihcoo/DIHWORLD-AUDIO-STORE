@@ -28,6 +28,7 @@ This folder is the local build package for DIHWorldAudio.com.
 - `docs/DIHWORLD_IDEAL_SHORT_DEMOS_HANDOFF_20260703.md` - family-based short demo slate with special functions and combo chains.
 - `docs/DIHWORLD_PRICE_LIST_20260703.md` - launch pricing strategy and public price list.
 - `docs/FULFILLMENT_MAP_HANDOFF_20260703.md` - team handoff for fulfillment-map status codes and publishing use.
+- `docs/STOREFRONT_VALUE_AUDIT_20260703.md` - value audit based on source-code scope, assets, pricing position, and improvement priorities.
 - `output/pdf/DIHWorld_Ideal_Short_Demos_Handoff_20260703.pdf` - team-ready PDF version of the short demo handoff.
 - `tools/build_static_index.py` - generator for the self-contained GitHub Pages `index.html`.
 - `tools/build_demo_handoff_pdf.py` - generator for the short demo handoff PDF.

@@ -189,13 +189,29 @@ def build() -> list[dict[str, str]]:
         family_products.setdefault(item["Primary family"], []).append(item["Name"])
 
     # Individual plugin products.
+    utility_individual_price = price_rows["DIH-INDIVIDUAL-UTILITY"]
     standard_individual_price = price_rows["DIH-INDIVIDUAL-STANDARD"]
+    signature_individual_price = price_rows["DIH-INDIVIDUAL-SIGNATURE"]
     flagship_spatial_price = price_rows["DIH-INDIVIDUAL-FLAGSHIP-SPATIAL"]
+    utility_individual_skus = {"DIH-SESHAT"}
+    signature_individual_skus = {
+        "DIH-DEBO",
+        "DIH-DRUMKRUSHGLUE",
+        "DIH-MARIANA",
+        "DIH-GOLD",
+        "DIH-PLATINUM",
+        "DIH-NTRSTLLR",
+    }
+    flagship_spatial_skus = {"DIH-SACREDVERB", "DIH-CATHEDRAL"}
     for item in catalog:
         family = item["Primary family"]
         individual_price = (
             flagship_spatial_price
-            if item["SKU"] in {"DIH-SACREDVERB", "DIH-CATHEDRAL"}
+            if item["SKU"] in flagship_spatial_skus
+            else signature_individual_price
+            if item["SKU"] in signature_individual_skus
+            else utility_individual_price
+            if item["SKU"] in utility_individual_skus
             else standard_individual_price
         )
         release_dir = family_dirs[family]
