@@ -12,6 +12,7 @@ OUTPUT = ROOT / "index.html"
 CSS = ROOT / "assets" / "css" / "styles.css"
 JS = ROOT / "assets" / "js" / "storefront.js"
 INLINE_IMAGE_ROOT = Path("/private/tmp/dihworld-inline-images")
+INLINE_IMAGES = False
 
 IMAGE_MAP = {
     "assets/images/dihworld-audio-logo.jpg": INLINE_IMAGE_ROOT / "dihworld-audio-logo.jpg",
@@ -52,10 +53,16 @@ def main() -> None:
     css = CSS.read_text(encoding="utf-8")
     js = JS.read_text(encoding="utf-8")
 
-    for original, image_path in IMAGE_MAP.items():
-        replacement = data_uri(resolve_image(original, image_path))
-        html = html.replace(original, replacement)
-        css = css.replace(original, replacement)
+    if INLINE_IMAGES:
+        for original, image_path in IMAGE_MAP.items():
+            replacement = data_uri(resolve_image(original, image_path))
+            html = html.replace(original, replacement)
+            css = css.replace(original, replacement)
+    else:
+        # The published site serves its image assets directly. Keeping them out
+        # of index.html makes the first document fast and lets the browser cache
+        # each illustration independently.
+        css = css.replace('../images/', 'assets/images/')
 
     html = html.replace('    <link rel="stylesheet" href="assets/css/styles.css">\n', f"    <style>\n{css}\n    </style>\n")
     html = html.replace('    <script src="assets/js/storefront.js"></script>', f"    <script>\n{js}\n    </script>")
