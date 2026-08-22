@@ -1,0 +1,5422 @@
+[
+  {
+    "id": "GOLD",
+    "name": "GOLD",
+    "family": "VOCAL_MIC_SOURCE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "source/vocal color; secondary silver mastering-support dot",
+    "description": "Master-series microphone voicing that combines source-array blend with silver air, copper body, iron weight, gold presence, platinum authority, and nickel focus.",
+    "parameters": [
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "sourcearray",
+        "name": "Source / Mic Array",
+        "type": "Factory"
+      },
+      {
+        "id": "AG_AIR",
+        "name": "Ag Air",
+        "type": "Factory"
+      },
+      {
+        "id": "CU_BODY",
+        "name": "Cu Body",
+        "type": "Factory"
+      },
+      {
+        "id": "FE_GLUE",
+        "name": "Fe Weight",
+        "type": "Factory"
+      },
+      {
+        "id": "AU_DRIVE",
+        "name": "Au Presence",
+        "type": "Factory"
+      },
+      {
+        "id": "PT_AUTHORITY",
+        "name": "Pt Authority",
+        "type": "Factory"
+      },
+      {
+        "id": "NI_FOCUS",
+        "name": "Ni Focus",
+        "type": "Factory"
+      }
+    ],
+    "presets": [
+      "Canon Open",
+      "Source True",
+      "Root Anchor",
+      "Earth Hold",
+      "Body Open",
+      "Spirit Lift",
+      "Sacred Push",
+      "Full Field"
+    ],
+    "meters": [],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/gold_bg.png"
+    ]
+  },
+  {
+    "id": "SILVER",
+    "name": "SILVER",
+    "family": "VOCAL_MIC_SOURCE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "source/vocal color; secondary silver mastering-support dot",
+    "description": "Precision microphone voicing for truth, focus, grounding, air, and transient definition with protected input, mix, and output control.",
+    "parameters": [
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "AG_TRUTH",
+        "name": "Truth Field",
+        "type": "Factory"
+      },
+      {
+        "id": "NI_FOCUS",
+        "name": "Precision",
+        "type": "Factory"
+      },
+      {
+        "id": "CU_GROUND",
+        "name": "Ground",
+        "type": "Factory"
+      },
+      {
+        "id": "AIR",
+        "name": "Air",
+        "type": "Factory"
+      },
+      {
+        "id": "TRANSIENT",
+        "name": "Transient",
+        "type": "Factory"
+      },
+      {
+        "id": "OUTPUT",
+        "name": "Output",
+        "type": "Factory"
+      },
+      {
+        "id": "INPUT_GAIN",
+        "name": "Input",
+        "type": "Factory"
+      },
+      {
+        "id": "MIX_BLEND",
+        "name": "Mix",
+        "type": "Factory"
+      }
+    ],
+    "presets": [
+      "Silver Prep [Stereo]",
+      "Reference Truth [Stereo]",
+      "Air Open [Stereo]",
+      "Transient Detail [Stereo]",
+      "Vocal Reveal [Stereo]",
+      "String Clarity [Stereo]",
+      "Piano Glass [Stereo]",
+      "Room Truth [Stereo]",
+      "Source True [Stereo]",
+      "Phi Balance [Stereo]",
+      "Breath Silver [Stereo]",
+      "Precision Field [Stereo]",
+      "Expansion Air [Stereo]",
+      "Neutral Transfer [Stereo]",
+      "Silver Prep [Mono]",
+      "Reference Truth [Mono]",
+      "Air Open [Mono]",
+      "Transient Detail [Mono]",
+      "Vocal Reveal [Mono]",
+      "String Clarity [Mono]",
+      "Piano Glass [Mono]",
+      "Room Truth [Mono]",
+      "Source True [Mono]",
+      "Phi Balance [Mono]",
+      "Breath Silver [Mono]",
+      "Precision Field [Mono]",
+      "Expansion Air [Mono]",
+      "Neutral Transfer [Mono]",
+      "Silver Prep [Dual Mono]",
+      "Reference Truth [Dual Mono]",
+      "Air Open [Dual Mono]",
+      "Transient Detail [Dual Mono]",
+      "Vocal Reveal [Dual Mono]",
+      "String Clarity [Dual Mono]",
+      "Piano Glass [Dual Mono]",
+      "Room Truth [Dual Mono]",
+      "Source True [Dual Mono]",
+      "Phi Balance [Dual Mono]",
+      "Breath Silver [Dual Mono]",
+      "Precision Field [Dual Mono]",
+      "Expansion Air [Dual Mono]",
+      "Neutral Transfer [Dual Mono]"
+    ],
+    "meters": [],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/silver_bg.png"
+    ]
+  },
+  {
+    "id": "WPR",
+    "name": "WPR",
+    "family": "VOCAL_MIC_SOURCE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "ribbon mic source shaping",
+    "description": "Phi ribbon microphone channel with transformer family, core material, winding, lamination, polar pattern, ribbon mass, proximity, and magnetic behavior.",
+    "parameters": [
+      {
+        "id": "DRIVE",
+        "name": "Transformer",
+        "type": "Float"
+      },
+      {
+        "id": "ARCHITECTURE",
+        "name": "Ribbon Tone",
+        "type": "Float"
+      },
+      {
+        "id": "DEPTH",
+        "name": "Ribbon Mass",
+        "type": "Float"
+      },
+      {
+        "id": "WIDTH",
+        "name": "Side Width",
+        "type": "Float"
+      },
+      {
+        "id": "FOCUS",
+        "name": "Polar Focus",
+        "type": "Float"
+      },
+      {
+        "id": "ENERGY",
+        "name": "Output Trim",
+        "type": "Float"
+      },
+      {
+        "id": "CLARITY",
+        "name": "Air Edge",
+        "type": "Float"
+      },
+      {
+        "id": "MIX",
+        "name": "Ribbon Blend",
+        "type": "Float"
+      },
+      {
+        "id": "CONVERGENCE",
+        "name": "Proximity",
+        "type": "Float"
+      },
+      {
+        "id": "IRON_DRIVE",
+        "name": "Iron Drive",
+        "type": "Float"
+      },
+      {
+        "id": "FLUX",
+        "name": "Magnetic Flux",
+        "type": "Float"
+      },
+      {
+        "id": "HEADROOM",
+        "name": "Core Headroom",
+        "type": "Float"
+      },
+      {
+        "id": "PRI_BIAS",
+        "name": "Primary Bias",
+        "type": "Float"
+      },
+      {
+        "id": "SEC_COLOR",
+        "name": "Sec Coloring",
+        "type": "Float"
+      },
+      {
+        "id": "LOAD",
+        "name": "Winding Load",
+        "type": "Float"
+      },
+      {
+        "id": "PERMEABILITY",
+        "name": "Permeability",
+        "type": "Float"
+      },
+      {
+        "id": "HYSTERESIS",
+        "name": "Hysteresis",
+        "type": "Float"
+      },
+      {
+        "id": "GEOMETRY",
+        "name": "Iron Geometry",
+        "type": "Float"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "LAMINATION",
+        "name": "Lamination Type",
+        "type": "Choice"
+      },
+      {
+        "id": "TRANSFORMER_FAMILY",
+        "name": "Transformer Family",
+        "type": "Choice"
+      },
+      {
+        "id": "CORE_MATERIAL",
+        "name": "Core Material",
+        "type": "Choice"
+      },
+      {
+        "id": "WINDING_TOPOLOGY",
+        "name": "Winding Topology",
+        "type": "Choice"
+      },
+      {
+        "id": "CORE_AGE",
+        "name": "Core Age",
+        "type": "Choice"
+      },
+      {
+        "id": "POLAR_MODE",
+        "name": "Polar Pattern",
+        "type": "Choice"
+      },
+      {
+        "id": "OUTPUT",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "WP-R MKVI CANON [Stereo]",
+      "VINTAGE VELVET [Stereo]",
+      "ROOM AMBIENCE [Stereo]",
+      "AIR EDGE [Stereo]",
+      "ORCHESTRAL PAIR [Stereo]",
+      "BRASS TAMER [Stereo]",
+      "VOCAL INTIMACY [Stereo]",
+      "BROADCAST WARMTH [Stereo]",
+      "DARK SHADOW [Stereo]",
+      "IRON DRIVE CORE [Stereo]",
+      "SILVER FOIL JENSEN [Stereo]",
+      "MAGNETIC CRUNCH [Stereo]",
+      "LUNDAHL DEEP OPEN [Stereo]",
+      "CINEMAG FAT BOTTOM [Stereo]",
+      "MU-METAL SILK [Stereo]",
+      "HYSTERESIS HEAT [Stereo]",
+      "BIFILAR FOCUS [Stereo]",
+      "VINTAGE CORE AGE [Stereo]",
+      "FIGURE 8 BLISS [Stereo]",
+      "BLUMLEIN CORE [Stereo]",
+      "GUITAR CAB FOCUS [Stereo]",
+      "DRUM OVERHEAD PHI [Stereo]",
+      "ACOUSTIC CLARITY [Stereo]",
+      "INFINITE MOMENTUM [Stereo]",
+      "RESONANT SPACE [Stereo]",
+      "DIH WORLD AUDIO [Stereo]",
+      "ULTRA CEILING 369 [Stereo]",
+      "WP-R MKVI CANON [Mono]",
+      "VINTAGE VELVET [Mono]",
+      "ROOM AMBIENCE [Mono]",
+      "AIR EDGE [Mono]",
+      "ORCHESTRAL PAIR [Mono]",
+      "BRASS TAMER [Mono]",
+      "VOCAL INTIMACY [Mono]",
+      "BROADCAST WARMTH [Mono]",
+      "DARK SHADOW [Mono]",
+      "IRON DRIVE CORE [Mono]",
+      "SILVER FOIL JENSEN [Mono]",
+      "MAGNETIC CRUNCH [Mono]",
+      "LUNDAHL DEEP OPEN [Mono]",
+      "CINEMAG FAT BOTTOM [Mono]",
+      "MU-METAL SILK [Mono]",
+      "HYSTERESIS HEAT [Mono]",
+      "BIFILAR FOCUS [Mono]",
+      "VINTAGE CORE AGE [Mono]",
+      "FIGURE 8 BLISS [Mono]",
+      "BLUMLEIN CORE [Mono]",
+      "GUITAR CAB FOCUS [Mono]",
+      "DRUM OVERHEAD PHI [Mono]",
+      "ACOUSTIC CLARITY [Mono]",
+      "INFINITE MOMENTUM [Mono]",
+      "RESONANT SPACE [Mono]",
+      "DIH WORLD AUDIO [Mono]",
+      "ULTRA CEILING 369 [Mono]",
+      "WP-R MKVI CANON [Dual Mono]",
+      "VINTAGE VELVET [Dual Mono]",
+      "ROOM AMBIENCE [Dual Mono]",
+      "AIR EDGE [Dual Mono]",
+      "ORCHESTRAL PAIR [Dual Mono]",
+      "BRASS TAMER [Dual Mono]",
+      "VOCAL INTIMACY [Dual Mono]",
+      "BROADCAST WARMTH [Dual Mono]",
+      "DARK SHADOW [Dual Mono]",
+      "IRON DRIVE CORE [Dual Mono]",
+      "SILVER FOIL JENSEN [Dual Mono]",
+      "MAGNETIC CRUNCH [Dual Mono]",
+      "LUNDAHL DEEP OPEN [Dual Mono]",
+      "CINEMAG FAT BOTTOM [Dual Mono]",
+      "MU-METAL SILK [Dual Mono]",
+      "HYSTERESIS HEAT [Dual Mono]",
+      "BIFILAR FOCUS [Dual Mono]",
+      "VINTAGE CORE AGE [Dual Mono]",
+      "FIGURE 8 BLISS [Dual Mono]",
+      "BLUMLEIN CORE [Dual Mono]",
+      "GUITAR CAB FOCUS [Dual Mono]",
+      "DRUM OVERHEAD PHI [Dual Mono]",
+      "ACOUSTIC CLARITY [Dual Mono]",
+      "INFINITE MOMENTUM [Dual Mono]",
+      "RESONANT SPACE [Dual Mono]",
+      "DIH WORLD AUDIO [Dual Mono]",
+      "ULTRA CEILING 369 [Dual Mono]"
+    ],
+    "meters": [],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "source/WP.PNG",
+      "source/WPR.png"
+    ]
+  },
+  {
+    "id": "AEGIS_NOVA",
+    "name": "AEGIS_NOVA",
+    "family": "VOCAL_MIC_SOURCE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "vocal/source protection and tone",
+    "description": "Vocal shield for plosive and sibilance control with a restrained drive stage and parallel mix.",
+    "parameters": [
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "plosive",
+        "name": "Plosive",
+        "type": "Float"
+      },
+      {
+        "id": "sibilance",
+        "name": "Sibilance",
+        "type": "Float"
+      },
+      {
+        "id": "drive",
+        "name": "Drive",
+        "type": "Float"
+      },
+      {
+        "id": "mix",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "Vocal Shield [Stereo]",
+      "Plosive Deflector [Stereo]",
+      "Broadcast Guard [Stereo]",
+      "Repair Field [Stereo]",
+      "Nova Transparent [Stereo]",
+      "Air Lock [Stereo]",
+      "Rap Shield [Stereo]",
+      "Podcast Field [Stereo]",
+      "Full Guard [Stereo]",
+      "Bass Vocal Lock [Stereo]",
+      "Female Vocal [Stereo]",
+      "Singer Songwriter [Stereo]",
+      "Breath Detail [Stereo]",
+      "Stage Vocal Lock [Stereo]",
+      "Vocal Shield [Mono]",
+      "Plosive Deflector [Mono]",
+      "Broadcast Guard [Mono]",
+      "Repair Field [Mono]",
+      "Nova Transparent [Mono]",
+      "Air Lock [Mono]",
+      "Rap Shield [Mono]",
+      "Podcast Field [Mono]",
+      "Full Guard [Mono]",
+      "Bass Vocal Lock [Mono]",
+      "Female Vocal [Mono]",
+      "Singer Songwriter [Mono]",
+      "Breath Detail [Mono]",
+      "Stage Vocal Lock [Mono]",
+      "Vocal Shield [Dual Mono]",
+      "Plosive Deflector [Dual Mono]",
+      "Broadcast Guard [Dual Mono]",
+      "Repair Field [Dual Mono]",
+      "Nova Transparent [Dual Mono]",
+      "Air Lock [Dual Mono]",
+      "Rap Shield [Dual Mono]",
+      "Podcast Field [Dual Mono]",
+      "Full Guard [Dual Mono]",
+      "Bass Vocal Lock [Dual Mono]",
+      "Female Vocal [Dual Mono]",
+      "Singer Songwriter [Dual Mono]",
+      "Breath Detail [Dual Mono]",
+      "Stage Vocal Lock [Dual Mono]"
+    ],
+    "meters": [
+      {
+        "display": "INPUT",
+        "measures": "Incoming peak activity",
+        "reading": "Confirms source level reaching the shield."
+      },
+      {
+        "display": "NOVA",
+        "measures": "Detected plosive/sibilant activity",
+        "reading": "More light means stronger shield intervention."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/aegisNova.png"
+    ]
+  },
+  {
+    "id": "TRIPLER",
+    "name": "TRIPLER",
+    "family": "VOCAL_MIC_SOURCE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "vocal/mic array enhancement",
+    "description": "Three-voice vocal harmonizer with key, scale, chord, pitch correction, voice gain, pan, fine tune, and Phi field control. The current left/right voices use the repaired high-quality overlap-add pitch path for clean stereo harmonies.",
+    "parameters": [
+      {
+        "id": "DIATONIC",
+        "name": "DIATONIC",
+        "type": "Referenced"
+      },
+      {
+        "id": "CHORD",
+        "name": "CHORD",
+        "type": "Referenced"
+      },
+      {
+        "id": "KEY",
+        "name": "KEY",
+        "type": "Referenced"
+      },
+      {
+        "id": "SCALE",
+        "name": "SCALE",
+        "type": "Referenced"
+      },
+      {
+        "id": "L_GAIN",
+        "name": "L_GAIN",
+        "type": "Referenced"
+      },
+      {
+        "id": "R_GAIN",
+        "name": "R_GAIN",
+        "type": "Referenced"
+      },
+      {
+        "id": "C_GAIN",
+        "name": "C_GAIN",
+        "type": "Referenced"
+      },
+      {
+        "id": "L_PAN",
+        "name": "L_PAN",
+        "type": "Referenced"
+      },
+      {
+        "id": "R_PAN",
+        "name": "R_PAN",
+        "type": "Referenced"
+      },
+      {
+        "id": "BYPASS",
+        "name": "BYPASS",
+        "type": "Referenced"
+      },
+      {
+        "id": "PITCH_CORRECT",
+        "name": "PITCH_CORRECT",
+        "type": "Referenced"
+      },
+      {
+        "id": "PC_AMOUNT",
+        "name": "PC_AMOUNT",
+        "type": "Referenced"
+      },
+      {
+        "id": "FINE_TUNE",
+        "name": "FINE_TUNE",
+        "type": "Referenced"
+      },
+      {
+        "id": "PHI_FIELD",
+        "name": "PHI_FIELD",
+        "type": "Referenced"
+      },
+      {
+        "id": "L_ON",
+        "name": "L_ON",
+        "type": "Referenced"
+      },
+      {
+        "id": "R_ON",
+        "name": "R_ON",
+        "type": "Referenced"
+      },
+      {
+        "id": "OUT_GAIN",
+        "name": "OUT_GAIN",
+        "type": "Referenced"
+      },
+      {
+        "id": "GAINMATCH",
+        "name": "GAINMATCH",
+        "type": "Referenced"
+      }
+    ],
+    "presets": [
+      "Default [Stereo]",
+      "Wide Open [Stereo]",
+      "Gospel 3rds [Major] [Stereo]",
+      "R&B Minor Bed [Stereo]",
+      "Soul Dom 7 [Stereo]",
+      "Trap Major 7 [Stereo]",
+      "Trap Minor 7 [Stereo]",
+      "Lo Seventh Bed [Stereo]",
+      "Pop Fifth Stack [Stereo]",
+      "Streaming Ready [Stereo]",
+      "Vinyl Warm [Stereo]",
+      "357 Canon [Full] [Stereo]",
+      "357 Diatonic Major [Stereo]",
+      "357 Diatonic Minor [Stereo]",
+      "Default [Mono]",
+      "Wide Open [Mono]",
+      "Gospel 3rds [Major] [Mono]",
+      "R&B Minor Bed [Mono]",
+      "Soul Dom 7 [Mono]",
+      "Trap Major 7 [Mono]",
+      "Trap Minor 7 [Mono]",
+      "Lo Seventh Bed [Mono]",
+      "Pop Fifth Stack [Mono]",
+      "Streaming Ready [Mono]",
+      "Vinyl Warm [Mono]",
+      "357 Canon [Full] [Mono]",
+      "357 Diatonic Major [Mono]",
+      "357 Diatonic Minor [Mono]",
+      "Default [Dual Mono]",
+      "Wide Open [Dual Mono]",
+      "Gospel 3rds [Major] [Dual Mono]",
+      "R&B Minor Bed [Dual Mono]",
+      "Soul Dom 7 [Dual Mono]",
+      "Trap Major 7 [Dual Mono]",
+      "Trap Minor 7 [Dual Mono]",
+      "Lo Seventh Bed [Dual Mono]",
+      "Pop Fifth Stack [Dual Mono]",
+      "Streaming Ready [Dual Mono]",
+      "Vinyl Warm [Dual Mono]",
+      "357 Canon [Full] [Dual Mono]",
+      "357 Diatonic Major [Dual Mono]",
+      "357 Diatonic Minor [Dual Mono]"
+    ],
+    "meters": [],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/TRIPLER.png"
+    ]
+  },
+  {
+    "id": "EchoLocate",
+    "name": "EchoLocate",
+    "family": "VOCAL_MIC_SOURCE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "source localization",
+    "description": "Three-position source-placement processor for spread, drift, microphone gain, proximity, pan, and reflected-space mix.",
+    "parameters": [
+      {
+        "id": "MODE",
+        "name": "MODE",
+        "type": "Referenced"
+      },
+      {
+        "id": "SPREAD",
+        "name": "SPREAD",
+        "type": "Referenced"
+      },
+      {
+        "id": "DRIFT",
+        "name": "DRIFT",
+        "type": "Referenced"
+      },
+      {
+        "id": "MIX",
+        "name": "MIX",
+        "type": "Referenced"
+      },
+      {
+        "id": "MIC1_GAIN",
+        "name": "MIC1_GAIN",
+        "type": "Referenced"
+      },
+      {
+        "id": "MIC2_GAIN",
+        "name": "MIC2_GAIN",
+        "type": "Referenced"
+      },
+      {
+        "id": "MIC3_GAIN",
+        "name": "MIC3_GAIN",
+        "type": "Referenced"
+      },
+      {
+        "id": "MIC2_PROX",
+        "name": "MIC2_PROX",
+        "type": "Referenced"
+      },
+      {
+        "id": "MIC3_PAN",
+        "name": "MIC3_PAN",
+        "type": "Referenced"
+      },
+      {
+        "id": "OUT_GAIN",
+        "name": "OUT_GAIN",
+        "type": "Referenced"
+      },
+      {
+        "id": "channelmode",
+        "name": "channelmode",
+        "type": "Referenced"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "dualmonolink",
+        "type": "Referenced"
+      }
+    ],
+    "presets": [
+      "ECHOLOCATE CANON [Stereo]",
+      "CLOSE CENTER [Stereo]",
+      "WIDE CALL [Stereo]",
+      "TRIPLE ROOM [Stereo]",
+      "CHEST LOCK [Stereo]",
+      "HEAD AIR [Stereo]",
+      "WALL RETURN [Stereo]",
+      "FOCUS FINDER [Stereo]",
+      "PHI PREPARATION [Stereo]",
+      "PHI HOME [Stereo]",
+      "PHI OPEN [Stereo]",
+      "PHI ACTIVE [Stereo]",
+      "PHI PUSH [Stereo]",
+      "PHI EXPANSION [Stereo]",
+      "ECHOLOCATE CANON [Mono]",
+      "CLOSE CENTER [Mono]",
+      "WIDE CALL [Mono]",
+      "TRIPLE ROOM [Mono]",
+      "CHEST LOCK [Mono]",
+      "HEAD AIR [Mono]",
+      "WALL RETURN [Mono]",
+      "FOCUS FINDER [Mono]",
+      "PHI PREPARATION [Mono]",
+      "PHI HOME [Mono]",
+      "PHI OPEN [Mono]",
+      "PHI ACTIVE [Mono]",
+      "PHI PUSH [Mono]",
+      "PHI EXPANSION [Mono]",
+      "ECHOLOCATE CANON [Dual Mono]",
+      "CLOSE CENTER [Dual Mono]",
+      "WIDE CALL [Dual Mono]",
+      "TRIPLE ROOM [Dual Mono]",
+      "CHEST LOCK [Dual Mono]",
+      "HEAD AIR [Dual Mono]",
+      "WALL RETURN [Dual Mono]",
+      "FOCUS FINDER [Dual Mono]",
+      "PHI PREPARATION [Dual Mono]",
+      "PHI HOME [Dual Mono]",
+      "PHI OPEN [Dual Mono]",
+      "PHI ACTIVE [Dual Mono]",
+      "PHI PUSH [Dual Mono]",
+      "PHI EXPANSION [Dual Mono]"
+    ],
+    "meters": [],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": false,
+    "sidechain": false,
+    "imageRefs": [
+      "resources/echolocate.png"
+    ]
+  },
+  {
+    "id": "ANUBIS",
+    "name": "ANUBIS",
+    "family": "DYNAMICS_GUARD",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "guard/dynamics",
+    "description": "Dynamics gate and guard with threshold, ratio, attack, hold, release, range, a named stereo host Sidechain bus, independent Sidechain Key and Sidechain Duck operation, protected I/O, and parallel mix.",
+    "parameters": [
+      {
+        "id": "input",
+        "name": "Input",
+        "type": "Float"
+      },
+      {
+        "id": "mix",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "output",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "threshold",
+        "name": "Threshold",
+        "type": "Float"
+      },
+      {
+        "id": "ratio",
+        "name": "Ratio",
+        "type": "Float"
+      },
+      {
+        "id": "attack",
+        "name": "Attack",
+        "type": "Float"
+      },
+      {
+        "id": "hold",
+        "name": "Hold",
+        "type": "Float"
+      },
+      {
+        "id": "release",
+        "name": "Release",
+        "type": "Float"
+      },
+      {
+        "id": "range",
+        "name": "Range",
+        "type": "Float"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "extkey",
+        "name": "Sidechain Key",
+        "type": "Bool"
+      },
+      {
+        "id": "scduck",
+        "name": "Sidechain Duck",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      }
+    ],
+    "presets": [
+      "TRANSPARENT PASS [Stereo]",
+      "VOCAL BREATH GUARD [Stereo]",
+      "KICK KEY GATE [Stereo]",
+      "TEHUTI DUCK GUARD [Stereo]",
+      "KEY + DUCK LOCK [Stereo]",
+      "DRUM TIGHT GUARD [Stereo]",
+      "MONO WALL HOLD [Mono]",
+      "DUAL MONO LOCK [Dual Mono]"
+    ],
+    "meters": [
+      {
+        "display": "IN",
+        "measures": "Main-input RMS energy",
+        "reading": "Shows the program feeding the gate."
+      },
+      {
+        "display": "GATE",
+        "measures": "Current gate passage gain",
+        "reading": "OPEN is full passage; lower values mean attenuation."
+      },
+      {
+        "display": "KEY",
+        "measures": "External sidechain RMS energy",
+        "reading": "Moves only when a host sidechain is routed."
+      },
+      {
+        "display": "DUCK",
+        "measures": "Sidechain-driven gain reduction",
+        "reading": "More fill means deeper ducking of the main signal."
+      },
+      {
+        "display": "OUT",
+        "measures": "Post-gate RMS energy",
+        "reading": "Compare with IN to judge actual attenuation."
+      },
+      {
+        "display": "Transfer graph",
+        "measures": "Threshold, envelope, and Range floor",
+        "reading": "Shows where the signal opens and how far closure may fall."
+      },
+      {
+        "display": "Correlation waves",
+        "measures": "Left/right phase relationship",
+        "reading": "Gold is coherent, purple is spread, red warns of anti-phase risk."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": true,
+    "imageRefs": [
+      "Assets/Images/Anubis.png",
+      "Assets/Images/Canopic.png"
+    ]
+  },
+  {
+    "id": "OTIS",
+    "name": "OTIS",
+    "family": "DYNAMICS_GUARD",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "dynamics support; secondary silver mastering-support dot",
+    "description": "3-6-9 macro dynamics processor: Micro Peak controls short events, Meso Density shapes body, and Macro Level governs the long envelope.",
+    "parameters": [
+      {
+        "id": "trumpet_l",
+        "name": "Micro Peak",
+        "type": "Float"
+      },
+      {
+        "id": "trumpet_c",
+        "name": "Meso Density",
+        "type": "Float"
+      },
+      {
+        "id": "trumpet_r",
+        "name": "Macro Level",
+        "type": "Float"
+      },
+      {
+        "id": "makeup_gain",
+        "name": "Makeup Gain",
+        "type": "Float"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      }
+    ],
+    "presets": [
+      "TRANSPARENT PASS [Stereo]",
+      "VOCAL LEVELER [Stereo]",
+      "DIALOG STEADY [Stereo]",
+      "DRUM BUS CATCH [Stereo]",
+      "MIX BUS GLUE [Stereo]",
+      "TRANSIENT GUARD [Stereo]",
+      "MONO LEVEL HOLD [Mono]",
+      "DUAL MONO CONTROL [Dual]"
+    ],
+    "meters": [
+      {
+        "display": "INPUT",
+        "measures": "Input peak in dB",
+        "reading": "Confirms level feeding all three time scales."
+      },
+      {
+        "display": "RESPONSE",
+        "measures": "Strongest active 3/6/9 reduction",
+        "reading": "Shows the greatest current reduction across Micro, Meso, or Macro."
+      },
+      {
+        "display": "OUTPUT",
+        "measures": "Output peak in dB",
+        "reading": "Use with INPUT and Gain Match for fair comparison."
+      },
+      {
+        "display": "3 / Micro activity",
+        "measures": "Fast transient reduction",
+        "reading": "Responds to short peaks and front edges."
+      },
+      {
+        "display": "6 / Meso activity",
+        "measures": "Body and phrase-density reduction",
+        "reading": "Responds to medium-duration energy."
+      },
+      {
+        "display": "9 / Macro activity",
+        "measures": "Long-envelope reduction",
+        "reading": "Responds to sustained level movement."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "source/Otis.png"
+    ]
+  },
+  {
+    "id": "DEBO",
+    "name": "DeBo",
+    "family": "DYNAMICS_GUARD",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "pressure-activated dynamics guard",
+    "description": "Pressure-activated dynamics processor with nine updated canonical programs using the restored iCloud names. The approved powered-on default is unchanged; the named bank uses a warmer depth/pressure progression without runtime preset clamping, topping out at 2.2 dB Maximize.",
+    "parameters": [
+      {
+        "id": "POWER",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "FLOWER",
+        "name": "Flower of Life",
+        "type": "Bool"
+      },
+      {
+        "id": "GAINMATCH",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "INPUT",
+        "name": "Input",
+        "type": "Factory"
+      },
+      {
+        "id": "DRIVE",
+        "name": "Drive",
+        "type": "Factory"
+      },
+      {
+        "id": "MAXIMIZE",
+        "name": "Maximize",
+        "type": "Factory"
+      },
+      {
+        "id": "DEPTH",
+        "name": "Depth",
+        "type": "Factory"
+      },
+      {
+        "id": "CLARITY",
+        "name": "Clarity",
+        "type": "Factory"
+      },
+      {
+        "id": "OUTPUT",
+        "name": "Output",
+        "type": "Factory"
+      }
+    ],
+    "presets": [
+      "NO BRICKS [Stereo]",
+      "VOCAL HOLD [Stereo]",
+      "BRICK TAP [Stereo]",
+      "WALL PRESSURE [Stereo]",
+      "SHOULDER CHECK [Stereo]",
+      "NO SCISSORS [Stereo]",
+      "BREAKTHROUGH [Stereo]",
+      "RED LINE WATCH [Stereo]",
+      "PHI GUARD [Stereo]"
+    ],
+    "meters": [
+      {
+        "display": "RMS",
+        "measures": "Sustained signal body",
+        "reading": "Shows average energy driving the pressure model."
+      },
+      {
+        "display": "GUARD PRESSURE",
+        "measures": "Combined density/containment demand",
+        "reading": "Higher values mean DEBO is working harder."
+      },
+      {
+        "display": "PEAK",
+        "measures": "Fast peak relative to ceiling",
+        "reading": "Approaching the top warns of limited remaining space."
+      },
+      {
+        "display": "GOVERNOR",
+        "measures": "Gain held back by protection",
+        "reading": "More activity means stronger safety containment."
+      },
+      {
+        "display": "Pressure window / face",
+        "measures": "RMS-driven pressure stage",
+        "reading": "The visual advances with real pressure; red is the ceiling warning state."
+      }
+    ],
+    "channelMode": false,
+    "dualMono": false,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Assets/Images/Debo_frame0.png",
+      "Assets/Images/Debo_frame2.png",
+      "Assets/Images/Debo_frame3.png",
+      "Assets/Images/Debo_state0_breach.png",
+      "Assets/Images/Debo_state1_emerge.png",
+      "Assets/Images/Debo_state2_push.png",
+      "Assets/Images/Left_hand.png",
+      "Assets/Images/Right_hand.png",
+      "Assets/Images/debo_breakthrough.png"
+    ]
+  },
+  {
+    "id": "LOOKOUT",
+    "name": "LookOut",
+    "family": "DYNAMICS_GUARD",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "dual-envelope transient/sustain shaper; Attack/Sustain directly move transient and sustain gain up to +/-18dB; Eye of Heru advisory guidance is secondary, not the primary function; cyan primary dot with green observation and silver mastering-support dots",
+    "description": "Dual-envelope transient/sustain shaper. Attack and Sustain directly move the level of the transient and sustain portions of the signal, up to +/-18 dB each, ahead of the DIH tone-color stage. Its Eye of Heru state also gives live advisory guidance on transient/sustain balance while it shapes.",
+    "parameters": [
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Factory"
+      },
+      {
+        "id": "attack",
+        "name": "Attack",
+        "type": "Factory"
+      },
+      {
+        "id": "sustain",
+        "name": "Sustain",
+        "type": "Factory"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Factory"
+      }
+    ],
+    "presets": [
+      "NEUTRAL SENTINEL [Stereo]",
+      "VOCAL FRONT GUARD",
+      "DRUM SNAP LOCK",
+      "KICK BODY ANCHOR",
+      "PERCUSSION EDGE",
+      "ROOM TAIL WATCH",
+      "MIX BUS COMPOSURE",
+      "FINAL PEAK SENTINEL"
+    ],
+    "meters": [
+      {
+        "display": "Transient",
+        "measures": "Detected front-edge energy",
+        "reading": "Use to judge whether Attack is emphasizing or restraining hits."
+      },
+      {
+        "display": "Sustain",
+        "measures": "Detected body and tail energy",
+        "reading": "Use to judge Sustain changes to ring, room, and body."
+      },
+      {
+        "display": "Alert",
+        "measures": "Potential transient/sustain imbalance",
+        "reading": "Higher values suggest the balance needs attention."
+      },
+      {
+        "display": "Miss",
+        "measures": "Underrepresented event energy",
+        "reading": "Indicates material that may be disappearing."
+      },
+      {
+        "display": "Stress",
+        "measures": "Over-concentrated envelope pressure",
+        "reading": "Reduce shaping intensity when stress remains high."
+      },
+      {
+        "display": "Composure",
+        "measures": "Stable transient/sustain balance",
+        "reading": "Higher is calmer and more controlled."
+      },
+      {
+        "display": "Eye of Heru",
+        "measures": "Combined advisory state",
+        "reading": "It reports balance; it does not move controls automatically."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/lookout_sentinel_bg.png"
+    ]
+  },
+  {
+    "id": "MARIANA",
+    "name": "MARIANA",
+    "family": "BASS_LOW_END",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Low End Source",
+    "placementNote": "low-end/sub field",
+    "description": "Sub and foundation processor with depth, sub pressure, kick definition, target mode, and parallel mix.",
+    "parameters": [
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "depth",
+        "name": "Depth",
+        "type": "Float"
+      },
+      {
+        "id": "pressure",
+        "name": "Sub Pressure",
+        "type": "Float"
+      },
+      {
+        "id": "foundation",
+        "name": "Foundation",
+        "type": "Float"
+      },
+      {
+        "id": "kick_define",
+        "name": "Kick Define",
+        "type": "Float"
+      },
+      {
+        "id": "mode",
+        "name": "Target Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "input",
+        "name": "Input",
+        "type": "Float"
+      },
+      {
+        "id": "mix",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      }
+    ],
+    "presets": [
+      "MARIANA SWEET SPOT",
+      "LOW GRAVITY CLEAN",
+      "WARM SUBFIELD",
+      "SUB WEIGHT",
+      "DEEP PRESSURE",
+      "ABYSSAL FIELD",
+      "TRENCH FLOOR",
+      "GENTLE FINISH",
+      "OCEAN FLOOR",
+      "SUB ENHANCED",
+      "KICK PRESSURE",
+      "ABYSS BLOOM",
+      "TIDAL TRACE",
+      "SHALLOW CURRENT"
+    ],
+    "meters": [],
+    "channelMode": false,
+    "dualMono": false,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/Mariana.png",
+      "source/Mar2.png",
+      "source/Mariana.png"
+    ]
+  },
+  {
+    "id": "MONOLITH",
+    "name": "MONOLITH",
+    "family": "BASS_LOW_END",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Low End Source",
+    "placementNote": "low-end mass",
+    "description": "Low-end impact and body shaper with excavation, weight, resonance, reverse motion, drive, and balance.",
+    "parameters": [
+      {
+        "id": "gate",
+        "name": "gate",
+        "type": "Referenced"
+      },
+      {
+        "id": "input",
+        "name": "input",
+        "type": "Referenced"
+      },
+      {
+        "id": "output",
+        "name": "output",
+        "type": "Referenced"
+      },
+      {
+        "id": "channelmode",
+        "name": "channelmode",
+        "type": "Referenced"
+      },
+      {
+        "id": "gainmatch",
+        "name": "gainmatch",
+        "type": "Referenced"
+      },
+      {
+        "id": "excavation",
+        "name": "excavation",
+        "type": "Referenced"
+      },
+      {
+        "id": "impact",
+        "name": "impact",
+        "type": "Referenced"
+      },
+      {
+        "id": "weight",
+        "name": "weight",
+        "type": "Referenced"
+      },
+      {
+        "id": "resonance",
+        "name": "resonance",
+        "type": "Referenced"
+      },
+      {
+        "id": "reverse",
+        "name": "reverse",
+        "type": "Referenced"
+      },
+      {
+        "id": "drive",
+        "name": "drive",
+        "type": "Referenced"
+      },
+      {
+        "id": "balance",
+        "name": "balance",
+        "type": "Referenced"
+      }
+    ],
+    "presets": [
+      "MONOLITH PHI IMPACT [Stereo]",
+      "MONOLITH PHI IMPACT [Mono]",
+      "MONOLITH TRANSIENT STONE [Stereo]",
+      "MONOLITH TRANSIENT STONE [Mono]",
+      "MONOLITH BODY WEIGHT [Stereo]",
+      "MONOLITH BODY WEIGHT [Mono]",
+      "MONOLITH SHAPE IMPACT [Stereo]",
+      "MONOLITH SHAPE IMPACT [Mono]",
+      "MONOLITH BUS CARVE [Stereo]",
+      "MONOLITH BUS CARVE [Mono]",
+      "MONOLITH GATEWAY [Stereo]",
+      "MONOLITH GATEWAY [Mono]",
+      "MONOLITH PHI IMPACT [Dual Mono]",
+      "MONOLITH TRANSIENT STONE [Dual Mono]",
+      "MONOLITH BODY WEIGHT [Dual Mono]",
+      "MONOLITH SHAPE IMPACT [Dual Mono]",
+      "MONOLITH BUS CARVE [Dual Mono]",
+      "MONOLITH GATEWAY [Dual Mono]"
+    ],
+    "meters": [
+      {
+        "display": "INPUT / OUTPUT",
+        "measures": "Live pre/post level",
+        "reading": "Use for bypass and level matching."
+      },
+      {
+        "display": "IMPACT",
+        "measures": "Low-end transient activity",
+        "reading": "Shows the punch component being produced."
+      },
+      {
+        "display": "WEIGHT",
+        "measures": "Sustained low-frequency body",
+        "reading": "Shows foundation rather than peak attack."
+      },
+      {
+        "display": "RESONANCE",
+        "measures": "Active resonant low-end energy",
+        "reading": "Persistent high readings warn of ringing."
+      },
+      {
+        "display": "REVERSE",
+        "measures": "Reverse-motion contribution",
+        "reading": "Shows how strongly the reverse path is active."
+      },
+      {
+        "display": "Monolith field",
+        "measures": "Combined low-end activity map",
+        "reading": "Reactive summary, not a spectrum analyzer."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "source/monolith_bg.png"
+    ]
+  },
+  {
+    "id": "DEPTH_BOOST_PRO",
+    "name": "DEPTH_BOOST_PRO",
+    "family": "BASS_LOW_END",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Low End Source",
+    "placementNote": "low/depth support; secondarily a spatial gain plugin via its dedicated Spatial Gain control (0dB to -12dB) applied after delay-based depth/width field placement; blue secondary dot",
+    "description": "Focused low-end depth extension built on delay-based mid/side field placement. Primary role is low-end depth and width; secondarily it is a spatial gain stage, with a dedicated Spatial Gain control (0 dB down to -12 dB) applied after the depth field, plus protected input trim.",
+    "parameters": [
+      {
+        "id": "input",
+        "name": "Input Trim",
+        "type": "Float"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "depth",
+        "name": "Spatial Depth",
+        "type": "Float"
+      },
+      {
+        "id": "output",
+        "name": "Spatial Gain",
+        "type": "Float"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "PHI ROOT TOUCH [Stereo]",
+      "TIGHT KICK ROOT [Stereo]",
+      "VOCAL SHADOW LIFT [Stereo]",
+      "PHI SPACE OPEN [Stereo]",
+      "LOW END GLUE [Stereo]",
+      "SUB FLOOR WEIGHT [Stereo]",
+      "BASS WIDTH SPREAD [Stereo]",
+      "MIX FRONT TO BACK [Stereo]",
+      "DRUM ROOM DEPTH [Stereo]",
+      "TEMPLE WIDTH [Stereo]",
+      "CINEMA FLOOR [Stereo]",
+      "LOW FIELD EXTENDER [Stereo]",
+      "MONO BASS FOCUS [Stereo]",
+      "FULL BUS DEPTH [Stereo]",
+      "PHI ROOT TOUCH [Mono]",
+      "TIGHT KICK ROOT [Mono]",
+      "VOCAL SHADOW LIFT [Mono]",
+      "PHI SPACE OPEN [Mono]",
+      "LOW END GLUE [Mono]",
+      "SUB FLOOR WEIGHT [Mono]",
+      "BASS WIDTH SPREAD [Mono]",
+      "MIX FRONT TO BACK [Mono]",
+      "DRUM ROOM DEPTH [Mono]",
+      "TEMPLE WIDTH [Mono]",
+      "CINEMA FLOOR [Mono]",
+      "LOW FIELD EXTENDER [Mono]",
+      "MONO BASS FOCUS [Mono]",
+      "FULL BUS DEPTH [Mono]",
+      "PHI ROOT TOUCH [Dual Mono]",
+      "TIGHT KICK ROOT [Dual Mono]",
+      "VOCAL SHADOW LIFT [Dual Mono]",
+      "PHI SPACE OPEN [Dual Mono]",
+      "LOW END GLUE [Dual Mono]",
+      "SUB FLOOR WEIGHT [Dual Mono]",
+      "BASS WIDTH SPREAD [Dual Mono]",
+      "MIX FRONT TO BACK [Dual Mono]",
+      "DRUM ROOM DEPTH [Dual Mono]",
+      "TEMPLE WIDTH [Dual Mono]",
+      "CINEMA FLOOR [Dual Mono]",
+      "LOW FIELD EXTENDER [Dual Mono]",
+      "MONO BASS FOCUS [Dual Mono]",
+      "FULL BUS DEPTH [Dual Mono]"
+    ],
+    "meters": [
+      {
+        "display": "Touch sphere",
+        "measures": "Depth field plus live level",
+        "reading": "Water motion follows field/level activity; sphere position remains the output control."
+      },
+      {
+        "display": "Spatial field",
+        "measures": "Depth, field energy, and motion",
+        "reading": "A reactive placement view, not a calibrated spectrum."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Assets/Images/Boost.png"
+    ]
+  },
+  {
+    "id": "NTRPL",
+    "name": "NTRPL",
+    "family": "BASS_LOW_END",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Low End Source",
+    "placementNote": "reclassified bass family",
+    "description": "Low-end transformation engine for rewrite map, novelty, interval motion, contour, shape, space, and originality guard.",
+    "parameters": [
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "chordMap",
+        "name": "Rewrite Map",
+        "type": "Choice"
+      },
+      {
+        "id": "interpolate",
+        "name": "Novelty",
+        "type": "Float"
+      },
+      {
+        "id": "motif",
+        "name": "Chord Rewrite",
+        "type": "Float"
+      },
+      {
+        "id": "rhythm",
+        "name": "Motion",
+        "type": "Float"
+      },
+      {
+        "id": "pitch",
+        "name": "Interval Distance",
+        "type": "Float"
+      },
+      {
+        "id": "melody",
+        "name": "Contour",
+        "type": "Float"
+      },
+      {
+        "id": "shape",
+        "name": "Shape",
+        "type": "Float"
+      },
+      {
+        "id": "field",
+        "name": "Space",
+        "type": "Float"
+      },
+      {
+        "id": "guard",
+        "name": "Originality Guard",
+        "type": "Float"
+      },
+      {
+        "id": "alternateMix",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "output",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "01 SOURCE TRACE [Stereo]",
+      "02 PHI BODY REWRITE [Stereo]",
+      "03 LOW WEIGHT LATTICE [Stereo]",
+      "04 HARMONIC REWRITE [Stereo]",
+      "05 ALT PHI FIELD [Stereo]",
+      "06 WIDE RECONTOUR [Stereo]",
+      "07 DEEP BASS BLOOM [Stereo]",
+      "08 EDGE TRANSLATION [Stereo]",
+      "01 SOURCE TRACE [Mono]",
+      "02 PHI BODY REWRITE [Mono]",
+      "03 LOW WEIGHT LATTICE [Mono]",
+      "04 HARMONIC REWRITE [Mono]",
+      "05 ALT PHI FIELD [Mono]",
+      "06 WIDE RECONTOUR [Mono]",
+      "07 DEEP BASS BLOOM [Mono]",
+      "08 EDGE TRANSLATION [Mono]",
+      "01 SOURCE TRACE [Dual Mono]",
+      "02 PHI BODY REWRITE [Dual Mono]",
+      "03 LOW WEIGHT LATTICE [Dual Mono]",
+      "04 HARMONIC REWRITE [Dual Mono]",
+      "05 ALT PHI FIELD [Dual Mono]",
+      "06 WIDE RECONTOUR [Dual Mono]",
+      "07 DEEP BASS BLOOM [Dual Mono]",
+      "08 EDGE TRANSLATION [Dual Mono]"
+    ],
+    "meters": [
+      {
+        "display": "SOURCE",
+        "measures": "Original input contribution",
+        "reading": "Shows how much source survives into the main route."
+      },
+      {
+        "display": "REWRITE",
+        "measures": "Generated harmonic-rewrite activity",
+        "reading": "Shows the newly synthesized low-end material."
+      },
+      {
+        "display": "ALT OUT",
+        "measures": "Alternative new-signal output",
+        "reading": "Always represents the generated signal path."
+      },
+      {
+        "display": "MAIN",
+        "measures": "Final blended output",
+        "reading": "Use against SOURCE for level and blend context."
+      },
+      {
+        "display": "Harmonic Rewriter",
+        "measures": "Live input-to-output contour",
+        "reading": "Shows source energy changing into rewritten energy."
+      },
+      {
+        "display": "Rewrite Map",
+        "measures": "Novelty, chord, interval, contour, motion, space, guard, and mix state",
+        "reading": "A live process map; it is not a frequency analyzer."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/ntrpl.png",
+      "assets/ntrpl_knob.png"
+    ]
+  },
+  {
+    "id": "DIH_DRUM_MORPHER",
+    "name": "Drum",
+    "family": "DRUM_INSTRUMENT",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Creative Transform",
+    "placementNote": "instrument/plugin generator",
+    "description": "Sixteen-pad drum sampler and host-synced sequencer with sample loading, pad shaping, restored factory programs, pattern memory, capture, morph, and performance controls. The current AU is registered and uses smoothed output normalization.",
+    "parameters": [],
+    "presets": [],
+    "meters": [
+      {
+        "display": "L / R output",
+        "measures": "Left and right output activity",
+        "reading": "Confirms stereo drum output and imbalance."
+      },
+      {
+        "display": "GOVERNOR",
+        "measures": "Output containment activity",
+        "reading": "More activity means protection is holding energy back."
+      },
+      {
+        "display": "MORPH",
+        "measures": "Current metamorphosis activity",
+        "reading": "Shows how strongly the active pads are transforming."
+      },
+      {
+        "display": "Pad waveform",
+        "measures": "Loaded sample amplitude over time",
+        "reading": "Use to identify attacks, tails, and silence in each pad."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": false,
+    "sidechain": false,
+    "imageRefs": [
+      "source/DrMorph.png"
+    ]
+  },
+  {
+    "id": "BALLPARK",
+    "name": "Ballpark",
+    "family": "DRUM_INSTRUMENT",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Creative Transform",
+    "placementNote": "instrument/drum function",
+    "description": "Drum impact and placement processor whose base progression and hit calls turn performance energy into an audible stadium-response field.",
+    "parameters": [],
+    "presets": [
+      "BALLPARK CANON (Mu Metal)",
+      "SINGLE TIGHT (Nickel Focus)",
+      "DOUBLE WIDTH (Copper Body)",
+      "TRIPLE ENERGY (Iron Weight)",
+      "HOME RUN LIFT (Gold Presence)",
+      "DUGOUT WARM (Brass)",
+      "STADIUM AIR (Silver Air)",
+      "GLUE DEFENSE (Mu Metal Shield)",
+      "BULLPEN LOCK (Steel)",
+      "NINTH INNING (Platinum Authority)",
+      "FIFTH TOOL (Alloy)",
+      "CROWDPULSE (Copper Ground)",
+      "GRANDSTAND (Bronze)",
+      "EXTRA BASES (Titanium)"
+    ],
+    "meters": [
+      {
+        "display": "IN",
+        "measures": "Input level",
+        "reading": "Confirms drum energy entering the stadium model."
+      },
+      {
+        "display": "GR",
+        "measures": "Gain reduction",
+        "reading": "Shows active impact containment."
+      },
+      {
+        "display": "OUT",
+        "measures": "Output level",
+        "reading": "Use with IN for level matching."
+      },
+      {
+        "display": "RMS / PEAK",
+        "measures": "Body level and fast peak",
+        "reading": "Their separation describes drum crest and punch."
+      },
+      {
+        "display": "Ceiling score / hit call",
+        "measures": "Composite impact, control, and ceiling score",
+        "reading": "Walk through Home Run describes response intensity, not sports prediction."
+      }
+    ],
+    "channelMode": false,
+    "dualMono": false,
+    "gainMatch": false,
+    "sidechain": false,
+    "imageRefs": [
+      "Assets/Images/Ballpark.png",
+      "Assets/Images/Ballpark_Wide_Stadium.png"
+    ]
+  },
+  {
+    "id": "DRUMKRUSHGLUE",
+    "name": "DrumKrushGlue",
+    "family": "DRUM_INSTRUMENT",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Bus Preferred",
+    "placementNote": "drum-family percussion adhesive; use on drum bus or parallel drum-impact return; secondary dynamics guard/cyan dot",
+    "description": "Bus-preferred drum cohesion stage for binding hits into one controlled impact field, with secondary dynamics-guard/cyan-dot behavior.",
+    "parameters": [
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "DRUM KRUSH GLUE [Stereo]",
+      "TIGHT BUS GLUE [Stereo]",
+      "BOOM BAP BODY [Stereo]",
+      "TRAP SNAP KRUSH [Stereo]",
+      "DRILL KICK ANCHOR [Mono]",
+      "808 KRUSH WEIGHT [Stereo]",
+      "PARALLEL KRUSH RETURN [Stereo]",
+      "DUAL MONO DRUM LOCK"
+    ],
+    "meters": [
+      {
+        "display": "IMPACT",
+        "measures": "Detected drum peak activity",
+        "reading": "Shows hit strength entering the impact path."
+      },
+      {
+        "display": "BODY",
+        "measures": "Sustained drum energy",
+        "reading": "Shows weight carried between hits."
+      },
+      {
+        "display": "REPAIR",
+        "measures": "Glue/control activity",
+        "reading": "Shows how strongly cohesion is correcting the bus."
+      },
+      {
+        "display": "CEILING",
+        "measures": "Protected output pressure",
+        "reading": "Persistent maximum activity means the chain is overdriven."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Assets/Images/DrumKrushGlue.generated_candidate_20260719_0719.png",
+      "Assets/Images/DrumKrushGlue.png",
+      "Assets/Images/DrumKrushGlue.prev_20260719_0719.png"
+    ]
+  },
+  {
+    "id": "APIS",
+    "name": "APIS",
+    "family": "COLOR_AMP_TAPE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "amp/color source tone",
+    "description": "Body and color processor built around color, body, petal dispersion, air, protected I/O, and channel-mode support.",
+    "parameters": [
+      {
+        "id": "INPUT",
+        "name": "Input",
+        "type": "Float"
+      },
+      {
+        "id": "COLOR",
+        "name": "Color",
+        "type": "Float"
+      },
+      {
+        "id": "BODY",
+        "name": "Body",
+        "type": "Float"
+      },
+      {
+        "id": "FLOWER",
+        "name": "Flower Petal",
+        "type": "Float"
+      },
+      {
+        "id": "AIR",
+        "name": "Air",
+        "type": "Float"
+      },
+      {
+        "id": "OUTPUT",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Float"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Float"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      }
+    ],
+    "presets": [
+      "APIS CANON RESET",
+      "APIS BODY THRONE",
+      "APIS AIR CROWN",
+      "APIS BLOOM FIELD",
+      "APIS SHADOW CUT",
+      "APIS DUAL COMB",
+      "APIS FULL FIELD"
+    ],
+    "meters": [],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/background_stripped.png"
+    ]
+  },
+  {
+    "id": "PTAHTUBE",
+    "name": "PTAHTUBE",
+    "family": "COLOR_AMP_TAPE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "tube color; vocal clarity required",
+    "description": "Phi-based tube color processor with input, drive, energy, balance, focus, output, and Flower of Life dispersal tied to its illuminated tube field.",
+    "parameters": [
+      {
+        "id": "input",
+        "name": "Input",
+        "type": "Float"
+      },
+      {
+        "id": "drive",
+        "name": "Drive",
+        "type": "Float"
+      },
+      {
+        "id": "output",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "energy",
+        "name": "Energy",
+        "type": "Float"
+      },
+      {
+        "id": "balance",
+        "name": "Balance",
+        "type": "Float"
+      },
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Float"
+      },
+      {
+        "id": "focus",
+        "name": "Focus",
+        "type": "Float"
+      },
+      {
+        "id": "flower",
+        "name": "Flower of Life Dispersal",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "Canon Clear",
+      "Warm Filament",
+      "Memphis Grit",
+      "Vocal Copper Edge",
+      "Bus Tube Glue",
+      "Drum Ember Forge",
+      "Ra Saturation"
+    ],
+    "meters": [],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Assets/Ptah.png"
+    ]
+  },
+  {
+    "id": "KHEPRI",
+    "name": "Khepri",
+    "family": "COLOR_AMP_TAPE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "tape/source color; default mix canon 1/Phi; secondary silver mastering-support dot",
+    "description": "Sacred tape machine with selectable machine, Phi formula, tape type (Gold Alloy, Ferric Oxide, Metal Alloy), speed, drive, bias, wow, flutter, head bump, HF rolloff, and parallel mix.",
+    "parameters": [
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "machine",
+        "name": "Machine",
+        "type": "Choice"
+      },
+      {
+        "id": "formula",
+        "name": "Phi Formula",
+        "type": "Choice"
+      },
+      {
+        "id": "tapeType",
+        "name": "Tape Type",
+        "type": "Choice"
+      },
+      {
+        "id": "speed",
+        "name": "Speed",
+        "type": "Choice"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "input",
+        "name": "Input",
+        "type": "Float"
+      },
+      {
+        "id": "drive",
+        "name": "Drive",
+        "type": "Float"
+      },
+      {
+        "id": "bias",
+        "name": "Bias",
+        "type": "Float"
+      },
+      {
+        "id": "wow",
+        "name": "Wow",
+        "type": "Float"
+      },
+      {
+        "id": "flutter",
+        "name": "Flutter",
+        "type": "Float"
+      },
+      {
+        "id": "bump",
+        "name": "Head Bump",
+        "type": "Float"
+      },
+      {
+        "id": "rolloff",
+        "name": "HF Rolloff",
+        "type": "Float"
+      },
+      {
+        "id": "mix",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "output",
+        "name": "Output",
+        "type": "Float"
+      }
+    ],
+    "presets": [],
+    "meters": [
+      {
+        "display": "INPUT VU",
+        "measures": "Ballistic input level",
+        "reading": "Calibrated to the printed analog VU scale."
+      },
+      {
+        "display": "OUTPUT VU",
+        "measures": "Ballistic post-tape level",
+        "reading": "Compare with INPUT to avoid loudness bias."
+      },
+      {
+        "display": "Waveform",
+        "measures": "Recent live output samples",
+        "reading": "Shows real signal motion, not a decorative animation."
+      },
+      {
+        "display": "Reels / beetle glow",
+        "measures": "Tape motion and drive state",
+        "reading": "Operational feedback; not a calibrated level meter."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Assets/Khepri_Background.png",
+      "Assets/Khepri_Reel_L.png",
+      "Assets/Khepri_Reel_R.png"
+    ]
+  },
+  {
+    "id": "SOVEREIGN",
+    "name": "SOVEREIGN",
+    "family": "COLOR_AMP_TAPE",
+    "version": "3.15",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Mix Bus",
+    "placementNote": "stronger color and bus authority; secondary silver mastering-support dot",
+    "description": "Source-oriented amplifier and tone stage with drive, bass, mid, treble, presence, and master controls.",
+    "parameters": [
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "drive",
+        "name": "Drive",
+        "type": "Float"
+      },
+      {
+        "id": "bass",
+        "name": "Bass",
+        "type": "Float"
+      },
+      {
+        "id": "mid",
+        "name": "Mid",
+        "type": "Float"
+      },
+      {
+        "id": "treble",
+        "name": "Treble",
+        "type": "Float"
+      },
+      {
+        "id": "presence",
+        "name": "Presence",
+        "type": "Float"
+      },
+      {
+        "id": "master",
+        "name": "Master",
+        "type": "Float"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      }
+    ],
+    "presets": [
+      "ROYAL BALANCE [Stereo]",
+      "CLEAN CROWN [Stereo]",
+      "TAPE FRONT [Stereo]",
+      "GUITAR ROYALTY [Stereo]",
+      "BASS BODY AMP [Stereo]",
+      "VOCAL AUTHORITY [Stereo]",
+      "PARALLEL COLOR BUS [Stereo]",
+      "DARK IRON CAB [Stereo]",
+      "ROYAL BALANCE [Mono]",
+      "CLEAN CROWN [Mono]",
+      "TAPE FRONT [Mono]",
+      "GUITAR ROYALTY [Mono]",
+      "BASS BODY AMP [Mono]",
+      "VOCAL AUTHORITY [Mono]",
+      "PARALLEL COLOR BUS [Mono]",
+      "DARK IRON CAB [Mono]",
+      "ROYAL BALANCE [Dual Mono]",
+      "CLEAN CROWN [Dual Mono]",
+      "TAPE FRONT [Dual Mono]",
+      "GUITAR ROYALTY [Dual Mono]",
+      "BASS BODY AMP [Dual Mono]",
+      "VOCAL AUTHORITY [Dual Mono]",
+      "PARALLEL COLOR BUS [Dual Mono]",
+      "DARK IRON CAB [Dual Mono]"
+    ],
+    "meters": [],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "source/Sovereign.png"
+    ]
+  },
+  {
+    "id": "AUSET",
+    "name": "AUSET",
+    "family": "FIELD_TONE_BALANCE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Bus Preferred",
+    "placementNote": "tone balance and dispersal field",
+    "description": "Field-tone balancer with intensity, tilt, power, and optional Flower of Life dispersal.",
+    "parameters": [
+      {
+        "id": "INTENSITY",
+        "name": "Intensity",
+        "type": "Float"
+      },
+      {
+        "id": "TILT",
+        "name": "Tilt",
+        "type": "Float"
+      },
+      {
+        "id": "POWER",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "FLOWER_DISPERSAL",
+        "name": "Flower of Life Dispersal",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "AUSET NIGHT BALANCE [Stereo]",
+      "AUSET LUNAR LIFT [Stereo]",
+      "AUSET SOLAR REVEAL [Stereo]",
+      "AUSET VELVET BODY [Stereo]",
+      "AUSET SHADOW DEPTH [Stereo]",
+      "AUSET AIR LIFT REVEAL [Stereo]",
+      "AUSET MASTER SUPPORT [Stereo]",
+      "AUSET FLOWER BLOOM [Stereo]",
+      "AUSET NIGHT BALANCE [Mono]",
+      "AUSET LUNAR LIFT [Mono]",
+      "AUSET SOLAR REVEAL [Mono]",
+      "AUSET VELVET BODY [Mono]",
+      "AUSET SHADOW DEPTH [Mono]",
+      "AUSET AIR LIFT REVEAL [Mono]",
+      "AUSET MASTER SUPPORT [Mono]",
+      "AUSET FULL RANGE [Mono]",
+      "AUSET NIGHT BALANCE [Dual Mono]",
+      "AUSET LUNAR LIFT [Dual Mono]",
+      "AUSET SOLAR REVEAL [Dual Mono]",
+      "AUSET VELVET BODY [Dual Mono]",
+      "AUSET SHADOW DEPTH [Dual Mono]",
+      "AUSET AIR LIFT REVEAL [Dual Mono]",
+      "AUSET MASTER SUPPORT [Dual Mono]",
+      "AUSET FULL RANGE [Dual Mono]"
+    ],
+    "meters": [],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/auset_bg.png"
+    ]
+  },
+  {
+    "id": "AUSAR",
+    "name": "AUSAR",
+    "family": "FIELD_TONE_BALANCE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Bus Preferred",
+    "placementNote": "field/tone balance",
+    "description": "Restoration processor for hum repair, broadband extraction, transient integrity, and controlled output.",
+    "parameters": [
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "HUM_REPAIR",
+        "name": "Hum Repair",
+        "type": "Float"
+      },
+      {
+        "id": "BROADBAND_EXT",
+        "name": "Broadband Extraction",
+        "type": "Float"
+      },
+      {
+        "id": "TRANSIENT_INT",
+        "name": "Transient Integrity",
+        "type": "Float"
+      },
+      {
+        "id": "OUTPUT_GAIN",
+        "name": "Output",
+        "type": "Float"
+      }
+    ],
+    "presets": [
+      "AUSAR SOURCE RESTORE",
+      "AUSAR RELIC WASH",
+      "AUSAR RESURRECTION FIELD",
+      "AUSAR HUM DEEP CLEAN",
+      "AUSAR BROADBAND REVEAL",
+      "AUSAR TRANSIENT REPAIR",
+      "AUSAR ARCHIVAL BALANCE",
+      "AUSAR FULL RANGE PROOF"
+    ],
+    "meters": [],
+    "channelMode": false,
+    "dualMono": false,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/ausar_bg.png"
+    ]
+  },
+  {
+    "id": "DEPTH_IMPACT_HYBRID_X",
+    "name": "DEPTH IMPACT HYBRID",
+    "family": "DIMENSIONAL_IMPACT_MOVE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "spectral clarity, harmonic depth, and hybrid spatial field",
+    "description": "Six-mode spatial field for clarity, depth, low bloom, front push, hybrid pressure, fold, freeze, and source-to-horizon movement.",
+    "parameters": [
+      {
+        "id": "output",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "mode",
+        "name": "Hybrid X Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "horizonFold",
+        "name": "Horizon Fold",
+        "type": "Bool"
+      },
+      {
+        "id": "freeze",
+        "name": "Event Freeze",
+        "type": "Bool"
+      },
+      {
+        "id": "echo",
+        "name": "Echo",
+        "type": "Bool"
+      },
+      {
+        "id": "cpuSaver",
+        "name": "CPU Saver",
+        "type": "Bool"
+      },
+      {
+        "id": "bypass",
+        "name": "Bypass",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "spectralClarity",
+        "name": "spectralClarity",
+        "type": "Referenced"
+      },
+      {
+        "id": "spatialDepth",
+        "name": "spatialDepth",
+        "type": "Referenced"
+      },
+      {
+        "id": "loContour",
+        "name": "loContour",
+        "type": "Referenced"
+      },
+      {
+        "id": "subPressure",
+        "name": "subPressure",
+        "type": "Referenced"
+      },
+      {
+        "id": "foundation",
+        "name": "foundation",
+        "type": "Referenced"
+      },
+      {
+        "id": "ground",
+        "name": "ground",
+        "type": "Referenced"
+      },
+      {
+        "id": "mass",
+        "name": "mass",
+        "type": "Referenced"
+      },
+      {
+        "id": "presenceLift",
+        "name": "presenceLift",
+        "type": "Referenced"
+      },
+      {
+        "id": "frontPush",
+        "name": "frontPush",
+        "type": "Referenced"
+      },
+      {
+        "id": "dimensionalGain",
+        "name": "dimensionalGain",
+        "type": "Referenced"
+      },
+      {
+        "id": "extension",
+        "name": "extension",
+        "type": "Referenced"
+      },
+      {
+        "id": "horizonDrive",
+        "name": "horizonDrive",
+        "type": "Referenced"
+      },
+      {
+        "id": "horizonMaximizer",
+        "name": "horizonMaximizer",
+        "type": "Referenced"
+      },
+      {
+        "id": "eventSmear",
+        "name": "eventSmear",
+        "type": "Referenced"
+      },
+      {
+        "id": "eventGravity",
+        "name": "eventGravity",
+        "type": "Referenced"
+      },
+      {
+        "id": "hybridAmount",
+        "name": "hybridAmount",
+        "type": "Referenced"
+      },
+      {
+        "id": "immersionBlend",
+        "name": "immersionBlend",
+        "type": "Referenced"
+      },
+      {
+        "id": "marianaBlend",
+        "name": "marianaBlend",
+        "type": "Referenced"
+      },
+      {
+        "id": "boostBlend",
+        "name": "boostBlend",
+        "type": "Referenced"
+      },
+      {
+        "id": "horizonBlend",
+        "name": "horizonBlend",
+        "type": "Referenced"
+      },
+      {
+        "id": "eventBlend",
+        "name": "eventBlend",
+        "type": "Referenced"
+      },
+      {
+        "id": "pressureBlend",
+        "name": "pressureBlend",
+        "type": "Referenced"
+      }
+    ],
+    "presets": [
+      "Balanced Field",
+      "Vocal Focus",
+      "Drum Front",
+      "Bass Foundation",
+      "Wide Atmosphere",
+      "Pushback Space",
+      "Deep Immersion",
+      "Hybrid Motion"
+    ],
+    "meters": [
+      {
+        "display": "RMS FIELD",
+        "measures": "Overall sustained field energy",
+        "reading": "Shows the body of the dimensional result."
+      },
+      {
+        "display": "LEFT / RIGHT",
+        "measures": "Per-channel output activity",
+        "reading": "Use to spot unintended channel imbalance."
+      },
+      {
+        "display": "HORIZON",
+        "measures": "Depth and distant-field contribution",
+        "reading": "Higher values indicate stronger rearward space."
+      },
+      {
+        "display": "EVENT",
+        "measures": "Transient/front-push contribution",
+        "reading": "Higher values indicate stronger forward impact."
+      },
+      {
+        "display": "Immersion / Foundation / Motion",
+        "measures": "Three-part dimensional activity summary",
+        "reading": "Read together to distinguish depth, low support, and movement."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Resources/DepthImpactHybrid_bg.png",
+      "Resources/DepthImpactHybrid_previous_ui.png"
+    ]
+  },
+  {
+    "id": "PARALLAX",
+    "name": "PARALLAX",
+    "family": "DIMENSIONAL_IMPACT_MOVE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Bus Preferred",
+    "placementNote": "bus-preferred dimensional placement",
+    "description": "Bus-preferred width and depth field with focus, spread, axis core, link, mix, and output control.",
+    "parameters": [
+      {
+        "id": "width",
+        "name": "Width",
+        "type": "Float"
+      },
+      {
+        "id": "depth",
+        "name": "Depth",
+        "type": "Float"
+      },
+      {
+        "id": "focus",
+        "name": "Focus",
+        "type": "Float"
+      },
+      {
+        "id": "spread",
+        "name": "Stereo Spread",
+        "type": "Float"
+      },
+      {
+        "id": "axis",
+        "name": "Axis Core",
+        "type": "Float"
+      },
+      {
+        "id": "mix",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "output",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "field_link",
+        "name": "Field Link",
+        "type": "Bool"
+      },
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "Deep Space [Stereo]",
+      "Wormhole [Stereo]",
+      "Nebula Shift [Stereo]",
+      "Stellar Grid [Stereo]",
+      "Planetary Orbits [Stereo]",
+      "Light Speed [Stereo]",
+      "Quantum Field [Stereo]",
+      "Dimensional Gate [Stereo]",
+      "Gravity Well [Stereo]",
+      "Ascension [Stereo]",
+      "Deep Space [Mono]",
+      "Wormhole [Mono]",
+      "Nebula Shift [Mono]",
+      "Stellar Grid [Mono]",
+      "Planetary Orbits [Mono]",
+      "Light Speed [Mono]",
+      "Quantum Field [Mono]",
+      "Dimensional Gate [Mono]",
+      "Gravity Well [Mono]",
+      "Ascension [Mono]",
+      "Deep Space [Dual Mono]",
+      "Wormhole [Dual Mono]",
+      "Nebula Shift [Dual Mono]",
+      "Stellar Grid [Dual Mono]",
+      "Planetary Orbits [Dual Mono]",
+      "Light Speed [Dual Mono]",
+      "Quantum Field [Dual Mono]",
+      "Dimensional Gate [Dual Mono]",
+      "Gravity Well [Dual Mono]",
+      "Ascension [Dual Mono]"
+    ],
+    "meters": [
+      {
+        "display": "INPUT / OUTPUT",
+        "measures": "Live pre/post level",
+        "reading": "Use for level matching around the width field."
+      },
+      {
+        "display": "Field visualizer",
+        "measures": "Width, depth, focus, spread, and axis state",
+        "reading": "Motion shows spatial behavior; it is not a frequency plot."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/parallax_preset_00_deep_space.png",
+      "assets/parallax_preset_01_wormhole.png",
+      "assets/parallax_preset_02_nebula_shift.png",
+      "assets/parallax_preset_03_stellar_grid.png",
+      "assets/parallax_preset_04_planetary_orbits.png",
+      "assets/parallax_preset_05_light_speed.png",
+      "assets/parallax_preset_06_quantum_field.png",
+      "assets/parallax_preset_07_dimensional_gate.png",
+      "assets/parallax_preset_08_gravity_well.png",
+      "assets/parallax_preset_09_ascension.png"
+    ]
+  },
+  {
+    "id": "NSR",
+    "name": "NSR",
+    "family": "DIMENSIONAL_IMPACT_MOVE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Bus Preferred",
+    "placementNote": "phi-based spatial delay, microphase, and flange field",
+    "description": "Phi-ratio spatial delay and movement field combining travel, microphase, air, anchor, spread, time delay, flange, and mix.",
+    "parameters": [
+      {
+        "id": "telescope",
+        "name": "Telescope",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "travel",
+        "name": "travel",
+        "type": "Referenced"
+      },
+      {
+        "id": "microphase",
+        "name": "microphase",
+        "type": "Referenced"
+      },
+      {
+        "id": "air",
+        "name": "air",
+        "type": "Referenced"
+      },
+      {
+        "id": "anchor",
+        "name": "anchor",
+        "type": "Referenced"
+      },
+      {
+        "id": "spread",
+        "name": "spread",
+        "type": "Referenced"
+      },
+      {
+        "id": "field",
+        "name": "field",
+        "type": "Referenced"
+      },
+      {
+        "id": "timeDelay",
+        "name": "timeDelay",
+        "type": "Referenced"
+      },
+      {
+        "id": "flange",
+        "name": "flange",
+        "type": "Referenced"
+      },
+      {
+        "id": "mix",
+        "name": "mix",
+        "type": "Referenced"
+      }
+    ],
+    "presets": [
+      "Ankh Source Field",
+      "Ra Side Light",
+      "Ausar Depth Gate",
+      "Ma'at Balance",
+      "Horus Wide Eye",
+      "Seshat Trace",
+      "Thoth Phase Door",
+      "Sekhem Phi Orbit",
+      "Neteru Full Field"
+    ],
+    "meters": [
+      {
+        "display": "SPECTRUM",
+        "measures": "Energy across displayed frequency bands",
+        "reading": "Shows tonal distribution of the current signal."
+      },
+      {
+        "display": "CORRELATION",
+        "measures": "Left/right phase similarity",
+        "reading": "+1 is mono-coherent, 0 is decorrelated, negative values risk cancellation."
+      },
+      {
+        "display": "L / R",
+        "measures": "Channel activity",
+        "reading": "Use to detect imbalance before and after the field."
+      },
+      {
+        "display": "PHI FIELD VIEW",
+        "measures": "Combined spatial-field intensity",
+        "reading": "Shows overall activity of the responder."
+      },
+      {
+        "display": "STEREO FIELD / WIDTH",
+        "measures": "Side-to-mid spatial width",
+        "reading": "Check correlation whenever width stays high."
+      },
+      {
+        "display": "FIELD ACTIVITY",
+        "measures": "Wet spatial-path energy",
+        "reading": "Shows how much processed field is actually active."
+      },
+      {
+        "display": "DRY / WET waveform",
+        "measures": "Recent source and processed traces",
+        "reading": "Compare timing, shape, and motion between paths."
+      },
+      {
+        "display": "Signal Path",
+        "measures": "Activity at each processing stage",
+        "reading": "Locates where energy enters, moves, feeds back, and is contained."
+      }
+    ],
+    "channelMode": false,
+    "dualMono": false,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Resources/NSR_bg.png",
+      "assets/As_Above.png",
+      "assets/So_Below.png",
+      "assets/nsr_bg.png"
+    ]
+  },
+  {
+    "id": "NTRSTLLR",
+    "name": "NTRSTLLR",
+    "family": "FX_SPATIAL",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Bus Preferred",
+    "placementNote": "spatial/nebula/wormhole bus",
+    "description": "Audible interstellar delay and tail engine with travel, warp, orbit, portal, delay, air, haze, width, diffusion, axis, and Nebula/Wormhole modes.",
+    "parameters": [
+      {
+        "id": "trumpet_l",
+        "name": "Micro Peak",
+        "type": "Float"
+      },
+      {
+        "id": "trumpet_c",
+        "name": "Meso Density",
+        "type": "Float"
+      },
+      {
+        "id": "trumpet_r",
+        "name": "Macro Level",
+        "type": "Float"
+      },
+      {
+        "id": "makeup_gain",
+        "name": "Makeup Gain",
+        "type": "Float"
+      },
+      {
+        "id": "travel",
+        "name": "Travel",
+        "type": "Float"
+      },
+      {
+        "id": "warp",
+        "name": "Warp",
+        "type": "Float"
+      },
+      {
+        "id": "orbit",
+        "name": "Orbit",
+        "type": "Float"
+      },
+      {
+        "id": "portal",
+        "name": "Portal",
+        "type": "Float"
+      },
+      {
+        "id": "time_delay",
+        "name": "Time/Delay",
+        "type": "Float"
+      },
+      {
+        "id": "rubber",
+        "name": "Rubber",
+        "type": "Float"
+      },
+      {
+        "id": "air",
+        "name": "Air",
+        "type": "Float"
+      },
+      {
+        "id": "haze",
+        "name": "Haze",
+        "type": "Float"
+      },
+      {
+        "id": "width",
+        "name": "Width",
+        "type": "Float"
+      },
+      {
+        "id": "diffusion",
+        "name": "Diffusion",
+        "type": "Float"
+      },
+      {
+        "id": "axis",
+        "name": "Axis",
+        "type": "Float"
+      },
+      {
+        "id": "mix",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "output",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "wormhole_mode",
+        "name": "Wormhole Mode",
+        "type": "Bool"
+      },
+      {
+        "id": "nebula_mode",
+        "name": "Nebula Mode",
+        "type": "Bool"
+      },
+      {
+        "id": "phi_grid",
+        "name": "Phi Grid",
+        "type": "Bool"
+      },
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "NTRSTLLR Canon Reset",
+      "Interstellar Phi 2",
+      "Sacred Wormhole",
+      "Nebula Phi Echo",
+      "Short Portal",
+      "Deep Universe Gate",
+      "Dual Phi Orbit",
+      "Time Lens Isolate",
+      "Delay Line Isolate",
+      "Portal Tail Isolate",
+      "Motion Warp Isolate",
+      "Air Tone Isolate",
+      "Haze Veil Isolate",
+      "Width Axis Isolate",
+      "Diffusion Cloud",
+      "Mono Wormhole Probe",
+      "Dual Mono Split Probe",
+      "Nebula Only Bloom",
+      "Wormhole Only Pull"
+    ],
+    "meters": [
+      {
+        "display": "INPUT / OUTPUT",
+        "measures": "Weighted peak-plus-RMS level",
+        "reading": "Use for level matching around the spatial return."
+      },
+      {
+        "display": "TONE RESPONSE",
+        "measures": "Current low-to-high response shape",
+        "reading": "Shows tonal contour, not a mastering EQ recommendation."
+      },
+      {
+        "display": "WORMHOLE",
+        "measures": "Delay/warp-path energy",
+        "reading": "Shows active wormhole return strength."
+      },
+      {
+        "display": "NEBULA",
+        "measures": "Portal/diffusion-path energy",
+        "reading": "Shows active nebula tail strength."
+      },
+      {
+        "display": "SINGULARITY",
+        "measures": "Axis and pull concentration",
+        "reading": "Higher values indicate stronger inward focus."
+      },
+      {
+        "display": "PHI FIELD OBSERVATION",
+        "measures": "Combined macro-control activity",
+        "reading": "A spatial-state summary rather than loudness."
+      },
+      {
+        "display": "PHI ECHO / DELAY FIELD",
+        "measures": "Delay taps, orbit, and return motion",
+        "reading": "Use to understand tail movement and density."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/NTRSTLLR_BG_20260715.png",
+      "assets/NTRSTLLR_StellarField_20260721.png",
+      "assets/NTRSTLLR_reduced_bg.png",
+      "assets/Nebula_Core.png",
+      "assets/Nebula_Field.png",
+      "assets/Wormhole_Core.png",
+      "assets/Wormhole_Field.png",
+      "assets/energyVeins.png",
+      "assets/knobGlow.png",
+      "assets/meterMask.png",
+      "assets/nebulaClouds.png",
+      "assets/particleLayer.png",
+      "assets/phiGrid.png",
+      "assets/portalGlow.png",
+      "assets/singularity.png",
+      "assets/starDrift.png"
+    ]
+  },
+  {
+    "id": "Cathedral",
+    "name": "Cathedral",
+    "family": "FX_SPATIAL",
+    "version": "3.22",
+    "formats": [
+      "VST3",
+      "AU"
+    ],
+    "placement": "Bus Preferred",
+    "placementNote": "reverb/spatial aux",
+    "description": "Seven-river chamber environment with arch, convergence, 3-6-9 nodes, protected I/O, and parallel mix.",
+    "parameters": [
+      {
+        "id": "arch",
+        "name": "Arch",
+        "type": "Float"
+      },
+      {
+        "id": "rivers",
+        "name": "Seven Rivers",
+        "type": "Float"
+      },
+      {
+        "id": "nodes",
+        "name": "3-6-9 Nodes",
+        "type": "Float"
+      },
+      {
+        "id": "convergence",
+        "name": "Convergence",
+        "type": "Float"
+      },
+      {
+        "id": "input",
+        "name": "Input",
+        "type": "Float"
+      },
+      {
+        "id": "mix",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "output",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "channel_mode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      }
+    ],
+    "presets": [
+      "Sweet Spot (Stereo)",
+      "Cordoba (Stereo)",
+      "Cologne (Stereo)",
+      "St. Peter's (Stereo)",
+      "Notre-Dame (Stereo)",
+      "St. Sophia's (Stereo)",
+      "St. Basil's (Stereo)",
+      "Tallinn (Stereo)",
+      "Unity Chapel (Stereo)",
+      "Seven Rivers (Stereo)",
+      "369 Nodes (Stereo)",
+      "Convergence Hall (Stereo)",
+      "Golden Nave (Stereo)",
+      "Quiet Sanctuary (Stereo)",
+      "Sweet Spot (Mono)",
+      "Cordoba (Mono)",
+      "Cologne (Mono)",
+      "St. Peter's (Mono)",
+      "Notre-Dame (Mono)",
+      "St. Sophia's (Mono)",
+      "St. Basil's (Mono)",
+      "Tallinn (Mono)",
+      "Unity Chapel (Mono)",
+      "Seven Rivers (Mono)",
+      "369 Nodes (Mono)",
+      "Convergence Hall (Mono)",
+      "Golden Nave (Mono)",
+      "Quiet Sanctuary (Mono)",
+      "Sweet Spot (Dual Mono)",
+      "Cordoba (Dual Mono)",
+      "Cologne (Dual Mono)",
+      "St. Peter's (Dual Mono)",
+      "Notre-Dame (Dual Mono)",
+      "St. Sophia's (Dual Mono)",
+      "St. Basil's (Dual Mono)",
+      "Tallinn (Dual Mono)",
+      "Unity Chapel (Dual Mono)",
+      "Seven Rivers (Dual Mono)",
+      "369 Nodes (Dual Mono)",
+      "Convergence Hall (Dual Mono)",
+      "Golden Nave (Dual Mono)",
+      "Quiet Sanctuary (Dual Mono)"
+    ],
+    "meters": [
+      {
+        "display": "ENERGY",
+        "measures": "Current chamber RMS in dB",
+        "reading": "Shows how strongly the room is being excited."
+      },
+      {
+        "display": "DIFFUSION",
+        "measures": "3-6-9 node density",
+        "reading": "Higher values produce a denser, smoother tail."
+      },
+      {
+        "display": "WIDTH",
+        "measures": "Node density multiplied by wet mix",
+        "reading": "Shows audible spatial spread, not dry-source width."
+      },
+      {
+        "display": "RT60",
+        "measures": "Estimated mid-band decay time",
+        "reading": "Seconds required for the modeled room to decay by 60 dB."
+      },
+      {
+        "display": "ROOM RESONANCE",
+        "measures": "Modeled low/mid/high response",
+        "reading": "Use to identify room emphasis before printing."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Assets/Images/Cathedral.png"
+    ]
+  },
+  {
+    "id": "SacredVerb",
+    "name": "SacredVerb",
+    "family": "FX_SPATIAL",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Bus Preferred",
+    "placementNote": "reverb and spatial aux",
+    "description": "Sacred spatial reverb with pre-delay, chamber size, damping, rate, depth, Neter blend, resonance, chamber and pattern modes, and protected presets.",
+    "parameters": [
+      {
+        "id": "PRE_DELAY",
+        "name": "PRE DELAY",
+        "type": "Float"
+      },
+      {
+        "id": "ROOM_SIZE",
+        "name": "CHAMBER SIZE",
+        "type": "Float"
+      },
+      {
+        "id": "DAMPING",
+        "name": "DAMPING",
+        "type": "Float"
+      },
+      {
+        "id": "REVERB_MIX",
+        "name": "WET MIX",
+        "type": "Float"
+      },
+      {
+        "id": "MOD_RATE",
+        "name": "RATE",
+        "type": "Float"
+      },
+      {
+        "id": "MOD_DEPTH",
+        "name": "DEPTH",
+        "type": "Float"
+      },
+      {
+        "id": "NETER_BLEND",
+        "name": "NETER BLEND",
+        "type": "Float"
+      },
+      {
+        "id": "RESONANCE",
+        "name": "RESONANCE",
+        "type": "Float"
+      },
+      {
+        "id": "INPUT",
+        "name": "INPUT",
+        "type": "Float"
+      },
+      {
+        "id": "OUTPUT",
+        "name": "OUTPUT",
+        "type": "Float"
+      },
+      {
+        "id": "CHAMBER",
+        "name": "Chamber",
+        "type": "Int"
+      },
+      {
+        "id": "PATTERN_MODE",
+        "name": "Pattern Mode",
+        "type": "Int"
+      },
+      {
+        "id": "FLOWER",
+        "name": "Flower of Life",
+        "type": "Bool"
+      },
+      {
+        "id": "ECO_MODE",
+        "name": "Eco Mode",
+        "type": "Bool"
+      },
+      {
+        "id": "BYPASS",
+        "name": "Bypass",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "TRIG_TAIL",
+        "name": "Trigger Tail",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "TRIG_",
+        "name": "TRIG_",
+        "type": "Referenced"
+      },
+      {
+        "id": "EN_",
+        "name": "EN_",
+        "type": "Referenced"
+      }
+    ],
+    "presets": [
+      "Step Pyramid [Stereo]",
+      "Step Pyramid [Mono]",
+      "Step Pyramid [Dual Mono]",
+      "King's Chamber [Stereo]",
+      "King's Chamber [Mono]",
+      "King's Chamber [Dual Mono]",
+      "Osireion [Stereo]",
+      "Osireion [Mono]",
+      "Osireion [Dual Mono]",
+      "Hypostyle Hall [Stereo]",
+      "Hypostyle Hall [Mono]",
+      "Hypostyle Hall [Dual Mono]",
+      "Temple of Luxor [Stereo]",
+      "Temple of Luxor [Mono]",
+      "Temple of Luxor [Dual Mono]",
+      "Temple of Horus [Stereo]",
+      "Temple of Horus [Mono]",
+      "Temple of Horus [Dual Mono]",
+      "Abu Simbel [Stereo]",
+      "Abu Simbel [Mono]",
+      "Abu Simbel [Dual Mono]",
+      "Pyramid Early Field [Stereo]",
+      "Pyramid Early Field [Mono]",
+      "Pyramid Early Field [Dual Mono]",
+      "Chamber Long Tail [Stereo]",
+      "Chamber Long Tail [Mono]",
+      "Chamber Long Tail [Dual Mono]",
+      "Stone Room Focus [Stereo]",
+      "Stone Room Focus [Mono]",
+      "Stone Room Focus [Dual Mono]",
+      "Hall Wide Decay [Stereo]",
+      "Hall Wide Decay [Mono]",
+      "Hall Wide Decay [Dual Mono]",
+      "Temple Soft Bloom [Stereo]",
+      "Temple Soft Bloom [Mono]",
+      "Temple Soft Bloom [Dual Mono]",
+      "Bright Temple Tail [Stereo]",
+      "Bright Temple Tail [Mono]",
+      "Bright Temple Tail [Dual Mono]",
+      "Deep Stone Return [Stereo]",
+      "Deep Stone Return [Mono]",
+      "Deep Stone Return [Dual Mono]",
+      "Short Pyramid Room [Stereo]",
+      "Short Pyramid Room [Mono]",
+      "Short Pyramid Room [Dual Mono]",
+      "Short Chamber Room [Stereo]",
+      "Short Chamber Room [Mono]",
+      "Short Chamber Room [Dual Mono]",
+      "Focused Stone Room [Stereo]",
+      "Focused Stone Room [Mono]",
+      "Focused Stone Room [Dual Mono]",
+      "Short Hall Room [Stereo]",
+      "Short Hall Room [Mono]",
+      "Short Hall Room [Dual Mono]",
+      "Soft Temple Room [Stereo]",
+      "Soft Temple Room [Mono]",
+      "Soft Temple Room [Dual Mono]",
+      "Bright Room Edge [Stereo]",
+      "Bright Room Edge [Mono]",
+      "Bright Room Edge [Dual Mono]",
+      "Deep Room Guard [Stereo]",
+      "Deep Room Guard [Mono]",
+      "Deep Room Guard [Dual Mono]",
+      "Open Pyramid Wash [Stereo]",
+      "Open Pyramid Wash [Mono]",
+      "Open Pyramid Wash [Dual Mono]",
+      "Open Chamber Wash [Stereo]",
+      "Open Chamber Wash [Mono]",
+      "Open Chamber Wash [Dual Mono]",
+      "Open Stone Wash [Stereo]",
+      "Open Stone Wash [Mono]",
+      "Open Stone Wash [Dual Mono]",
+      "Open Hall Wash [Stereo]",
+      "Open Hall Wash [Mono]",
+      "Open Hall Wash [Dual Mono]",
+      "Open Temple Wash [Stereo]",
+      "Open Temple Wash [Mono]",
+      "Open Temple Wash [Dual Mono]",
+      "Open Bright Wash [Stereo]",
+      "Open Bright Wash [Mono]",
+      "Open Bright Wash [Dual Mono]",
+      "Open Deep Wash [Stereo]",
+      "Open Deep Wash [Mono]",
+      "Open Deep Wash [Dual Mono]",
+      "Dark Pyramid Hold [Stereo]",
+      "Dark Pyramid Hold [Mono]",
+      "Dark Pyramid Hold [Dual Mono]",
+      "Dark Chamber Hold [Stereo]",
+      "Dark Chamber Hold [Mono]",
+      "Dark Chamber Hold [Dual Mono]",
+      "Dark Stone Hold [Stereo]",
+      "Dark Stone Hold [Mono]",
+      "Dark Stone Hold [Dual Mono]",
+      "Dark Hall Hold [Stereo]",
+      "Dark Hall Hold [Mono]",
+      "Dark Hall Hold [Dual Mono]",
+      "Dark Temple Hold [Stereo]",
+      "Dark Temple Hold [Mono]",
+      "Dark Temple Hold [Dual Mono]",
+      "Dark Bright Hold [Stereo]",
+      "Dark Bright Hold [Mono]",
+      "Dark Bright Hold [Dual Mono]",
+      "Dark Deep Hold [Stereo]",
+      "Dark Deep Hold [Mono]",
+      "Dark Deep Hold [Dual Mono]",
+      "Word Room [Stereo]",
+      "Word Room [Mono]",
+      "Word Room [Dual Mono]",
+      "Solar Chamber [Stereo]",
+      "Solar Chamber [Mono]",
+      "Solar Chamber [Dual Mono]",
+      "Depth Room [Stereo]",
+      "Depth Room [Mono]",
+      "Depth Room [Dual Mono]",
+      "Hidden Hall [Stereo]",
+      "Hidden Hall [Mono]",
+      "Hidden Hall [Dual Mono]",
+      "Aura Room [Stereo]",
+      "Aura Room [Mono]",
+      "Aura Room [Dual Mono]",
+      "Bright Strike [Stereo]",
+      "Bright Strike [Mono]",
+      "Bright Strike [Dual Mono]",
+      "Veil Room [Stereo]",
+      "Veil Room [Mono]",
+      "Veil Room [Dual Mono]",
+      "Low Foundation [Stereo]",
+      "Low Foundation [Mono]",
+      "Low Foundation [Dual Mono]",
+      "Bloom Room [Stereo]",
+      "Bloom Room [Mono]",
+      "Bloom Room [Dual Mono]",
+      "Union Hall [Stereo]",
+      "Union Hall [Mono]",
+      "Union Hall [Dual Mono]",
+      "Vision Room [Stereo]",
+      "Vision Room [Mono]",
+      "Vision Room [Dual Mono]",
+      "Ascent Room [Stereo]",
+      "Ascent Room [Mono]",
+      "Ascent Room [Dual Mono]",
+      "396 Foundation [Stereo]",
+      "396 Foundation [Mono]",
+      "396 Foundation [Dual Mono]",
+      "417 Lift [Stereo]",
+      "417 Lift [Mono]",
+      "417 Lift [Dual Mono]",
+      "528 Bloom [Stereo]",
+      "528 Bloom [Mono]",
+      "528 Bloom [Dual Mono]",
+      "639 Balance [Stereo]",
+      "639 Balance [Mono]",
+      "639 Balance [Dual Mono]",
+      "741 Perception [Stereo]",
+      "741 Perception [Mono]",
+      "741 Perception [Dual Mono]",
+      "852 Vision [Stereo]",
+      "852 Vision [Mono]",
+      "852 Vision [Dual Mono]",
+      "963 Ascent [Stereo]",
+      "963 Ascent [Mono]",
+      "963 Ascent [Dual Mono]"
+    ],
+    "meters": [
+      {
+        "display": "Seven Hathor meters",
+        "measures": "Energy at enabled Solfeggio nodes",
+        "reading": "Each column shows its resonant band activity and peak hold."
+      },
+      {
+        "display": "Output meter",
+        "measures": "Current reverb-output peak",
+        "reading": "Use to keep the return controlled and level matched."
+      },
+      {
+        "display": "3-6-9 modulator",
+        "measures": "Active modulation/pattern state",
+        "reading": "Shows motion settings; it is not a loudness meter."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Assets/Images/SacredVerb.png",
+      "Assets/Knobs/SacredVerb_Knob.png"
+    ]
+  },
+  {
+    "id": "THOTH",
+    "name": "Thoth",
+    "family": "HARMONICS_PITCH",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "harmonics/pitch",
+    "description": "Sacred harmonic EQ with low and high shelves, visible shelf curves, Flower of Life mode, protected I/O, and parallel mix.",
+    "parameters": [
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "input",
+        "name": "Input",
+        "type": "Float"
+      },
+      {
+        "id": "mix",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "ls_gain",
+        "name": "Low Shelf",
+        "type": "Float"
+      },
+      {
+        "id": "hs_gain",
+        "name": "High Shelf",
+        "type": "Float"
+      },
+      {
+        "id": "output",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "flower",
+        "name": "Flower of Life",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      }
+    ],
+    "presets": [
+      "THOTH FLAT REFERENCE",
+      "THOTH MIX POLISH",
+      "THOTH VOCAL CLARITY",
+      "THOTH VOCAL WARMTH",
+      "THOTH DRUM HARMONIC LIFT",
+      "THOTH BASS TRANSLATE",
+      "THOTH LOW MID CLEANUP",
+      "THOTH PRESENCE SEAT",
+      "THOTH GENTLE AIR",
+      "SOLFEGGIO 396 GROUND",
+      "SOLFEGGIO 417 WEIGHT",
+      "SOLFEGGIO 528 BODY",
+      "SOLFEGGIO 639 SCRIBE",
+      "SOLFEGGIO 741 FOCUS",
+      "SOLFEGGIO 852 AIR",
+      "SOLFEGGIO 963 FLOWER",
+      "THOTH DYNAMIC NOTCH SHOWCASE",
+      "THOTH DYNAMIC SMILE SHOWCASE",
+      "THOTH DYNAMIC AIR SHOWCASE"
+    ],
+    "meters": [
+      {
+        "display": "Spectrum bands",
+        "measures": "Live energy in each displayed EQ region",
+        "reading": "Use to see where harmonic energy is accumulating."
+      },
+      {
+        "display": "Shelf curves",
+        "measures": "Current low/high shelf response",
+        "reading": "These show the selected EQ shape, not measured level."
+      },
+      {
+        "display": "IN / OUT",
+        "measures": "Pre/post peak activity",
+        "reading": "Use for level-fair harmonic decisions."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "source/THOTH_KNOB.PNG",
+      "source/Thoth.png"
+    ]
+  },
+  {
+    "id": "TEHUTI",
+    "name": "TEHUTI",
+    "family": "HARMONICS_PITCH",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "harmonics/pitch",
+    "description": "Harmonic motion processor using low, mid, and high ducking with depth, speed, mix, and Flower of Life mode.",
+    "parameters": [
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "low_duck",
+        "name": "Low Duck",
+        "type": "Float"
+      },
+      {
+        "id": "mid_duck",
+        "name": "Mid Duck",
+        "type": "Float"
+      },
+      {
+        "id": "high_duck",
+        "name": "High Duck",
+        "type": "Float"
+      },
+      {
+        "id": "depth",
+        "name": "Depth",
+        "type": "Float"
+      },
+      {
+        "id": "speed",
+        "name": "Speed",
+        "type": "Float"
+      },
+      {
+        "id": "mix",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "flower",
+        "name": "Flower of Life",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "TEHUTI OPEN REFERENCE",
+      "TEHUTI LOW SPEED HIGH DEPTH",
+      "TEHUTI LOW DEPTH HIGH SPEED",
+      "TEHUTI LOW BAND LOCK",
+      "TEHUTI MID SWIM FAST",
+      "TEHUTI HIGH SHIMMER DUCK",
+      "TEHUTI FULL BAND PUMP",
+      "TEHUTI REVERSE POCKET",
+      "TEHUTI VOCAL CARVE DEEP",
+      "TEHUTI PERCUSSIVE SNAP",
+      "TEHUTI SLOW WIDE BREATH",
+      "TEHUTI PARALLEL EDGE"
+    ],
+    "meters": [
+      {
+        "display": "INPUT",
+        "measures": "Main-program peak activity",
+        "reading": "Shows the signal being ducked."
+      },
+      {
+        "display": "SIDECHAIN SEND",
+        "measures": "External sidechain envelope",
+        "reading": "Confirms that the host sidechain is present."
+      },
+      {
+        "display": "LOW GR",
+        "measures": "Reduction below 162 Hz",
+        "reading": "Shows low-band ducking driven by the sidechain."
+      },
+      {
+        "display": "MID GR",
+        "measures": "Reduction from 162 Hz to 1.62 kHz",
+        "reading": "Shows mid-band ducking driven by the sidechain."
+      },
+      {
+        "display": "HIGH GR",
+        "measures": "Reduction above 1.62 kHz",
+        "reading": "Shows high-band ducking driven by the sidechain."
+      },
+      {
+        "display": "Duck curves",
+        "measures": "Expected reduction versus sidechain energy",
+        "reading": "The live dot shows the current operating point."
+      },
+      {
+        "display": "History",
+        "measures": "Recent sidechain and reduction motion",
+        "reading": "Use to judge pumping and release behavior."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "source/Tehuti.png",
+      "source/Tehuti_knob.png"
+    ]
+  },
+  {
+    "id": "AU",
+    "name": "AU",
+    "family": "HARMONICS_PITCH",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Insert Safe",
+    "placementNote": "instrument/harmonic utility",
+    "description": "DIHWorld instrument and synth with factory sound selection, drag-and-drop source support, nine Neter voices, modulation, space, glide, sustain, and master control. The current AU is registered and uses smoothed output normalization.",
+    "parameters": [
+      {
+        "id": "SOUND",
+        "name": "Factory Sound",
+        "type": "Choice"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "PTAH",
+        "name": "PTAH",
+        "type": "Referenced"
+      },
+      {
+        "id": "RA",
+        "name": "RA",
+        "type": "Referenced"
+      },
+      {
+        "id": "SET",
+        "name": "SET",
+        "type": "Referenced"
+      },
+      {
+        "id": "ASAR",
+        "name": "ASAR",
+        "type": "Referenced"
+      },
+      {
+        "id": "MAAT",
+        "name": "MAAT",
+        "type": "Referenced"
+      },
+      {
+        "id": "SEKHMET",
+        "name": "SEKHMET",
+        "type": "Referenced"
+      },
+      {
+        "id": "KHNUM",
+        "name": "KHNUM",
+        "type": "Referenced"
+      },
+      {
+        "id": "HERU",
+        "name": "HERU",
+        "type": "Referenced"
+      },
+      {
+        "id": "DRIVE",
+        "name": "DRIVE",
+        "type": "Referenced"
+      },
+      {
+        "id": "AMOUNT",
+        "name": "AMOUNT",
+        "type": "Referenced"
+      },
+      {
+        "id": "DEPTH",
+        "name": "DEPTH",
+        "type": "Referenced"
+      },
+      {
+        "id": "SV_MIX",
+        "name": "SV_MIX",
+        "type": "Referenced"
+      },
+      {
+        "id": "HARP",
+        "name": "HARP",
+        "type": "Referenced"
+      },
+      {
+        "id": "ORGAN",
+        "name": "ORGAN",
+        "type": "Referenced"
+      },
+      {
+        "id": "CHOIR",
+        "name": "CHOIR",
+        "type": "Referenced"
+      },
+      {
+        "id": "MOD",
+        "name": "MOD",
+        "type": "Referenced"
+      },
+      {
+        "id": "BREATH",
+        "name": "BREATH",
+        "type": "Referenced"
+      },
+      {
+        "id": "VIBRATO",
+        "name": "VIBRATO",
+        "type": "Referenced"
+      },
+      {
+        "id": "PHI",
+        "name": "PHI",
+        "type": "Referenced"
+      },
+      {
+        "id": "AZIMUTH",
+        "name": "AZIMUTH",
+        "type": "Referenced"
+      },
+      {
+        "id": "FLOWER",
+        "name": "FLOWER",
+        "type": "Referenced"
+      },
+      {
+        "id": "HATHOR",
+        "name": "HATHOR",
+        "type": "Referenced"
+      },
+      {
+        "id": "RAW",
+        "name": "RAW",
+        "type": "Referenced"
+      },
+      {
+        "id": "MOD_MACRO",
+        "name": "MOD_MACRO",
+        "type": "Referenced"
+      },
+      {
+        "id": "MASTER",
+        "name": "MASTER",
+        "type": "Referenced"
+      },
+      {
+        "id": "GLIDE",
+        "name": "GLIDE",
+        "type": "Referenced"
+      },
+      {
+        "id": "PURE",
+        "name": "PURE",
+        "type": "Referenced"
+      },
+      {
+        "id": "SUSTAIN",
+        "name": "SUSTAIN",
+        "type": "Referenced"
+      },
+      {
+        "id": "GAINMATCH",
+        "name": "GAINMATCH",
+        "type": "Referenced"
+      }
+    ],
+    "presets": [
+      "AU Core",
+      "Canon Glass",
+      "Temple Keys",
+      "Organ Foundation",
+      "Motion Pluck",
+      "Horizon Pad",
+      "Root Foundation",
+      "Santuri Full"
+    ],
+    "meters": [],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Assets/AU_Background.png",
+      "Assets/AU_Knob.png"
+    ]
+  },
+  {
+    "id": "SLOTMACHINE",
+    "name": "SlotMachine",
+    "family": "CREATIVE_TRANSFORM",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Creative Transform",
+    "placementNote": "creative transform",
+    "description": "Three-chamber creative host that combines source, opposition, and resolution through architecture, blend, morph, and containment.",
+    "parameters": [
+      {
+        "id": "chamberA",
+        "name": "Chamber A Source",
+        "type": "Choice"
+      },
+      {
+        "id": "chamberB",
+        "name": "Chamber B Opposition",
+        "type": "Choice"
+      },
+      {
+        "id": "chamberC",
+        "name": "Chamber C Resolution",
+        "type": "Choice"
+      },
+      {
+        "id": "architecture",
+        "name": "Architecture",
+        "type": "Float"
+      },
+      {
+        "id": "blend",
+        "name": "Blend",
+        "type": "Float"
+      },
+      {
+        "id": "morph",
+        "name": "Morph",
+        "type": "Float"
+      },
+      {
+        "id": "containment",
+        "name": "Containment",
+        "type": "Float"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      }
+    ],
+    "presets": [
+      "SLOTMACHINE CANON RESET [Stereo]",
+      "RELIC SPIN [Stereo]",
+      "IMPACT REROUTE [Stereo]",
+      "GOLDEN COLLISION [Stereo]",
+      "SOVEREIGN FLIP [Stereo]",
+      "WORMHOLE PRIZE [Stereo]",
+      "PARALLAX JACKPOT [Stereo]",
+      "FOCUSED CHAMBER [Stereo]",
+      "SLOTMACHINE CANON RESET [Mono]",
+      "RELIC SPIN [Mono]",
+      "IMPACT REROUTE [Mono]",
+      "GOLDEN COLLISION [Mono]",
+      "SOVEREIGN FLIP [Mono]",
+      "WORMHOLE PRIZE [Mono]",
+      "PARALLAX JACKPOT [Mono]",
+      "FOCUSED CHAMBER [Mono]",
+      "SLOTMACHINE CANON RESET [Dual Mono]",
+      "RELIC SPIN [Dual Mono]",
+      "IMPACT REROUTE [Dual Mono]",
+      "GOLDEN COLLISION [Dual Mono]",
+      "SOVEREIGN FLIP [Dual Mono]",
+      "WORMHOLE PRIZE [Dual Mono]",
+      "PARALLAX JACKPOT [Dual Mono]",
+      "FOCUSED CHAMBER [Dual Mono]"
+    ],
+    "meters": [
+      {
+        "display": "INPUT",
+        "measures": "Input peak",
+        "reading": "Confirms level entering the three chambers."
+      },
+      {
+        "display": "OUTPUT",
+        "measures": "Output peak",
+        "reading": "Use for level matching."
+      },
+      {
+        "display": "RMS",
+        "measures": "Average program body",
+        "reading": "Shows sustained density."
+      },
+      {
+        "display": "CREST",
+        "measures": "Peak-to-RMS relationship",
+        "reading": "Higher values mean sharper transients; lower values mean denser material."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/Images/SlotMachine_BG.png"
+    ]
+  },
+  {
+    "id": "ARCHAEOLOGIST_X",
+    "name": "ARCHAEOLOGIST",
+    "family": "CREATIVE_TRANSFORM",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Creative Transform",
+    "placementNote": "creative recovery/excavation",
+    "description": "Forensic recovery processor for excavation, recovery field, harmonic extraction, layer selection, gate, and parallel mix.",
+    "parameters": [
+      {
+        "id": "power",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "excavation",
+        "name": "Excavation Engine",
+        "type": "Float"
+      },
+      {
+        "id": "recovery",
+        "name": "Recovery Field",
+        "type": "Float"
+      },
+      {
+        "id": "harmonic",
+        "name": "Harmonic Extraction",
+        "type": "Float"
+      },
+      {
+        "id": "forensic",
+        "name": "Forensic Layer",
+        "type": "Float"
+      },
+      {
+        "id": "gate",
+        "name": "Gate",
+        "type": "Float"
+      },
+      {
+        "id": "mix",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "output",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "profile",
+        "name": "Profile",
+        "type": "Choice"
+      },
+      {
+        "id": "mode",
+        "name": "Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "ARCHX CANON RESET [Stereo]",
+      "RELIC VOICE [Stereo]",
+      "DUST DETAIL [Stereo]",
+      "BODY RECOVERY [Stereo]",
+      "AIR SCRIPT [Stereo]",
+      "FORENSIC LENS [Stereo]",
+      "TEMPLE MEMORY [Stereo]",
+      "FULL EXCAVATION FIELD [Stereo]",
+      "ARCHX CANON RESET [Mono]",
+      "RELIC VOICE [Mono]",
+      "DUST DETAIL [Mono]",
+      "BODY RECOVERY [Mono]",
+      "AIR SCRIPT [Mono]",
+      "FORENSIC LENS [Mono]",
+      "TEMPLE MEMORY [Mono]",
+      "FULL EXCAVATION FIELD [Mono]",
+      "ARCHX CANON RESET [Dual Mono]",
+      "RELIC VOICE [Dual Mono]",
+      "DUST DETAIL [Dual Mono]",
+      "BODY RECOVERY [Dual Mono]",
+      "AIR SCRIPT [Dual Mono]",
+      "FORENSIC LENS [Dual Mono]",
+      "TEMPLE MEMORY [Dual Mono]",
+      "FULL EXCAVATION FIELD [Dual Mono]"
+    ],
+    "meters": [
+      {
+        "display": "INPUT / OUTPUT",
+        "measures": "Live pre/post peak",
+        "reading": "Use for bypass and level matching."
+      },
+      {
+        "display": "EXCAVATION",
+        "measures": "Low/deep recovery activity",
+        "reading": "Shows energy being uncovered by excavation."
+      },
+      {
+        "display": "RECOVERY",
+        "measures": "Recovered-source contribution",
+        "reading": "Shows how much repaired material is active."
+      },
+      {
+        "display": "HARMONIC",
+        "measures": "Extracted harmonic activity",
+        "reading": "Shows reconstructed tonal information."
+      },
+      {
+        "display": "FORENSIC",
+        "measures": "Forensic layer/gate activity",
+        "reading": "Shows the selective analysis path at work."
+      },
+      {
+        "display": "Observation Field",
+        "measures": "Combined four-process activity",
+        "reading": "A process summary, not a spectrum."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Assets/archaeologist_x_bg.png",
+      "Assets/archaeologist_x_bg_v2.png"
+    ]
+  },
+  {
+    "id": "SERQET",
+    "name": "SERQET",
+    "family": "CREATIVE_TRANSFORM",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3"
+    ],
+    "placement": "Creative Transform",
+    "placementNote": "width/creative secondary",
+    "description": "Creative sting and width processor with intensity, venom saturation, convergence focus, and output control.",
+    "parameters": [
+      {
+        "id": "STING",
+        "name": "Width Reach",
+        "type": "Float"
+      },
+      {
+        "id": "VENOM",
+        "name": "Movement Trace",
+        "type": "Float"
+      },
+      {
+        "id": "FOCUS",
+        "name": "Prism Focus",
+        "type": "Float"
+      },
+      {
+        "id": "OUTPUT",
+        "name": "Output Master",
+        "type": "Float"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "SERQET CANON WIDTH [Stereo]",
+      "SERQET VEIL MOTION [Stereo]",
+      "SERQET PRISM LENS [Stereo]",
+      "SERQET WIDE FIELD [Stereo]",
+      "SERQET BUS VEIL [Stereo]",
+      "SERQET CANON WIDTH [Mono]",
+      "SERQET VEIL MOTION [Mono]",
+      "SERQET PRISM LENS [Mono]",
+      "SERQET WIDE FIELD [Mono]",
+      "SERQET BUS VEIL [Mono]",
+      "SERQET CANON WIDTH [Dual Mono]",
+      "SERQET VEIL MOTION [Dual Mono]",
+      "SERQET PRISM LENS [Dual Mono]",
+      "SERQET WIDE FIELD [Dual Mono]",
+      "SERQET BUS VEIL [Dual Mono]"
+    ],
+    "meters": [
+      {
+        "display": "RMS WIDTH",
+        "measures": "Input RMS feeding the width field",
+        "reading": "Shows source energy available for widening."
+      },
+      {
+        "display": "PRISM WIDTH",
+        "measures": "Measured side-field width",
+        "reading": "Higher values indicate a broader stereo prism."
+      },
+      {
+        "display": "OUTPUT FIELD",
+        "measures": "Post-process RMS energy",
+        "reading": "Use with RMS WIDTH for level context."
+      },
+      {
+        "display": "Prism visualizer",
+        "measures": "Width, motion, focus, and output state",
+        "reading": "The polygon is a spatial-state map, not a loudness target."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/SERQET_0001.png",
+      "assets/SERQET_0002.png",
+      "assets/SERQET_0003.png",
+      "assets/SERQET_0004.png",
+      "assets/SERQET_0005.png",
+      "assets/SERQET_0006.png",
+      "assets/SERQET_0007.png",
+      "assets/SERQET_0008.png",
+      "assets/SERQET_0009.png",
+      "assets/SERQET_0010.png"
+    ]
+  },
+  {
+    "id": "ANKH",
+    "name": "ANKH",
+    "family": "MASTERING_CORE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Master Field",
+    "placementNote": "final containment authority",
+    "description": "Sacred optical leveler for late-stage compression, Ma'at limiting, attack, release, drive, ratio, stereo link, Flower luminosity, and final containment.",
+    "parameters": [
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "inputDb",
+        "name": "RA Input",
+        "type": "Float"
+      },
+      {
+        "id": "mix",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "attack",
+        "name": "Sekhem Attack",
+        "type": "Float"
+      },
+      {
+        "id": "release",
+        "name": "Ma'at Release",
+        "type": "Float"
+      },
+      {
+        "id": "drive",
+        "name": "Ptah Drive",
+        "type": "Float"
+      },
+      {
+        "id": "ascension",
+        "name": "Ascension Ratio",
+        "type": "Float"
+      },
+      {
+        "id": "outputDb",
+        "name": "Amun Output",
+        "type": "Float"
+      },
+      {
+        "id": "compress",
+        "name": "Compress",
+        "type": "Bool"
+      },
+      {
+        "id": "limit_on",
+        "name": "Limit",
+        "type": "Bool"
+      },
+      {
+        "id": "flower_of_life",
+        "name": "Flower of Life",
+        "type": "Bool"
+      },
+      {
+        "id": "link",
+        "name": "Stereo Link",
+        "type": "Bool"
+      },
+      {
+        "id": "bypass",
+        "name": "Bypass",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "[Stereo] ESSENTIAL / Default",
+      "[Stereo] COLOR / Soft Optical",
+      "[Stereo] BUS / Life Compress",
+      "[Stereo] MASTER / Canon Ceiling",
+      "[Stereo] REPAIR / Transient Watch",
+      "[Stereo] UTILITY / Unity Reference",
+      "[Mono] ESSENTIAL / Default",
+      "[Mono] COLOR / Soft Optical",
+      "[Mono] BUS / Life Compress",
+      "[Mono] MASTER / Canon Ceiling",
+      "[Mono] REPAIR / Transient Watch",
+      "[Mono] UTILITY / Unity Reference",
+      "[Dual Mono] ESSENTIAL / Default",
+      "[Dual Mono] COLOR / Soft Optical",
+      "[Dual Mono] BUS / Life Compress",
+      "[Dual Mono] MASTER / Canon Ceiling",
+      "[Dual Mono] REPAIR / Transient Watch",
+      "[Dual Mono] UTILITY / Unity Reference"
+    ],
+    "meters": [
+      {
+        "display": "INPUT LEVEL",
+        "measures": "Peak level entering ANKH",
+        "reading": "Use to verify healthy mastering-chain entry."
+      },
+      {
+        "display": "GAIN REDUCTION",
+        "measures": "Current optical/limiter attenuation",
+        "reading": "More fill means more level is being removed."
+      },
+      {
+        "display": "OUTPUT LEVEL",
+        "measures": "Peak level after containment",
+        "reading": "Compare with Input for level-fair decisions."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/ankh_bg.png"
+    ]
+  },
+  {
+    "id": "SPHYNX",
+    "name": "SPHYNX",
+    "family": "MASTERING_CORE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Mix Bus",
+    "placementNote": "prepares material before field/finalization",
+    "description": "Mastering normalizer and calibrator that prepares input level, target, engine strength, normalization amount, mix, and output.",
+    "parameters": [
+      {
+        "id": "INPUT",
+        "name": "Input",
+        "type": "Float"
+      },
+      {
+        "id": "CALIBRATE",
+        "name": "Calibrate",
+        "type": "Float"
+      },
+      {
+        "id": "NORMALIZE",
+        "name": "Normalize",
+        "type": "Float"
+      },
+      {
+        "id": "ENGINE",
+        "name": "Engine",
+        "type": "Float"
+      },
+      {
+        "id": "TARGET",
+        "name": "Target",
+        "type": "Float"
+      },
+      {
+        "id": "MIX",
+        "name": "Mix",
+        "type": "Float"
+      },
+      {
+        "id": "OUTPUT",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "SPHYNX CANON ALIGN [Stereo]",
+      "SPHYNX GENTLE CALIBRATE [Stereo]",
+      "SPHYNX TRANSLATION [Stereo]",
+      "SPHYNX DYNAMIC PRESERVE [Stereo]",
+      "SPHYNX MASTER ANCHOR [Stereo]",
+      "SPHYNX LEVEL MATCH [Stereo]",
+      "SPHYNX CANON ALIGN [Mono]",
+      "SPHYNX GENTLE CALIBRATE [Mono]",
+      "SPHYNX TRANSLATION [Mono]",
+      "SPHYNX DYNAMIC PRESERVE [Mono]",
+      "SPHYNX MASTER ANCHOR [Mono]",
+      "SPHYNX LEVEL MATCH [Mono]",
+      "SPHYNX CANON ALIGN [Dual Mono]",
+      "SPHYNX GENTLE CALIBRATE [Dual Mono]",
+      "SPHYNX TRANSLATION [Dual Mono]",
+      "SPHYNX DYNAMIC PRESERVE [Dual Mono]",
+      "SPHYNX MASTER ANCHOR [Dual Mono]",
+      "SPHYNX LEVEL MATCH [Dual Mono]"
+    ],
+    "meters": [
+      {
+        "display": "INPUT PEAK",
+        "measures": "Peak entering calibration",
+        "reading": "Confirms available headroom before normalization."
+      },
+      {
+        "display": "PROGRAM RMS",
+        "measures": "Average program energy",
+        "reading": "Use to understand body level, not final delivery loudness alone."
+      },
+      {
+        "display": "AUTO TRIM",
+        "measures": "Gain correction calculated by SPHYNX",
+        "reading": "Center is 0 dB; left cuts and right boosts."
+      },
+      {
+        "display": "OUTPUT PEAK",
+        "measures": "Peak after normalization",
+        "reading": "Verify headroom after calibration."
+      },
+      {
+        "display": "Crest / headroom",
+        "measures": "Peak-to-RMS and remaining space",
+        "reading": "Use together to avoid flattening transient structure."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/sphynx.png",
+      "validation/SPHYNX_v2.2.0_standalone.png"
+    ]
+  },
+  {
+    "id": "MAAT",
+    "name": "Maat",
+    "family": "MASTERING_CORE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Mix Bus",
+    "placementNote": "mastering balance/justice stage with secondary observation/advisor dot",
+    "description": "Mastering balance processor for foundation and air, bandwidth, truth, architecture, phase, stereo link, saturation mode, and output.",
+    "parameters": [
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "FOUNDATION_BOOST",
+        "name": "Foundation Boost",
+        "type": "Float"
+      },
+      {
+        "id": "FOUNDATION_ATTEN",
+        "name": "Foundation Atten",
+        "type": "Float"
+      },
+      {
+        "id": "FOUNDATION_FREQ",
+        "name": "Foundation Frequency",
+        "type": "Float"
+      },
+      {
+        "id": "AIR_BOOST",
+        "name": "Air Boost",
+        "type": "Float"
+      },
+      {
+        "id": "AIR_ATTEN",
+        "name": "Air Atten",
+        "type": "Float"
+      },
+      {
+        "id": "BANDWIDTH",
+        "name": "Bandwidth",
+        "type": "Float"
+      },
+      {
+        "id": "BALANCE",
+        "name": "Balance",
+        "type": "Float"
+      },
+      {
+        "id": "TRUTH",
+        "name": "Truth",
+        "type": "Float"
+      },
+      {
+        "id": "ARCHITECTURE",
+        "name": "Architecture",
+        "type": "Float"
+      },
+      {
+        "id": "OUTPUT",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "POWER",
+        "name": "Power",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "PHASE_INVERT",
+        "name": "Phase Invert",
+        "type": "Bool"
+      },
+      {
+        "id": "FOUNDATION_WEIGHT_ON",
+        "name": "Foundation Weight On",
+        "type": "Bool"
+      },
+      {
+        "id": "RUMBLE_HPF",
+        "name": "Rumble HPF",
+        "type": "Float"
+      },
+      {
+        "id": "STEREO_LINK_MODE",
+        "name": "Stereo Link Mode",
+        "type": "Float"
+      },
+      {
+        "id": "SATURATION",
+        "name": "Saturation Tube Tape",
+        "type": "Float"
+      }
+    ],
+    "presets": [
+      "MAAT SWEET SPOT [Stereo]",
+      "TRUTH ALIGN [Stereo]",
+      "FOUNDATION WEIGHT [Stereo]",
+      "AIR SHEEN [Stereo]",
+      "LOW END MERCY [Stereo]",
+      "BRIGHTNESS MERCY [Stereo]",
+      "MIX SEAT [Stereo]",
+      "WARM BALANCE [Stereo]",
+      "MASTER READY [Stereo]",
+      "CHAMBER POLISH [Stereo]",
+      "GENTLE FINISH [Stereo]",
+      "BREATH ROOT [Stereo]",
+      "CANON GROUND [Stereo]",
+      "FULL RESET [Stereo]",
+      "MAAT SWEET SPOT [Mono]",
+      "TRUTH ALIGN [Mono]",
+      "FOUNDATION WEIGHT [Mono]",
+      "AIR SHEEN [Mono]",
+      "LOW END MERCY [Mono]",
+      "BRIGHTNESS MERCY [Mono]",
+      "MIX SEAT [Mono]",
+      "WARM BALANCE [Mono]",
+      "MASTER READY [Mono]",
+      "CHAMBER POLISH [Mono]",
+      "GENTLE FINISH [Mono]",
+      "BREATH ROOT [Mono]",
+      "CANON GROUND [Mono]",
+      "FULL RESET [Mono]",
+      "MAAT SWEET SPOT [Dual Mono]",
+      "TRUTH ALIGN [Dual Mono]",
+      "FOUNDATION WEIGHT [Dual Mono]",
+      "AIR SHEEN [Dual Mono]",
+      "LOW END MERCY [Dual Mono]",
+      "BRIGHTNESS MERCY [Dual Mono]",
+      "MIX SEAT [Dual Mono]",
+      "WARM BALANCE [Dual Mono]",
+      "MASTER READY [Dual Mono]",
+      "CHAMBER POLISH [Dual Mono]",
+      "GENTLE FINISH [Dual Mono]",
+      "BREATH ROOT [Dual Mono]",
+      "CANON GROUND [Dual Mono]",
+      "FULL RESET [Dual Mono]"
+    ],
+    "meters": [
+      {
+        "display": "TRUTH",
+        "measures": "Composite tonal/phase balance score",
+        "reading": "Higher values mean the current foundation/air balance is closer to the intended field."
+      },
+      {
+        "display": "INPUT / OUTPUT",
+        "measures": "Live pre/post level",
+        "reading": "Use for level matching."
+      },
+      {
+        "display": "FOUNDATION",
+        "measures": "Low-frequency contribution",
+        "reading": "Shows active foundation energy."
+      },
+      {
+        "display": "AIR",
+        "measures": "Upper-frequency contribution",
+        "reading": "Shows active air energy."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Assets/Images/Maat.png"
+    ]
+  },
+  {
+    "id": "HORIZON_X",
+    "name": "Horizon",
+    "family": "MASTERING_CORE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Mix Bus",
+    "placementNote": "mastering finalizer and controlled lift",
+    "description": "Mastering finalizer with dawn/dusk states, volume, drive, maximizer, depth, clarity, gravity, pull, collapse, return, and blended Horizon/Event modes.",
+    "parameters": [
+      {
+        "id": "input",
+        "name": "Input",
+        "type": "Float"
+      },
+      {
+        "id": "output",
+        "name": "Output",
+        "type": "Float"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "bypass",
+        "name": "Bypass",
+        "type": "Bool"
+      },
+      {
+        "id": "clip",
+        "name": "RA Clip",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "volume",
+        "name": "Volume",
+        "type": "Factory"
+      },
+      {
+        "id": "drive",
+        "name": "Drive",
+        "type": "Factory"
+      },
+      {
+        "id": "maximizer",
+        "name": "Maximizer",
+        "type": "Factory"
+      },
+      {
+        "id": "depth",
+        "name": "Depth",
+        "type": "Factory"
+      },
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "type": "Factory"
+      },
+      {
+        "id": "mix",
+        "name": "Mix",
+        "type": "Factory"
+      },
+      {
+        "id": "gravity",
+        "name": "Gravity",
+        "type": "Factory"
+      },
+      {
+        "id": "pull",
+        "name": "Pull",
+        "type": "Factory"
+      },
+      {
+        "id": "collapse",
+        "name": "Collapse",
+        "type": "Factory"
+      },
+      {
+        "id": "return",
+        "name": "Return",
+        "type": "Factory"
+      },
+      {
+        "id": "eventBlend",
+        "name": "Event Blend",
+        "type": "Factory"
+      },
+      {
+        "id": "horizonBlend",
+        "name": "Horizon Blend",
+        "type": "Factory"
+      },
+      {
+        "id": "field",
+        "name": "Field Of Life",
+        "type": "Factory"
+      },
+      {
+        "id": "mode",
+        "name": "Mode",
+        "type": "Factory"
+      }
+    ],
+    "presets": [
+      "[FINALIZER] Canon Open",
+      "[CLARITY] Source True",
+      "[DEPTH] Root Anchor",
+      "[EVENT] Motion Rise",
+      "[MAXIMIZER] Expansion",
+      "[FINALIZER] Full Field",
+      "[UTILITY] Canon Reset"
+    ],
+    "meters": [
+      {
+        "display": "LIVE SIGNAL",
+        "measures": "Per-channel input RMS on a -60 to 0 dBFS scale",
+        "reading": "Shows program energy entering the finalizer."
+      },
+      {
+        "display": "FIELD STATE",
+        "measures": "Combined Horizon/Event processing state",
+        "reading": "A process-state visualization, not a delivery-loudness meter."
+      },
+      {
+        "display": "OUTPUT LEVEL",
+        "measures": "Post-finalizer level on a -60 to 0 dBFS scale",
+        "reading": "Use with LIVE SIGNAL for level-fair review."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/horizon_dawn.png",
+      "assets/horizon_dusk.png"
+    ]
+  },
+  {
+    "id": "PLATINUM",
+    "name": "PLATINUM",
+    "family": "MASTERING_CORE",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Mix Bus",
+    "placementNote": "master bus authority; secondary red-orange color/amp/tape support",
+    "description": "Mastering authority processor using silver air, gold drive, copper body, iron glue, nickel focus, platinum authority, and final output.",
+    "parameters": [
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "AG_AIR",
+        "name": "AG Air",
+        "type": "Factory"
+      },
+      {
+        "id": "AU_DRIVE",
+        "name": "AU Drive",
+        "type": "Factory"
+      },
+      {
+        "id": "CU_BODY",
+        "name": "CU Body",
+        "type": "Factory"
+      },
+      {
+        "id": "FE_GLUE",
+        "name": "FE Glue",
+        "type": "Factory"
+      },
+      {
+        "id": "NI_FOCUS",
+        "name": "NI Focus",
+        "type": "Factory"
+      },
+      {
+        "id": "PT_AUTHORITY",
+        "name": "PT Authority",
+        "type": "Factory"
+      },
+      {
+        "id": "OUTPUT",
+        "name": "Output",
+        "type": "Factory"
+      }
+    ],
+    "presets": [
+      "PLATINUM CANON RESET",
+      "PLATINUM AIR CROWN",
+      "PLATINUM BODY THRONE",
+      "PLATINUM GLUE FIELD",
+      "PLATINUM FOCUS CUT",
+      "PLATINUM DUAL AUTH",
+      "PLATINUM FULL RANGE"
+    ],
+    "meters": [],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "assets/platinum_bg.png"
+    ]
+  },
+  {
+    "id": "IMHOTEP",
+    "name": "IMHOTEP",
+    "family": "MASTER_FIELD",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Master Field",
+    "placementNote": "macro master-field structure and finish",
+    "description": "Macro master-field builder for foundation, architecture, dimension, finish, tonal axis, I/O trim, and Flower of Life dispersal.",
+    "parameters": [
+      {
+        "id": "dispersal",
+        "name": "Flower of Life Dispersal",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "foundation",
+        "name": "Foundation",
+        "type": "Factory"
+      },
+      {
+        "id": "architecture",
+        "name": "Architecture",
+        "type": "Factory"
+      },
+      {
+        "id": "dimension",
+        "name": "Dimension",
+        "type": "Factory"
+      },
+      {
+        "id": "finish",
+        "name": "Finish",
+        "type": "Factory"
+      },
+      {
+        "id": "tilt",
+        "name": "Tonal Axis",
+        "type": "Factory"
+      },
+      {
+        "id": "input",
+        "name": "Input Trim",
+        "type": "Factory"
+      },
+      {
+        "id": "output",
+        "name": "Output Trim",
+        "type": "Factory"
+      }
+    ],
+    "presets": [
+      "MASTER BUILDER CANON",
+      "CLEAN PRINT FRAME",
+      "FOUNDATION MONUMENT",
+      "VOCAL MASTER ORDER",
+      "DENSE MIX REBUILD",
+      "OPEN PYRAMID FIELD",
+      "TRANSIENT STONEWORK",
+      "GREAT PYRAMID"
+    ],
+    "meters": [
+      {
+        "display": "INPUT PEAK",
+        "measures": "Peak entering the master builder",
+        "reading": "Confirms headroom before macro shaping."
+      },
+      {
+        "display": "FIELD ACTIVITY",
+        "measures": "Combined foundation, architecture, dimension, and finish activity",
+        "reading": "Shows how strongly the macro field is engaged."
+      },
+      {
+        "display": "OUTPUT / PHI CEILING",
+        "measures": "Output level relative to containment",
+        "reading": "Persistent maximum readings mean less available headroom."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": false,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "Assets/Images/Imhotep.png",
+      "Assets/Images/Imhotep_Knob.png"
+    ]
+  },
+  {
+    "id": "SESHAT",
+    "name": "SESHAT",
+    "family": "UTILITY_OBSERVATION",
+    "version": "3.22",
+    "formats": [
+      "AU",
+      "VST3",
+      "Standalone"
+    ],
+    "placement": "Observation",
+    "placementNote": "observation-first advisor/meter; translates phi score into guidance without altering audio",
+    "description": "Final observation and analysis lane with restored spacious panel layout and optional peak hold; Full Observation shows the complete meter set, while each named preset shows only the meter or panel relevant to that view. It is not a tone-shaping processor.",
+    "parameters": [
+      {
+        "id": "hold_peaks",
+        "name": "Hold Peaks",
+        "type": "Bool"
+      },
+      {
+        "id": "gainmatch",
+        "name": "Gain Match",
+        "type": "Bool"
+      },
+      {
+        "id": "channelmode",
+        "name": "Channel Mode",
+        "type": "Choice"
+      },
+      {
+        "id": "dualmonolink",
+        "name": "Dual Mono Link",
+        "type": "Choice"
+      }
+    ],
+    "presets": [
+      "SESHAT FULL OBSERVATION",
+      "SESHAT PEAK / TRUE PEAK",
+      "SESHAT TRANSIENT IMPACT",
+      "SESHAT FIELD PRESSURE",
+      "SESHAT MOMENTUM DRIFT",
+      "SESHAT PHI ALIGNMENT",
+      "SESHAT INTEGRITY GRID",
+      "SESHAT CROWN / MOONSHOT",
+      "SESHAT LUFS BODY",
+      "SESHAT CORRELATION",
+      "SESHAT SOLFEGGIO ENERGY",
+      "SESHAT TRANSIENT HISTORY",
+      "SESHAT SIDE PRESSURE",
+      "SESHAT PRINT SCAN"
+    ],
+    "meters": [
+      {
+        "display": "LUFS / BODY READ",
+        "measures": "Short-window perceptual loudness",
+        "reading": "Use for loudness context, not as the only delivery decision."
+      },
+      {
+        "display": "LEFT INPUT / RIGHT OUTPUT",
+        "measures": "Peak, RMS body, impact, and held peak",
+        "reading": "Shows entry and exit behavior; Hold Peaks retains the highest marker."
+      },
+      {
+        "display": "CORRELATION / MONO SAFETY",
+        "measures": "Left/right phase relationship",
+        "reading": "+1 is coherent, 0 is wide/uncorrelated, negative values risk cancellation."
+      },
+      {
+        "display": "SOLFEGGIO FREQUENCIES",
+        "measures": "Energy near the seven displayed resonant bands",
+        "reading": "Shows tonal concentration around 396 through 963 Hz."
+      },
+      {
+        "display": "IMPACT",
+        "measures": "Fast peak relative to the canon ceiling",
+        "reading": "Higher means stronger transient force."
+      },
+      {
+        "display": "FIELD",
+        "measures": "Body RMS plus stereo-side pressure",
+        "reading": "Higher means denser sustained spatial load."
+      },
+      {
+        "display": "MOMENTUM",
+        "measures": "Change in impact plus transient shape",
+        "reading": "Higher means faster, more active movement."
+      },
+      {
+        "display": "PHI ALIGNMENT",
+        "measures": "Proximity to DIH golden-ratio checkpoints",
+        "reading": "Higher means field pressure sits nearer a PHI reference point."
+      },
+      {
+        "display": "INTEGRITY",
+        "measures": "Similarity between impact and field pressure",
+        "reading": "Higher means transients and body remain proportionate."
+      },
+      {
+        "display": "CROWN",
+        "measures": "Weighted combined observation score",
+        "reading": "Summarizes impact, field, momentum, alignment, and integrity."
+      },
+      {
+        "display": "MOON",
+        "measures": "Transient shape plus momentum",
+        "reading": "Higher means stronger forward or launching behavior."
+      },
+      {
+        "display": "HF RISK",
+        "measures": "High-frequency energy imbalance",
+        "reading": "Higher values warn of potential harshness."
+      },
+      {
+        "display": "PHASE RISK",
+        "measures": "Correlation and side-energy danger",
+        "reading": "Higher values warn of mono cancellation."
+      },
+      {
+        "display": "LEVEL RISK",
+        "measures": "Peak/ceiling and transient danger",
+        "reading": "Higher values warn of insufficient headroom."
+      },
+      {
+        "display": "COMFORT",
+        "measures": "Alignment, integrity, and low-risk balance",
+        "reading": "Higher values indicate a more stable field."
+      },
+      {
+        "display": "ADVISOR",
+        "measures": "Combined risk recommendation",
+        "reading": "A diagnostic suggestion; it does not change audio."
+      },
+      {
+        "display": "REEL 1 - Impact",
+        "measures": "Transient-force rank",
+        "reading": "First reel; 396 is low and MOON is highest."
+      },
+      {
+        "display": "REEL 2 - Field",
+        "measures": "Sustained spatial-pressure rank",
+        "reading": "Second reel; numbers are symbolic stages, not Hz."
+      },
+      {
+        "display": "REEL 3 - Momentum",
+        "measures": "Motion/transient-change rank",
+        "reading": "Third reel; higher stages mean more movement."
+      },
+      {
+        "display": "REEL 4 - Alignment",
+        "measures": "PHI-alignment rank",
+        "reading": "Fourth reel; higher stages mean closer alignment."
+      },
+      {
+        "display": "REEL 5 - Moon",
+        "measures": "Forward-propulsion rank",
+        "reading": "Fifth reel; higher stages mean stronger launch."
+      }
+    ],
+    "channelMode": true,
+    "dualMono": true,
+    "gainMatch": true,
+    "sidechain": false,
+    "imageRefs": [
+      "source/Seshat.png"
+    ]
+  }
+]

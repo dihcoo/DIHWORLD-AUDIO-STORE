@@ -35,15 +35,25 @@ def data_uri(path: Path) -> str:
     return f"data:{mime};base64,{encoded}"
 
 
+def resolve_image(original: str, preferred_path: Path) -> Path:
+    if preferred_path.exists():
+        return preferred_path
+
+    repo_relative = original.replace("../images/", "assets/images/")
+    repo_path = ROOT / repo_relative
+    if repo_path.exists():
+        return repo_path
+
+    raise FileNotFoundError(f"Missing inline image: {preferred_path}")
+
+
 def main() -> None:
     html = SOURCE.read_text(encoding="utf-8")
     css = CSS.read_text(encoding="utf-8")
     js = JS.read_text(encoding="utf-8")
 
     for original, image_path in IMAGE_MAP.items():
-        if not image_path.exists():
-            raise FileNotFoundError(f"Missing inline image: {image_path}")
-        replacement = data_uri(image_path)
+        replacement = data_uri(resolve_image(original, image_path))
         html = html.replace(original, replacement)
         css = css.replace(original, replacement)
 

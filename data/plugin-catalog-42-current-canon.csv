@@ -17,7 +17,7 @@ DIH-PLATINUM,Platinum,MASTERING_CORE,MIX_BUS,Companion bundle draft,Mastering sh
 DIH-IMHOTEP,IMHOTEP,MASTER_FIELD,MASTER_FIELD,Companion bundle draft,Architect engine for structure width and canon-calibrated field geometry.
 DIH-AUSET,AUSET,FIELD_TONE_BALANCE,BUS_PREFERRED,Full catalog draft,Precise tone-balance and field application for whole-signal spectral tilt.
 DIH-AUSAR,AUSAR,FIELD_TONE_BALANCE,BUS_PREFERRED,Full catalog draft,Restoration and regeneration processor for recovering buried signal character.
-DIH-DEPTH-IMPACT-HYBRID-X,DEPTH IMPACT HYBRID X,DIMENSIONAL_IMPACT_MOVE,INSERT_SAFE,Companion bundle draft,Depth and impact shaping for dimensional low-end and transient presence.
+DIH-DEPTH-IMPACT-HYBRID-X,DEPTH IMPACT HYBRID,DIMENSIONAL_IMPACT_MOVE,INSERT_SAFE,Companion bundle draft,Depth and impact shaping for dimensional low-end and transient presence.
 DIH-PARALLAX,PARALLAX,DIMENSIONAL_IMPACT_MOVE,BUS_PREFERRED,Companion bundle draft,Stereo imager and perspective processor for width depth focus and spread.
 DIH-NSR,NSR,DIMENSIONAL_IMPACT_MOVE,BUS_PREFERRED,Companion bundle draft,Spatial movement processor for depth width motion and source-bound response.
 DIH-ANUBIS,ANUBIS,DYNAMICS_GUARD,INSERT_SAFE,Companion bundle draft,Gate and threshold discipline tool for controlled passage and release.

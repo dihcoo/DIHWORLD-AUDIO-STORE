@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Complete 42 | DIHWorld Audio Visual Manuals</title>
+    <meta name="description" content="The official DIHWorld Audio visual manual library: 42 illustrated plugin guides, 13 family manuals, routing diagrams, templates, controls, presets, workflows, and troubleshooting.">
+    <meta property="og:title" content="DIHWorld Audio — The Complete 42">
+    <meta property="og:description" content="Visual manuals and downloadable documentation for the complete 42-plugin DIHWorld Audio system.">
+    <meta property="og:image" content="../assets/images/complete-42-social.png">
+    <link rel="icon" href="../assets/images/dihworld-audio-logo.jpg">
+    <link rel="stylesheet" href="manuals.css">
+  </head>
+  <body>
+    <header class="masthead">
+      <a class="brand" href="../" aria-label="Return to DIHWorld Audio home">
+        <img src="../assets/images/dihworld-audio-logo.jpg" alt="DIHWorld Audio">
+        <span>DIHWORLD AUDIO</span>
+      </a>
+      <div class="manual-brand">
+        <p>OFFICIAL DOCUMENTATION</p>
+        <h1>The Complete 42</h1>
+      </div>
+      <nav aria-label="Documentation navigation">
+        <a href="#documents">Documents</a>
+        <a href="#manual-library">Visual manuals</a>
+        <a href="../#demos">Demos</a>
+        <a href="../#support">Support</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">INTELLIGENCE YOU CAN SEE</p>
+          <h2>Learn the sound.<br>Understand the signal.</h2>
+          <p>One searchable home for every current DIHWorld Audio processor—illustrated interfaces, controls, signal flow, presets, meters, workflows, DAW setup, family manuals, and troubleshooting.</p>
+          <div class="hero-actions">
+            <a class="primary" href="#manual-library">Explore all plugins</a>
+            <a href="#documents">Open document library</a>
+          </div>
+          <div class="stats" aria-label="Manual library totals">
+            <span><strong>42</strong> plugins</span>
+            <span><strong>13</strong> families</span>
+            <span><strong>1</strong> current canon</span>
+          </div>
+        </div>
+        <div class="system-orbit" aria-label="The Complete 42 system illustration">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="orbit orbit-c"></div>
+          <div class="orbit-core"><span>DIH</span><strong>42</strong></div>
+          <i class="node node-a"></i><i class="node node-b"></i><i class="node node-c"></i><i class="node node-d"></i>
+        </div>
+      </section>
+
+      <section class="document-library" id="documents" aria-labelledby="documents-title">
+        <div class="section-intro">
+          <p class="eyebrow">DOCUMENT LIBRARY</p>
+          <h2 id="documents-title">Start fast. Go as deep as you need.</h2>
+          <p>Every PDF is hosted inside DIHWorldAudio.com and connected to the visual manual below.</p>
+        </div>
+        <div class="resource-grid">
+          <a href="docs/guides/START_HERE.pdf" target="_blank"><span>FIRST RUN</span><strong>Start Here</strong><p>The shortest path from installation to first sound.</p><b>OPEN PDF ↗</b></a>
+          <a href="docs/guides/CUSTOMER_QUICK_GUIDE.pdf" target="_blank"><span>QUICK GUIDE</span><strong>Customer Quick Guide</strong><p>Essential setup, reset, comparison, and troubleshooting.</p><b>OPEN PDF ↗</b></a>
+          <a href="docs/guides/COMPLETE_AUDIO_MANUAL.pdf" target="_blank"><span>COMPLETE</span><strong>Complete Audio Manual</strong><p>The full 42-plugin operating manual in one document.</p><b>OPEN PDF ↗</b></a>
+          <a href="docs/guides/COMPLETE_AUDIO_REFERENCE.pdf" target="_blank"><span>REFERENCE</span><strong>Complete Reference</strong><p>Parameter, placement, format, and system reference.</p><b>OPEN PDF ↗</b></a>
+          <a href="docs/guides/ROUTING_QUICK_REFERENCE.pdf" target="_blank"><span>ROUTING</span><strong>Routing Quick Reference</strong><p>Fast bus, family, print, and key-routing orientation.</p><b>OPEN PDF ↗</b></a>
+          <a href="docs/guides/SIGNAL_FLOW_GUIDE.pdf" target="_blank"><span>SIGNAL FLOW</span><strong>Signal Flow Guide</strong><p>Source-to-family-to-master signal architecture.</p><b>OPEN PDF ↗</b></a>
+          <a href="docs/sidechain/SIDECHAIN_ROUTING_GUIDE.pdf" target="_blank"><span>SIDECHAIN</span><strong>Sidechain Routing</strong><p>Named external sidechains, detector paths, and host setup.</p><b>OPEN PDF ↗</b></a>
+          <a href="docs/templates/TEMPLATE_STARTER_PACK.pdf" target="_blank"><span>TEMPLATES</span><strong>Template Starter Pack</strong><p>Ready-to-build family, bus, and dynamics session layouts.</p><b>OPEN PDF ↗</b></a>
+        </div>
+      </section>
+
+      <section class="manual-shell" id="manual-library" aria-label="Interactive plugin manual library">
+        <aside class="catalog">
+          <div class="catalog-head">
+            <p class="eyebrow">MANUAL LIBRARY</p>
+            <label for="manual-search">Search</label>
+            <input id="manual-search" type="search" placeholder="Plugin or control…" autocomplete="off">
+            <label for="family-filter">Family</label>
+            <select id="family-filter"><option value="ALL">All 13 families</option></select>
+            <p class="result-count" id="result-count">Loading the current canon…</p>
+          </div>
+          <div class="plugin-list" id="plugin-list"></div>
+        </aside>
+
+        <article class="manual">
+          <div class="manual-title">
+            <div>
+              <p class="eyebrow" id="plugin-family">CURRENT CANON</p>
+              <h2 id="plugin-name">Loading…</h2>
+              <p class="lead" id="plugin-description"></p>
+            </div>
+            <div class="badges" id="plugin-badges"></div>
+          </div>
+          <nav class="chapter-nav" id="chapter-nav" aria-label="Manual chapters"></nav>
+          <div id="chapter-content" aria-live="polite"></div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div><strong>DIHWORLD AUDIO</strong><span>The Complete 42 · Official visual documentation</span></div>
+      <a href="../">Storefront</a><a href="#documents">Documents</a><a href="#manual-library">Manuals</a>
+    </footer>
+    <script src="manuals.js"></script>
+  </body>
+</html>
