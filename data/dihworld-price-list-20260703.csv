@@ -22,10 +22,11 @@ Workflow Bundle,DIH-BUNDLE-BASS-FOUNDATION,Bass Foundation Bundle,4,199,329,"Mar
 Workflow Bundle,DIH-BUNDLE-MASTER-BUS,Master Bus Bundle,7,399,699,"SPHYNX, MAAT, PLATINUM, HORIZON_X, IMHOTEP, ANKH, SESHAT",Premium master-bus workflow bundle
 Workflow Bundle,DIH-BUNDLE-COLOR-AMP-TAPE,Color Amp Tape Bundle,4,199,329,"APIS, PTAHTUBE, KHEPRI, SOVEREIGN",Storefront companion bundle
 Workflow Bundle,DIH-BUNDLE-SPATIAL-MOTION,Spatial Motion Bundle,6,399,699,"DEPTH_IMPACT_HYBRID_X, PARALLAX, NSR, NTRSTLLR, Cathedral, SacredVerb",Premium spatial/motion companion bundle
-Workflow Bundle,DIH-BUNDLE-BEAT-BUILDER,Beat Builder Bundle,7,399,699,"DIH_DRUM_MORPHER, BALLPARK, DRUMKRUSHGLUE, ANUBIS, OTIS, DEBO, LOOKOUT",Premium drums/dynamics workflow bundle
+Workflow Bundle,DIH-BUNDLE-DRUM-DESIGN,Drum Design Bundle,2,99,179,"DIH_DRUM_MORPHER, BALLPARK","Approved canonical drum offer. DrumKrushGlue remains Dynamics/Core, not Drum family."
+Workflow Bundle,DIH-BUNDLE-DYNAMICS-GUARD,Dynamics Guard Bundle,5,249,399,"DEBO, DRUMKRUSHGLUE, ANUBIS, OTIS, LOOKOUT","Approved canonical dynamics/control offer for peak control, rhythmic glue, transient guard, and mix safety."
 Workflow Bundle,DIH-BUNDLE-CREATIVE-LAB,Creative Lab Bundle,6,299,499,"THOTH, TEHUTI, AU, SLOTMACHINE, ARCHAEOLOGIST_X, SERQET",Creative/harmonics workflow bundle
-Bulk,DIH-COMPLETE-COLLECTION,Complete Collection,42,899,1499,All current 42 DIHWorld Audio plugins,Mac AU/VST3 plus Windows VST3 bulk release path
+Bulk,DIH-COMPLETE-COLLECTION,Complete Collection,42,799,1199,All current 42 DIHWorld Audio plugins,Approved launch and regular pricing; checkout remains fulfillment-gated
 Download,DIH-BETTER-BUSES,DIHWorld Better Buses,1,0,0,Logic channel-strip starter set,Use as free/gated lead magnet
-Membership,DIH-LEGACY-FOUNDER-LIFETIME,Legacy Founder Lifetime,42+,1499,1999,Complete Collection plus future DIHWorld Audio main-line plugin releases,Limited founder window / first 100 customers
-Membership,DIH-LEGACY-LIFETIME,Legacy Lifetime Membership,42+,1999,2499,Complete Collection plus future DIHWorld Audio main-line plugin releases,Standard lifetime offer
-Membership,DIH-LEGACY-STUDIO-LIFETIME,Legacy Studio Lifetime,42+,3499,4999,Legacy lifetime terms for up to 5 seats,Draft studio/team tier
+Membership,DIH-LEGACY-FOUNDER-LIFETIME,Founder Lifetime,42+,1499,1999,Complete Collection plus future DIHWorld Audio main-line plugin releases,"First 100 customers or through December 31, 2026; group office hours, one onboarding session, and eligible 10% discount"
+Membership,DIH-LEGACY-LIFETIME,Standard Lifetime,42+,1999,1999,Complete Collection plus future DIHWorld Audio main-line plugin releases,Standard individual Lifetime offer; no unsupported comparison price
+Membership,DIH-LEGACY-STUDIO-LIFETIME,Studio Lifetime,42+,3499,4999,Lifetime terms for up to 5 named seats,"Do not publish the $4,999 comparison or enable checkout until studio seat and support terms are approved"

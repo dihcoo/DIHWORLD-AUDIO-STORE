@@ -504,6 +504,22 @@ h1 {
   letter-spacing: -0.03em;
 }
 
+.bundle-price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 14px 0 0;
+  color: #171510;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.bundle-price small {
+  color: #746b60;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 .product-body p,
 .bundle-card p {
   color: #4f463b;
@@ -586,6 +602,16 @@ h1 {
   border-color: rgba(201, 163, 72, 0.75);
   background: #171510;
   color: #ffffff;
+}
+
+.price-card.hold-card {
+  grid-column: span 8;
+  background: #edf4f1;
+  border-color: #9bb7aa;
+}
+
+.price-card.hold-card h3 {
+  font-size: clamp(36px, 3.5vw, 54px);
 }
 
 .price-card span {
@@ -1098,6 +1124,10 @@ h1 {
     grid-column: span 12;
   }
 
+  .price-card.hold-card {
+    grid-column: span 12;
+  }
+
   .release-strip,
   .family-price-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1267,6 +1297,11 @@ h1 {
   .price-card,
   .price-card.featured-price {
     grid-column: 1;
+  }
+
+
+  .price-card.hold-card {
+    grid-column: auto;
   }
 
   .hero,
