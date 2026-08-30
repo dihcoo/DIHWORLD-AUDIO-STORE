@@ -1419,8 +1419,8 @@ h1 {
         <a href="manuals/">Manuals</a>
         <a href="#delivery">Delivery</a>
         <a href="#tutorials">Tutorials</a>
-        <a href="#support">Support</a>
-        <a href="#account">Account</a>
+        <a href="#support">About Us</a>
+        <a href="#contact">Contact</a>
       </nav>
       <details class="mobile-nav">
         <summary>Menu</summary>
@@ -1431,7 +1431,8 @@ h1 {
           <a href="#demos">Demos</a>
           <a href="manuals/">Manuals</a>
           <a href="#delivery">Downloads</a>
-          <a href="#support">Support</a>
+          <a href="#support">About Us</a>
+          <a href="#contact">Contact</a>
         </nav>
       </details>
     </header>
@@ -1471,15 +1472,15 @@ h1 {
         </div>
         <div class="release-strip" aria-label="Current release status">
           <span>13 primary families</span>
-          <span>42 deployed plugins</span>
+          <span>42 plugins</span>
           <span>macOS AU/VST3 signed + notarized</span>
-          <span>Windows VST3 bulk + Core installer</span>
+          <span>macOS Core PKG + branded DMG</span>
         </div>
         <div class="proof-grid">
           <article class="proof-card">
             <span>75 sec</span>
             <h3>Core Bundle Proof</h3>
-            <p>SacredVerb, Cathedral, DEBO, DrumKrushGlue, and Mariana moving from space to protection, drum glue, and low-end foundation.</p>
+            <p>OTIS and SILVER establish control and clarity, NTRPL restores bass translation, and PARALLAX with SacredVerb adds dimensional field and living space.</p>
           </article>
           <article class="proof-card">
             <span>45 sec</span>
@@ -1507,27 +1508,35 @@ h1 {
             </div>
           </article>
           <article class="interface-card">
-            <img src="assets/images/ui-cathedral.jpg" alt="Cathedral plugin interface in a DAW">
+            <img src="assets/images/otis.png" alt="OTIS plugin interface">
             <div>
-              <span>Flagship Spatial</span>
-              <h3>Cathedral</h3>
-              <p>Architectural controls, canon nodes, convergence, and full visual identity make Cathedral a premium spatial processor.</p>
+              <span>Dynamics / Guard</span>
+              <h3>OTIS</h3>
+              <p>Adaptive micro, meso, and macro dynamics shape movement and density without turning the Core into a hard-limiting chain.</p>
             </div>
           </article>
           <article class="interface-card">
-            <img src="assets/images/ui-debo.jpg" alt="DEBO plugin interface in a DAW">
+            <img src="assets/images/silver.png" alt="SILVER plugin interface">
             <div>
-              <span>Signature Dynamics</span>
-              <h3>DEBO</h3>
-              <p>A focused guard processor with preset states, no-brick protection language, and a distinctive dynamics interface.</p>
+              <span>Vocal / Mic Source</span>
+              <h3>SILVER</h3>
+              <p>Transient detail, air, and source presence add definition before the spatial lane opens the mix.</p>
             </div>
           </article>
           <article class="interface-card">
-            <img src="assets/images/ui-mariana.jpg" alt="Mariana plugin interface in a DAW">
+            <img src="assets/images/ntrpl.png" alt="NTRPL plugin interface">
             <div>
-              <span>Signature Low End</span>
-              <h3>Mariana</h3>
-              <p>Sub pressure, trench depth, foundation, impact, and bass mode controls give the Core Bundle its low-end authority.</p>
+              <span>Bass / Low End</span>
+              <h3>NTRPL</h3>
+              <p>Harmonic interpolation and alternate-field rewriting improve low-end clarity and translation without another heavy sub boost.</p>
+            </div>
+          </article>
+          <article class="interface-card">
+            <img src="assets/images/parallax.png" alt="PARALLAX plugin interface">
+            <div>
+              <span>Dimensional Impact / Move</span>
+              <h3>PARALLAX</h3>
+              <p>Depth, spread, focus, and perspective build a dimensional field around the protected center.</p>
             </div>
           </article>
         </div>
@@ -1537,19 +1546,91 @@ h1 {
         <div class="section-heading">
           <p class="eyebrow">Featured core</p>
           <h2 id="plugins-title">DIH Core Bundle</h2>
-          <p>Five practical entry-point processors for real sessions: space, architecture, dynamics control, drum glue, and low-end foundation.</p>
+          <p>Five complementary entry-point processors for real sessions: dynamics, clarity, bass translation, dimensional field, and living space.</p>
         </div>
 
         <div class="filter-bar" aria-label="Plugin filters">
           <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="dynamics">Dynamics</button>
+          <button class="filter-button" type="button" data-filter="clarity">Clarity</button>
+          <button class="filter-button" type="button" data-filter="bass">Bass</button>
+          <button class="filter-button" type="button" data-filter="field">Field</button>
           <button class="filter-button" type="button" data-filter="space">Space</button>
-          <button class="filter-button" type="button" data-filter="control">Control</button>
-          <button class="filter-button" type="button" data-filter="glue">Glue</button>
-          <button class="filter-button" type="button" data-filter="energy">Energy</button>
-          <button class="filter-button" type="button" data-filter="foundation">Foundation</button>
         </div>
 
         <div class="product-grid">
+          <article class="product-card" data-category="dynamics control">
+            <img src="assets/images/otis.png" alt="OTIS plugin artwork">
+            <div class="product-body">
+              <span class="product-family">Dynamics / Guard</span>
+              <h3>OTIS</h3>
+              <p>Adaptive dynamics and stereo-field support for musical movement, elevation, width, and density.</p>
+              <ul class="feature-list">
+                <li>Micro, meso, and macro dynamic shaping</li>
+                <li>Transient-aware motion and density control</li>
+                <li>Insert-safe foundation for the Core signal path</li>
+              </ul>
+              <div class="product-actions">
+                <span class="draft-status">Launch $59 · reg. $99</span>
+                <a class="text-link" href="#pricing">Pricing</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="clarity source">
+            <img src="assets/images/silver.png" alt="SILVER plugin artwork">
+            <div class="product-body">
+              <span class="product-family">Vocal / Mic Source</span>
+              <h3>SILVER</h3>
+              <p>Mic-source transient and presence shaping for reflective clarity, articulation, and controlled air.</p>
+              <ul class="feature-list">
+                <li>Transient detail and source definition</li>
+                <li>Presence and air without excess low-end weight</li>
+                <li>Designed for vocals and melodic sources</li>
+              </ul>
+              <div class="product-actions">
+                <span class="draft-status">Launch $59 · reg. $99</span>
+                <a class="text-link" href="#pricing">Pricing</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="bass clarity">
+            <img src="assets/images/ntrpl.png" alt="NTRPL plugin artwork">
+            <div class="product-body">
+              <span class="product-family">Bass / Low End</span>
+              <h3>NTRPL</h3>
+              <p>Harmonic interpolation and alternate-field rewriting for low-end definition, clarity, and translation.</p>
+              <ul class="feature-list">
+                <li>Bass clarity without excessive sub-pressure</li>
+                <li>Harmonic interpolation for translation</li>
+                <li>Controlled alternate-field support</li>
+              </ul>
+              <div class="product-actions">
+                <span class="draft-status">Launch $59 · reg. $99</span>
+                <a class="text-link" href="#pricing">Pricing</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="width field spatial">
+            <img src="assets/images/parallax.png" alt="PARALLAX plugin artwork">
+            <div class="product-body">
+              <span class="product-family">Dimensional Impact / Move</span>
+              <h3>PARALLAX</h3>
+              <p>Stereo perspective processing for width, depth, focus, spread, and dimensional field placement.</p>
+              <ul class="feature-list">
+                <li>Depth and spread control</li>
+                <li>Perspective and focus shaping</li>
+                <li>Designed for buses and parallel field work</li>
+              </ul>
+              <div class="product-actions">
+                <span class="draft-status">Launch $59 · reg. $99</span>
+                <a class="text-link" href="#pricing">Pricing</a>
+              </div>
+            </div>
+          </article>
+
           <article class="product-card" data-category="space spatial">
             <img src="assets/images/sacredverb.png" alt="SacredVerb plugin artwork">
             <div class="product-body">
@@ -1567,78 +1648,6 @@ h1 {
               </div>
             </div>
           </article>
-
-          <article class="product-card" data-category="space spatial">
-            <img src="assets/images/cathedral.png" alt="Cathedral plugin artwork">
-            <div class="product-body">
-              <span class="product-family">FX / Spatial</span>
-              <h3>Cathedral</h3>
-              <p>Architectural space modeling reverb for dimensional environments, clear reflection structure, and controlled diffusion.</p>
-              <ul class="feature-list">
-                <li>Architectural reverb modeling</li>
-                <li>Defined early reflections and spatial depth</li>
-                <li>Stable low-end response without wash buildup</li>
-              </ul>
-              <div class="product-actions">
-                <span class="draft-status">Launch $99 · reg. $149</span>
-                <a class="text-link" href="#pricing">Pricing</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="product-card" data-category="control dynamics">
-            <img src="assets/images/debo.png" alt="DEBO plugin artwork">
-            <div class="product-body">
-              <span class="product-family">Dynamics / Guard</span>
-              <h3>DEBO</h3>
-              <p>Dynamic ceiling control and mix protection for clean output behavior without destroying musical movement.</p>
-              <ul class="feature-list">
-                <li>Transparent limiting behavior</li>
-                <li>Controlled gain structure management</li>
-                <li>Clean transient preservation</li>
-              </ul>
-              <div class="product-actions">
-                <span class="draft-status">Launch $79 · reg. $129</span>
-                <a class="text-link" href="#pricing">Pricing</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="product-card" data-category="glue energy dynamics">
-            <img src="assets/images/drumkrushglue.png" alt="DrumKrushGlue plugin artwork">
-            <div class="product-body">
-              <span class="product-family">Dynamics / Guard</span>
-              <h3>DrumKrushGlue</h3>
-              <p>Parallel drum energy engine that blends compression, saturation, and glue into one controlled density system.</p>
-              <ul class="feature-list">
-                <li>Parallel compression architecture</li>
-                <li>Saturation-driven drum density</li>
-                <li>Punch and glue while preserving transients</li>
-              </ul>
-              <div class="product-actions">
-                <span class="draft-status">Launch $79 · reg. $129</span>
-                <a class="text-link" href="#pricing">Pricing</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="product-card" data-category="foundation bass">
-            <img src="assets/images/mariana.png" alt="Mariana plugin artwork">
-            <div class="product-body">
-              <span class="product-family">Bass / Low End</span>
-              <h3>Mariana</h3>
-              <p>Deep low-end foundation and sub-pressure control for bass sources, 808s, kick weight, and full mix translation.</p>
-              <ul class="feature-list">
-                <li>Core low-end authority processor</li>
-                <li>Foundation control for bass and sub material</li>
-                <li>Designed to pair with drum glue and spatial depth</li>
-              </ul>
-              <div class="product-actions">
-                <span class="draft-status">Launch $79 · reg. $129</span>
-                <a class="text-link" href="#pricing">Pricing</a>
-              </div>
-            </div>
-          </article>
         </div>
       </section>
 
@@ -1651,9 +1660,9 @@ h1 {
         <div class="bundle-grid">
           <article class="bundle-card">
             <span>Core Bundle</span>
-            <h3>Space, Glue, Foundation</h3>
+            <h3>Dynamics, Bass, Field</h3>
             <strong class="bundle-price">Launch $299 <small>Regular $499</small></strong>
-            <p>SacredVerb, Cathedral, DEBO, DrumKrushGlue, and Mariana. The entry bundle for space, drum force, clean control, and low-end authority, with Mac DMG/PKG and Windows x64 Core installer prepared.</p>
+            <p>OTIS, SILVER, NTRPL, PARALLAX, and SacredVerb. The entry bundle for dynamics, clarity, bass translation, dimensional field, and living space, with Mac DMG/PKG prepared.</p>
           </article>
           <article class="bundle-card">
             <span>Vocal Capture Bundle</span>
@@ -1708,9 +1717,9 @@ h1 {
 
       <section class="section pricing-band" id="pricing" aria-labelledby="pricing-title">
         <div class="section-heading">
-          <p class="eyebrow">Approved launch pricing</p>
+          <p class="eyebrow">Launch pricing</p>
           <h2 id="pricing-title">Choose Your DIHWorld System</h2>
-          <p>Pricing approved August 22, 2026. Start with one processor, build around a workflow, or unlock the complete 42-plugin collection. Paid checkout remains closed until every fulfillment and policy gate passes.</p>
+          <p>Start with one processor, build around a focused workflow, or unlock the complete 42-plugin collection.</p>
         </div>
         <div class="price-grid" aria-label="DIHWorld Audio launch price ladder">
           <article class="price-card">
@@ -1718,13 +1727,13 @@ h1 {
             <h3>$29-$99</h3>
             <small class="regular-price">Regular <s>$49-$149</s></small>
             <p>Utility tools start at $29, standard processors at $59, signature processors at $79, and flagship spatial processors at $99.</p>
-            <span class="sale-badge">Approved launch tiers</span>
+            <span class="sale-badge">Launch pricing</span>
           </article>
           <article class="price-card featured-price">
             <span>Core Bundle</span>
             <h3>$299</h3>
             <small class="regular-price">Regular <s>$499</s></small>
-            <p>SacredVerb, Cathedral, DEBO, DrumKrushGlue, and Mariana—the essential space, control, glue, and low-end system.</p>
+            <p>OTIS, SILVER, NTRPL, PARALLAX, and SacredVerb—the essential dynamics, clarity, bass, field, and space system.</p>
             <span class="sale-badge">Save $200</span>
           </article>
           <article class="price-card">
@@ -1759,14 +1768,14 @@ h1 {
             <span>Studio Lifetime</span>
             <h3>$3,499</h3>
             <small class="regular-price">Up to five named seats</small>
-            <p>Studio pricing is approved, but checkout remains unavailable until seat assignment, reassignment, transfer, contractor access, account sharing, and support terms are published.</p>
-            <span class="sale-badge">Terms required before checkout</span>
+            <p>Built for studios and production teams that need the complete DIHWorld Audio system across as many as five named users.</p>
+            <span class="sale-badge">Studio and team access</span>
           </article>
           <article class="price-card hold-card">
-            <span>Publication status</span>
-            <h3>Checkout on hold</h3>
-            <p>Approved prices may be displayed now. Paid checkout opens only after exact SKUs, current builds, Mac and Windows delivery, documentation, protected fulfillment, checksums, demo proof, terms, and launch-price conditions are verified.</p>
-            <span class="sale-badge">Pricing approved · fulfillment gated</span>
+            <span>Product guidance</span>
+            <h3>Find Your System</h3>
+            <p>Tell us what you mix, master, or produce, and we will help you choose the right processor, family, bundle, or complete collection.</p>
+            <a class="sale-badge" href="mailto:info@dihworld.com">info@dihworld.com</a>
           </article>
         </div>
         <div class="family-price-grid" aria-label="Primary family launch prices">
@@ -1788,12 +1797,12 @@ h1 {
           <article>
             <span>Live products</span>
             <h3>Real Interfaces</h3>
-            <p>SacredVerb, Cathedral, DEBO, and Mariana are running in-session with finished visual systems, controls, presets, and meters.</p>
+            <p>OTIS, SILVER, NTRPL, PARALLAX, and SacredVerb are the current Core five, selected to balance dynamics, clarity, bass translation, field, and space.</p>
           </article>
           <article>
-            <span>Release depth</span>
-            <h3>42 Deployed Plugins</h3>
-            <p>The catalog is organized into 13 current families with signed, notarized macOS artifacts and a Windows bulk installer.</p>
+            <span>Complete collection</span>
+            <h3>42 Plugins</h3>
+            <p>The full catalog is organized into 13 focused families for Mac AU/VST3 and Windows VST3 workflows.</p>
           </article>
           <article>
             <span>Bundle logic</span>
@@ -1805,9 +1814,9 @@ h1 {
 
       <section class="section canon-map" aria-labelledby="canon-title">
         <div class="section-heading compact">
-          <p class="eyebrow">Current canon</p>
+          <p class="eyebrow">Explore the collection</p>
           <h2 id="canon-title">13 Primary Families, 42 Plugins</h2>
-          <p>The store category map follows the current ANKH family manifest. Older 10-family reference language stays available as education, not catalog authority.</p>
+          <p>Explore the complete DIHWorld Audio collection by musical role, production task, or signal-flow position.</p>
         </div>
         <div class="family-grid" aria-label="Current DIHWorld Audio family map">
           <span>Vocal / Mic Source</span>
@@ -1828,15 +1837,15 @@ h1 {
 
       <section class="section operations" id="demo-downloads" aria-labelledby="demos-title">
         <div class="section-heading">
-          <p class="eyebrow">Demo center</p>
-          <h2 id="demos-title">Ideal Short Demo Queue</h2>
-          <p>Use fast A/B clips, then place the same sound in a full mix. Keep the loudness honest so tone, movement, and placement do the selling.</p>
+          <p class="eyebrow">Hear the system</p>
+          <h2 id="demos-title">Focused Workflows</h2>
+          <p>Discover how DIHWorld processors work together across core mixing, vocal, drum, bass, spatial, creative, and mastering workflows.</p>
         </div>
         <div class="ops-grid">
           <div class="ops-column">
-            <h3>First Demo Lanes</h3>
+            <h3>Core Workflows</h3>
             <ul class="ops-list">
-              <li><strong>Core Bundle</strong><span>SacredVerb -> Cathedral -> DEBO -> DrumKrushGlue -> Mariana proof path</span></li>
+              <li><strong>Core Bundle</strong><span>OTIS -> SILVER -> NTRPL, with PARALLAX / SacredVerb on parallel spatial lanes</span></li>
               <li><strong>Vocal Source</strong><span>GOLD -> AEGIS_NOVA -> SILVER on dry vocal, chain-only, and full mix</span></li>
               <li><strong>Drum Force</strong><span>DIH_DRUM_MORPHER -> BALLPARK -> DRUMKRUSHGLUE on loop and drum bus</span></li>
               <li><strong>Bass Foundation</strong><span>MARIANA -> NTRPL -> MONOLITH against kick and full mix translation</span></li>
@@ -1844,7 +1853,7 @@ h1 {
             </ul>
           </div>
           <div class="ops-column" id="tutorials">
-            <h3>Special Function Demos</h3>
+            <h3>Creative Workflows</h3>
             <ul class="ops-list">
               <li><strong>Width / Depth</strong><span>DEPTH IMPACT HYBRID -> PARALLAX -> NSR with mono check</span></li>
               <li><strong>Color Bus</strong><span>KHEPRI -> PTAHTUBE -> APIS, with SOVEREIGN when stronger authority is needed</span></li>
@@ -1854,11 +1863,11 @@ h1 {
             </ul>
           </div>
           <div class="ops-column ops-wide">
-            <h3>Master And Template Lanes</h3>
+            <h3>Mix, Master &amp; Templates</h3>
             <ul class="ops-list">
               <li><strong>Clean Master</strong><span>SPHYNX -> MAAT -> PLATINUM -> IMHOTEP -> ANKH -> SESHAT</span></li>
               <li><strong>Loud Master</strong><span>SPHYNX -> MAAT -> PLATINUM -> HORIZON_X -> ANKH -> SESHAT</span></li>
-              <li><strong>Better Buses</strong><span>Starter templates only, tied back to current family authority and release gates</span></li>
+              <li><strong>Better Buses</strong><span>Starter templates for organized routing, family-based processing, and mix-ready signal flow</span></li>
               <li><strong>Mac Install</strong><span>Signed, notarized, stapled, Gatekeeper verified AU/VST3 package path</span></li>
               <li><strong>Windows Install</strong><span>Current Windows x64 VST3 bulk installer proof path</span></li>
             </ul>
@@ -1900,7 +1909,7 @@ h1 {
           <p>Open the visual manuals, download the customer guides and templates, and return to the same DIHWorld Audio home for protected Mac and Windows delivery.</p>
         </div>
 
-        <div class="delivery-actions" aria-label="Wired delivery actions">
+        <div class="delivery-actions" aria-label="Delivery options">
           <a class="button button-primary" href="downloads/dihworld_templates.zip" download>Download DIHTemplates ZIP</a>
           <a class="button button-secondary light" href="manuals/">Open Visual Manuals</a>
           <a class="button button-secondary light" href="downloads/00A_DIHWorld_Customer_Quick_Guide_CURRENT.pdf">Open Customer Quick Guide</a>
@@ -1940,7 +1949,7 @@ h1 {
           </article>
         </div>
 
-        <div class="delivery-table-wrap" aria-label="Delivery system status">
+        <div class="delivery-table-wrap" aria-label="Available downloads and support">
           <table class="delivery-table">
             <thead>
               <tr>
@@ -1967,13 +1976,13 @@ h1 {
               </tr>
               <tr>
                 <td>Mac AU/VST3</td>
-                <td>Protected customer delivery</td>
-                <td><a href="#account">Account</a></td>
+                <td>Secure customer download</td>
+                <td><a href="#contact">Contact us</a></td>
               </tr>
               <tr>
                 <td>Windows VST3</td>
-                <td>Protected customer delivery</td>
-                <td><a href="#account">Account</a></td>
+                <td>Secure customer download</td>
+                <td><a href="#contact">Contact us</a></td>
               </tr>
               <tr>
                 <td>Installation support</td>
@@ -1987,30 +1996,30 @@ h1 {
 
       <section class="section support-band" id="support" aria-labelledby="support-title">
         <div>
-          <p class="eyebrow">Support</p>
-          <h2 id="support-title">DIHWorld Audio Philosophy</h2>
+          <p class="eyebrow">About Us</p>
+          <h2 id="support-title">DIHWorld Audio</h2>
         </div>
-        <p>Audio processing should behave like a system, not a collection of effects. Every plugin occupies a role inside structured signal flow: space, dynamics, control, harmonic shaping, and low-end architecture.</p>
+        <p>DIHWorld Audio builds connected production systems around the Imhotep 369 Engine—our Triadic Harmonic Lattice—and Ma’at 357 / MomentumBend. Phi-derived control, a Phi/2 canonical ceiling, and structured signal flow preserve movement, balance, and musical intent without brickwall limiting.</p>
       </section>
 
-      <section class="section account-band" id="account" aria-labelledby="account-title">
+      <section class="section account-band" id="contact" aria-labelledby="contact-title">
         <div class="account-copy">
-          <p class="eyebrow">Customer portal</p>
-          <h2 id="account-title">Downloads, Licenses, Activations, Manuals, Updates</h2>
-          <p>WooCommerce accounts can become the customer hub once pricing, payment gateways, download protection, and licensing are connected.</p>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Questions, Support, and Product Guidance</h2>
+          <p>Email <a class="text-link" href="mailto:info@dihworld.com">info@dihworld.com</a> for product selection, downloads, installation, manuals, licensing, updates, or account support.</p>
         </div>
-        <div class="account-checks" aria-label="Launch readiness">
-          <span>macOS AU/VST3</span>
-          <span>Windows VST3</span>
-          <span>42 Plugins</span>
-          <span>13 Families</span>
-          <span>Current Manual</span>
+        <div class="account-checks" aria-label="Customer support areas">
+          <span>Product Guidance</span>
+          <span>Downloads</span>
+          <span>Installation</span>
+          <span>Licensing</span>
+          <span>Manuals &amp; Updates</span>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>DIHWorld Audio. The complete 42-plugin system, visual documentation, and connected production workflow.</p>
+      <p>DIHWorld Audio. The complete 42-plugin system, visual documentation, and connected production workflow. <a href="mailto:info@dihworld.com">info@dihworld.com</a></p>
       <a href="#home">Back to top</a>
     </footer>
 

@@ -5,3 +5,16 @@ tmp/
 index.html.zip
 docs/DIHWORLD_DEMO_STOREFRONT_COPY_HANDOFF_20260701.md
 output/pdf/DIHWorld_Demo_Storefront_Copy_Handoff_20260701.pdf
+
+# Local-only working material: retained on this Mac, excluded from publishing.
+/README.md
+/index.with-assets.html
+/data/
+/docs/
+/tools/
+/output/
+/*.xlsx
+/*Handoff*.pdf
+/downloads/00A_CUSTOMER_DOCUMENT_MAP_CURRENT.pdf
+/downloads/00B_WINDOWS_BETA_TESTER_START_HERE.pdf
+/manuals/docs/templates/13_FAMILY_42_PLUGIN_SCHEMATIC.pdf
