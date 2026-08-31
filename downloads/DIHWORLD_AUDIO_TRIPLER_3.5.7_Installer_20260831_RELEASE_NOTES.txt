@@ -1,0 +1,8 @@
+DIHWorld Audio TRIPLER 3.5.7
+Mac Release · 2026-08-31
+
+TRIPLER 3.5.7 restores the sacred 3.5.7 version while correcting the internal three-voice balance across every factory preset.
+
+Voices 2 and 3 are now calibrated to sit evenly beside the lead voice. The factory side-voice levels and shared harmony blend were raised together so the harmony remains present without changing the master output balance.
+
+The individual installer includes universal Mac AU and VST3 formats. Delivery is through protected customer access.
