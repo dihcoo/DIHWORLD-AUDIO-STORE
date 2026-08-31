@@ -30,11 +30,19 @@ const sidechainIllustrations = {
 };
 
 const specialFlows = {
+  DIH_DRUM_MORPHER: ["MIDI / PAD TRIGGER", "SAMPLE · HYBRID · SYNTH ENGINE", "PAD ENVELOPE & MORPH", "SEQUENCER / PERFORMANCE", "DIH FIELD & GOVERNOR", "STEREO OUTPUT"],
   TEHUTI: ["MAIN INPUT", "SIDECHAIN DETECTOR", "3-BAND SPLITTER", "ENVELOPE FOLLOWERS", "GAIN REDUCTION", "FLOWER ENGINE", "MIX", "OUTPUT"],
   ANUBIS: ["MAIN / KEY INPUT", "THRESHOLD", "ATTACK", "HOLD", "RELEASE", "EXPANSION CURVE", "DYNAMICS GUARD", "TRANSPARENT PASS", "OUTPUT"],
 };
 
 const specialWorkflows = {
+  DIH_DRUM_MORPHER: [
+    "Start from PHI CALI MOOG BASS for a tight bass-led pocket, or PHI DREAM SYNTH for a spacious synthetic drum field.",
+    "Use the calibrated note shown in the upper-left of the target pad when programming or playing MIDI.",
+    "SOLO sits directly under each note: when any pad is soloed, all non-soloed pads are muted.",
+    "Sample plays loaded audio only; Hybrid blends loaded audio and the model; Synth is model-forward and plays without a loaded sample.",
+    "After choosing the engine, refine Pitch, Morph, Decay and Release in the complete groove.",
+  ],
   TEHUTI: [
     "Kick → bass: insert on bass, route kick to Side Chain, begin with Low Duck and moderate Depth.",
     "Vocal → music: insert on the music bus, route the lead vocal, favor Mid Duck for intelligibility.",
@@ -52,6 +60,12 @@ const specialWorkflows = {
 };
 
 const specialTroubleshooting = {
+  DIH_DRUM_MORPHER: [
+    "A pad is silent: clear any active SOLO buttons to restore the full kit.",
+    "Sample mode needs audio loaded on that pad; select Hybrid or Synth for model-generated sound without a sample.",
+    "If MIDI triggers the wrong pad, use the calibrated note printed in the target pad’s upper-left corner.",
+    "For synth voice length, adjust the pad Decay and Release rather than stretching a sample.",
+  ],
   TEHUTI: [
     "No sidechain activity: select the sending track in the host Side Chain menu and confirm SIDECHAIN SEND moves.",
     "No reduction: enable Power, raise a band Duck control and Depth, and verify nonzero sidechain energy.",

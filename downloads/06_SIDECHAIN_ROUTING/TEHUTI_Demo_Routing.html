@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEHUTI — Sidechain Demo Routing</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap');
+  :root {
+    --bg:#0a0a0f;--surface:#111118;--border:#1e1e2e;
+    --gold:#c8922a;--gold-hi:#f0b84d;--gold-dim:#6b4d18;
+    --cyan:#3eb8cc;--cyan-dim:#1a4f58;
+    --purple:#7c5cbf;--purple-dim:#2e2050;
+    --text:#e8e4d8;--text-dim:#6b6660;
+    --green:#4ab87a;--red:#c45a4a;--track-h:44px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:13px;line-height:1.5;padding:40px 32px 80px;}
+  .header{display:flex;align-items:flex-end;gap:24px;border-bottom:1px solid var(--gold-dim);padding-bottom:24px;margin-bottom:48px;}
+  .logo-mark{width:52px;height:52px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;color:var(--gold);letter-spacing:.05em;flex-shrink:0;}
+  .header-text h1{font-size:28px;font-weight:700;letter-spacing:-.02em;color:var(--gold-hi);}
+  .header-text p{color:var(--text-dim);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-top:2px;}
+  .badge{margin-left:auto;border:1px solid var(--gold-dim);color:var(--gold);font-family:'Space Mono',monospace;font-size:10px;padding:4px 10px;letter-spacing:.1em;text-transform:uppercase;}
+  .demo{margin-bottom:56px;}
+  .demo-header{display:flex;align-items:center;gap:16px;margin-bottom:20px;}
+  .demo-num{font-family:'Space Mono',monospace;font-size:11px;color:var(--gold-dim);letter-spacing:.1em;width:28px;flex-shrink:0;}
+  .demo-title{font-size:17px;font-weight:700;color:var(--text);letter-spacing:-.01em;}
+  .demo-tag{font-size:10px;font-family:'Space Mono',monospace;padding:3px 8px;letter-spacing:.08em;text-transform:uppercase;border:1px solid;flex-shrink:0;}
+  .tag-trap{color:var(--gold);border-color:var(--gold-dim);}
+  .tag-rb{color:var(--cyan);border-color:var(--cyan-dim);}
+  .tag-vocal{color:var(--purple);border-color:var(--purple-dim);}
+  .tag-mix{color:var(--green);border-color:#1e4d32;}
+  .tag-club{color:var(--red);border-color:#4d2018;}
+  .tag-dih{color:var(--gold-hi);border-color:var(--gold);}
+  .session{background:var(--surface);border:1px solid var(--border);border-radius:2px;overflow:hidden;}
+  .session-bar{background:#181820;border-bottom:1px solid var(--border);padding:6px 14px;display:flex;align-items:center;gap:8px;}
+  .session-bar .dot{width:10px;height:10px;border-radius:50%;}
+  .dot-r{background:#c45a4a;}.dot-y{background:#c8922a;}.dot-g{background:#4ab87a;}
+  .session-title{margin-left:8px;font-family:'Space Mono',monospace;font-size:10px;color:var(--text-dim);letter-spacing:.06em;}
+  .tracks{padding:12px 0;}
+  .track{display:flex;align-items:center;height:var(--track-h);border-bottom:1px solid #14141c;padding:0 14px;gap:10px;}
+  .track:last-child{border-bottom:none;}
+  .track-label{width:164px;flex-shrink:0;display:flex;align-items:center;gap:8px;}
+  .track-color{width:3px;height:28px;border-radius:1px;flex-shrink:0;}
+  .track-name{font-size:12px;font-weight:500;color:var(--text);white-space:nowrap;}
+  .track-type{font-family:'Space Mono',monospace;font-size:9px;color:var(--text-dim);letter-spacing:.06em;text-transform:uppercase;}
+  .strip{display:flex;align-items:center;gap:4px;flex-shrink:0;}
+  .btn{font-family:'Space Mono',monospace;font-size:9px;padding:2px 6px;border-radius:1px;border:1px solid var(--border);color:var(--text-dim);letter-spacing:.04em;background:#0e0e16;white-space:nowrap;}
+  .btn.sc{background:#4d1a18;color:#f07060;border-color:#c45a4a;}
+  .chain{display:flex;align-items:center;gap:4px;flex:1;overflow:hidden;}
+  .plugin{font-family:'Space Mono',monospace;font-size:9px;padding:3px 7px;border:1px solid var(--border);color:var(--text-dim);background:#0e0e16;white-space:nowrap;letter-spacing:.04em;}
+  .plugin.active{border-color:var(--gold);color:var(--gold);background:var(--gold-dim);}
+  .plugin.tehuti-active{border-color:var(--purple);color:#c8aaff;background:var(--purple-dim);}
+  .plugin.ntrstllr{border-color:var(--cyan);color:var(--cyan);background:var(--cyan-dim);}
+  .plugin.sc-source{border-color:#c45a4a;color:#f07060;background:#3d1410;}
+  .arrow{color:var(--text-dim);font-size:10px;flex-shrink:0;}
+  .sc-line{display:flex;align-items:center;padding:6px 14px 2px;gap:8px;}
+  .sc-indicator{font-family:'Space Mono',monospace;font-size:9px;color:#f07060;letter-spacing:.06em;display:flex;align-items:center;gap:6px;}
+  .sc-indicator::before{content:'';display:block;width:32px;height:1px;background:repeating-linear-gradient(90deg,#c45a4a 0,#c45a4a 4px,transparent 4px,transparent 8px);}
+  .sc-indicator::after{content:'▼';font-size:8px;color:#c45a4a;}
+  .routing-note{padding:8px 14px 10px;font-family:'Space Mono',monospace;font-size:9px;color:var(--text-dim);letter-spacing:.05em;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:12px;}
+  .routing-note span{color:var(--gold);}
+  .routing-note .cyan{color:var(--cyan);}
+  .routing-note .purple{color:var(--purple);}
+  .routing-note .red{color:#f07060;}
+  .result{margin-top:10px;padding:10px 14px;border-left:2px solid var(--gold);background:#0d0d12;font-size:12px;color:var(--text-dim);line-height:1.6;}
+  .result strong{color:var(--gold-hi);font-weight:500;}
+  .c-kick{background:#f07060;}.c-bass{background:#4ab87a;}.c-808{background:#e0954a;}
+  .c-hihat{background:#68d8ff;}.c-pad{background:#9b72e0;}.c-vocal{background:#e8c84a;}
+  .c-chord{background:#7c5cbf;}.c-bus{background:#c8922a;}.c-fx{background:#3eb8cc;}
+  .c-mix{background:#888;}.c-atm{background:#5090c0;}.c-noise{background:#c0c0c0;}
+  .c-music{background:#c8922a;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-mark">TEHUTI</div>
+  <div class="header-text">
+    <h1>TEHUTI — Sidechain Demo Routing</h1>
+    <p>DIHWorld Audio · Ancient Series · Logic Pro Signal Flow</p>
+  </div>
+  <div class="badge">AU: Tehu · DIHW</div>
+</div>
+
+<!-- DEMO 1 -->
+<div class="demo">
+  <div class="demo-header">
+    <span class="demo-num">01</span>
+    <span class="demo-title">Classic Kick / Bass Pump</span>
+    <span class="demo-tag tag-trap">Trap</span>
+  </div>
+  <div class="session">
+    <div class="session-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span class="session-title">TEHUTI_Demo_01_KickBass.logicx</span></div>
+    <div class="tracks">
+      <div class="track">
+        <div class="track-label"><div class="track-color c-kick"></div><div><div class="track-name">KICK 808</div><div class="track-type">Audio · Bus 1</div></div></div>
+        <div class="strip"><div class="btn sc">SC SRC</div></div>
+        <div class="chain"><div class="plugin sc-source">→ Bus 1 (SC Send)</div></div>
+      </div>
+      <div class="sc-line"><div class="sc-indicator">Sidechain bus routed into TEHUTI on BASS track</div></div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-bass"></div><div><div class="track-name">BASS / 808 SUB</div><div class="track-type">Instrument</div></div></div>
+        <div class="chain"><div class="plugin">EQ</div><div class="arrow">›</div><div class="plugin tehuti-active">TEHUTI ← Bus 1</div><div class="arrow">›</div><div class="plugin">OUTPUT</div></div>
+      </div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-hihat"></div><div><div class="track-name">HI-HAT PATTERN</div><div class="track-type">Audio</div></div></div>
+        <div class="chain"><div class="plugin">EQ</div><div class="arrow">›</div><div class="plugin">COMP</div></div>
+      </div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-bus"></div><div><div class="track-name">DRUM BUS</div><div class="track-type">Aux · Bus 2</div></div></div>
+        <div class="chain"><div class="plugin">GOLD</div><div class="arrow">›</div><div class="plugin active">MAAT</div></div>
+      </div>
+    </div>
+    <div class="routing-note"><span>Bus 1</span> = Kick SC send (pre-fader) &nbsp;|&nbsp; TEHUTI on Bass: <span class="purple">SC → Bus 1</span> &nbsp;|&nbsp; LOW: <span>100%</span> &nbsp;|&nbsp; MID: <span>35%</span> &nbsp;|&nbsp; HIGH: <span>0%</span> &nbsp;|&nbsp; DEPTH: <span>70%</span> &nbsp;|&nbsp; SPEED: <span>45%</span></div>
+  </div>
+  <div class="result"><strong>Result:</strong> Every kick hit ducks the bass in real time. PHI-based release means the sub rises back in a harmonic arc rather than a flat ramp — the pocket feels tighter without sounding pumped.</div>
+</div>
+
+<!-- DEMO 2 -->
+<div class="demo">
+  <div class="demo-header">
+    <span class="demo-num">02</span>
+    <span class="demo-title">Trap Hi-Hat Breathing</span>
+    <span class="demo-tag tag-trap">Trap</span>
+  </div>
+  <div class="session">
+    <div class="session-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span class="session-title">TEHUTI_Demo_02_HiHatBreath.logicx</span></div>
+    <div class="tracks">
+      <div class="track">
+        <div class="track-label"><div class="track-color c-hihat"></div><div><div class="track-name">HI-HAT 16THS</div><div class="track-type">Audio · Bus 3</div></div></div>
+        <div class="strip"><div class="btn sc">SC SRC</div></div>
+        <div class="chain"><div class="plugin sc-source">→ Bus 3 (SC Send)</div></div>
+      </div>
+      <div class="sc-line"><div class="sc-indicator">Hi-hat pattern triggers TEHUTI on atmosphere layer</div></div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-atm"></div><div><div class="track-name">ATMOSPHERE PAD</div><div class="track-type">Instrument</div></div></div>
+        <div class="chain"><div class="plugin">SILVER</div><div class="arrow">›</div><div class="plugin tehuti-active">TEHUTI ← Bus 3</div><div class="arrow">›</div><div class="plugin ntrstllr">NTRSTLLR</div></div>
+      </div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-kick"></div><div><div class="track-name">KICK</div><div class="track-type">Audio</div></div></div>
+        <div class="chain"><div class="plugin">OTIS</div></div>
+      </div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-808"></div><div><div class="track-name">808 SUB</div><div class="track-type">Instrument</div></div></div>
+        <div class="chain"><div class="plugin">EQ</div><div class="arrow">›</div><div class="plugin active">TEHUTI</div></div>
+      </div>
+    </div>
+    <div class="routing-note"><span>Bus 3</span> = Hi-hat SC send &nbsp;|&nbsp; TEHUTI on Atm Pad: <span class="purple">SC → Bus 3</span> &nbsp;|&nbsp; LOW: <span>0%</span> &nbsp;|&nbsp; MID: <span>15%</span> &nbsp;|&nbsp; HIGH: <span>70%</span> &nbsp;|&nbsp; DEPTH: <span>40%</span> &nbsp;|&nbsp; SPEED: <span>75%</span></div>
+  </div>
+  <div class="result"><strong>Result:</strong> The pad breathes rhythmically with every hi-hat hit. Sounds intentional, not compressed — the atmosphere becomes part of the groove rather than sitting on top of it.</div>
+</div>
+
+<!-- DEMO 3 -->
+<div class="demo">
+  <div class="demo-header">
+    <span class="demo-num">03</span>
+    <span class="demo-title">Vocal Ducking — Hook vs. Verse</span>
+    <span class="demo-tag tag-vocal">Vocal</span>
+  </div>
+  <div class="session">
+    <div class="session-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span class="session-title">TEHUTI_Demo_03_VocalDuck.logicx</span></div>
+    <div class="tracks">
+      <div class="track">
+        <div class="track-label"><div class="track-color c-vocal"></div><div><div class="track-name">LEAD VOCAL</div><div class="track-type">Audio · Bus 5</div></div></div>
+        <div class="strip"><div class="btn sc">SC SRC</div></div>
+        <div class="chain"><div class="plugin">KHEPRI</div><div class="arrow">›</div><div class="plugin sc-source">→ Bus 5 (SC Send)</div></div>
+      </div>
+      <div class="sc-line"><div class="sc-indicator">Lead vocal ducks background chord stack and BG vocals via TEHUTI</div></div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-chord"></div><div><div class="track-name">BG CHORD STACK</div><div class="track-type">Instrument</div></div></div>
+        <div class="chain"><div class="plugin">PLATINUM</div><div class="arrow">›</div><div class="plugin tehuti-active">TEHUTI ← Bus 5</div><div class="arrow">›</div><div class="plugin">PARALLAX</div></div>
+      </div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-chord"></div><div><div class="track-name">BG VOCAL LAYER</div><div class="track-type">Audio</div></div></div>
+        <div class="chain"><div class="plugin">WPR</div><div class="arrow">›</div><div class="plugin tehuti-active">TEHUTI ← Bus 5</div></div>
+      </div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-bus"></div><div><div class="track-name">VOCAL BUS</div><div class="track-type">Aux</div></div></div>
+        <div class="chain"><div class="plugin">GOLD</div><div class="arrow">›</div><div class="plugin active">SESHAT</div></div>
+      </div>
+    </div>
+    <div class="routing-note"><span>Bus 5</span> = Lead vocal SC send (post-fader) &nbsp;|&nbsp; LOW: <span>15%</span> &nbsp;|&nbsp; MID: <span>70%</span> &nbsp;|&nbsp; HIGH: <span>45%</span> &nbsp;|&nbsp; DEPTH: <span>45%</span> &nbsp;|&nbsp; SPEED: <span>50%</span></div>
+  </div>
+  <div class="result"><strong>Result:</strong> When the lead sings, chord stack and BG layers duck automatically. Mix space opens on the hook without a single automation clip — TEHUTI handles it dynamically every take.</div>
+</div>
+
+<!-- DEMO 4 -->
+<div class="demo">
+  <div class="demo-header">
+    <span class="demo-num">04</span>
+    <span class="demo-title">Parallel Bus Sidechain</span>
+    <span class="demo-tag tag-mix">Mix Bus</span>
+  </div>
+  <div class="session">
+    <div class="session-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span class="session-title">TEHUTI_Demo_04_ParallelBus.logicx</span></div>
+    <div class="tracks">
+      <div class="track">
+        <div class="track-label"><div class="track-color c-kick"></div><div><div class="track-name">DRUMS BUS</div><div class="track-type">Aux · Bus 2</div></div></div>
+        <div class="strip"><div class="btn sc">SC SRC</div></div>
+        <div class="chain"><div class="plugin active">MAAT</div><div class="arrow">›</div><div class="plugin sc-source">→ Bus 7 (SC Send)</div></div>
+      </div>
+      <div class="sc-line"><div class="sc-indicator">Drum bus transients trigger TEHUTI on FX return — mix breathes</div></div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-fx"></div><div><div class="track-name">FX RETURN BUS</div><div class="track-type">Aux · Bus 8</div></div></div>
+        <div class="chain"><div class="plugin">NSR</div><div class="arrow">›</div><div class="plugin tehuti-active">TEHUTI ← Bus 7</div><div class="arrow">›</div><div class="plugin active">OUTPUT</div></div>
+      </div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-mix"></div><div><div class="track-name">STEREO OUT</div><div class="track-type">Master Bus</div></div></div>
+        <div class="chain"><div class="plugin active">SOVEREIGN</div><div class="arrow">›</div><div class="plugin active">DEPTH_IMPACT_HYBRID_X</div></div>
+      </div>
+    </div>
+    <div class="routing-note"><span>Bus 7</span> = Drum bus SC send &nbsp;|&nbsp; TEHUTI on FX Return: <span class="purple">SC → Bus 7</span> &nbsp;|&nbsp; LOW/MID/HIGH: <span>35/55/40%</span> &nbsp;|&nbsp; DEPTH: <span>40%</span> &nbsp;|&nbsp; Mode: <span>parallel — FX return only</span></div>
+  </div>
+  <div class="result"><strong>Result:</strong> The effects return pulses with the kick and snare. Reverb and motion tails duck on transients and bloom back in the gaps — pumping that feels musical, not clichéd.</div>
+</div>
+
+<!-- DEMO 5 -->
+<div class="demo">
+  <div class="demo-header">
+    <span class="demo-num">05</span>
+    <span class="demo-title">DJ Drop / Radio Station ID</span>
+    <span class="demo-tag tag-club">Club / Radio</span>
+  </div>
+  <div class="session">
+    <div class="session-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span class="session-title">TEHUTI_Demo_05_DJDrop.logicx</span></div>
+    <div class="tracks">
+      <div class="track">
+        <div class="track-label"><div class="track-color c-noise"></div><div><div class="track-name">VOICE TAG / SWEEP</div><div class="track-type">Audio · Bus 9</div></div></div>
+        <div class="strip"><div class="btn sc">SC SRC</div></div>
+        <div class="chain"><div class="plugin sc-source">→ Bus 9 (SC Send)</div></div>
+      </div>
+      <div class="sc-line"><div class="sc-indicator">Voice tag / noise sweep triggers TEHUTI — music ducks under the drop</div></div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-music"></div><div><div class="track-name">MUSIC / BEAT</div><div class="track-type">Stereo · Main</div></div></div>
+        <div class="chain"><div class="plugin">GOLD</div><div class="arrow">›</div><div class="plugin tehuti-active">TEHUTI ← Bus 9</div><div class="arrow">›</div><div class="plugin active">MAAT</div></div>
+      </div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-noise"></div><div><div class="track-name">VOICE TAG DRY</div><div class="track-type">Audio</div></div></div>
+        <div class="chain"><div class="plugin">WPR</div><div class="arrow">›</div><div class="plugin active">OUTPUT</div></div>
+      </div>
+    </div>
+    <div class="routing-note"><span>Bus 9</span> = Voice/sweep SC send &nbsp;|&nbsp; TEHUTI on Music: <span class="purple">SC → Bus 9</span> &nbsp;|&nbsp; LOW/MID/HIGH: <span>100/100/100%</span> &nbsp;|&nbsp; DEPTH: <span>85%</span> &nbsp;|&nbsp; SPEED: <span>25%</span></div>
+  </div>
+  <div class="result"><strong>Result:</strong> The music drops hard the moment the voice tag hits. No automation needed. Designed for voice tags, drops, and timed musical callouts; the key stays clean regardless of placement in the session.</div>
+</div>
+
+<!-- DEMO 6 -->
+<div class="demo">
+  <div class="demo-header">
+    <span class="demo-num">06</span>
+    <span class="demo-title">Interstellar Chain — TEHUTI → NTRSTLLR</span>
+    <span class="demo-tag tag-dih">DIH Ecosystem</span>
+  </div>
+  <div class="session">
+    <div class="session-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span class="session-title">TEHUTI_Demo_06_InterstellarChain.logicx</span></div>
+    <div class="tracks">
+      <div class="track">
+        <div class="track-label"><div class="track-color c-kick"></div><div><div class="track-name">KICK + 808</div><div class="track-type">Audio · Bus 11</div></div></div>
+        <div class="strip"><div class="btn sc">SC SRC</div></div>
+        <div class="chain"><div class="plugin active">OTIS</div><div class="arrow">›</div><div class="plugin sc-source">→ Bus 11 (SC Send)</div></div>
+      </div>
+      <div class="sc-line"><div class="sc-indicator">Kick clears space → TEHUTI ducks → NTRSTLLR tail blooms into the gap</div></div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-atm"></div><div><div class="track-name">ATMOSPHERE / PAD</div><div class="track-type">Instrument</div></div></div>
+        <div class="chain"><div class="plugin">SILVER</div><div class="arrow">›</div><div class="plugin tehuti-active">TEHUTI ← Bus 11</div><div class="arrow">›</div><div class="plugin ntrstllr">NTRSTLLR</div><div class="arrow">›</div><div class="plugin active">SERQET</div></div>
+      </div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-vocal"></div><div><div class="track-name">LEAD VOCAL</div><div class="track-type">Audio</div></div></div>
+        <div class="chain"><div class="plugin">WPR</div><div class="arrow">›</div><div class="plugin">KHEPRI</div><div class="arrow">›</div><div class="plugin ntrstllr">NTRSTLLR</div></div>
+      </div>
+      <div class="track">
+        <div class="track-label"><div class="track-color c-bus"></div><div><div class="track-name">MASTER BUS</div><div class="track-type">Stereo Out</div></div></div>
+        <div class="chain"><div class="plugin">SOVEREIGN</div><div class="arrow">›</div><div class="plugin active">DEPTH_IMPACT_HYBRID_X</div><div class="arrow">›</div><div class="plugin active">SESHAT</div></div>
+      </div>
+    </div>
+    <div class="routing-note"><span>Bus 11</span> = Kick+808 SC send &nbsp;|&nbsp; TEHUTI: <span class="purple">SC → Bus 11</span>, LOW/MID/HIGH <span>70/45/20%</span>, DEPTH <span>65%</span>, SPEED <span>50%</span> &nbsp;|&nbsp; NTRSTLLR: <span class="cyan">Wormhole on</span> &nbsp;|&nbsp; Chain: <span>TEHUTI ducks → NTRSTLLR tail fills gap</span></div>
+  </div>
+  <div class="result"><strong>Result:</strong> Each kick hit clears the atmosphere, then the NTRSTLLR wormhole tail blooms back into the space between beats. TEHUTI creates the pocket, NTRSTLLR fills it with dimension — the full PHI-harmonic time architecture working as one system.</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIHWorld Audio Working Sidechain Demo Center</title>
+  <style>
+    :root{color-scheme:dark;--bg:#06100f;--panel:#0d1817;--line:#35f5d5;--gold:#f0c96b;--text:#f6f2df}
+    body{margin:0;background:radial-gradient(circle at 50% 0,#173530,#050807 72%);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    header,main{max-width:1120px;margin:auto;padding:34px 24px}
+    h1{margin:0;color:var(--gold);letter-spacing:.08em;text-transform:uppercase}
+    h2{color:var(--gold);letter-spacing:.06em}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{background:rgba(13,24,23,.9);border:1px solid rgba(53,245,213,.32);border-radius:18px;padding:20px;box-shadow:0 0 34px rgba(53,245,213,.08)}
+    .card h3{margin:0 0 8px;color:#66ffe3}
+    .tag{color:#a7fff0;font-size:.92rem}
+    a{color:#f7d775;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .button{display:inline-block;margin-top:8px;padding:10px 14px;border:1px solid rgba(240,201,107,.7);border-radius:10px;background:rgba(240,201,107,.08)}
+  </style>
+</head>
+<body>
+  <header>
+    <p><a href="SIDECHAIN_ROUTING_CENTER.html">← Documentation + schematics</a></p>
+    <h1>DIHWorld Audio Sidechain Working Demo Center</h1>
+    <p>Open a plugin demo to hear a generated program signal respond to an inaudible sidechain key. These examples are DIHWorld customer-routing references.</p>
+  </header>
+  <main>
+    <h2>Working examples</h2>
+    <section class="grid">
+      <article class="card"><h3>ANUBIS</h3><p>External key opens the gate; DUCK reverses the action into keyed reduction.</p><p class="tag">Target: dialogue / drums<br>Key: trigger / external key</p><a class="button" href="ANUBIS_SIDECHAIN_DEMO.html">Open working demo</a></article>
+      <article class="card"><h3>TEHUTI</h3><p>Independent low, mid, and high detectors create frequency-selective space.</p><p class="tag">Target: bass, music, pad, or FX return<br>Key: kick, vocal, hats, or drum bus</p><a class="button" href="TEHUTI_SIDECHAIN_DEMO.html">Open working demo</a></article>
+      <article class="card"><h3>MARIANA</h3><p>The key controls the generated low-end layer while preserving dry bass.</p><p class="tag">Target: bass or music track<br>Key: kick</p><a class="button" href="MARIANA_SIDECHAIN_DEMO.html">Open working demo</a></article>
+      <article class="card"><h3>MONOLITH</h3><p>The key creates room in the wet low-frequency field.</p><p class="tag">Target: bass or low-end bus<br>Key: kick / low-frequency key</p><a class="button" href="MONOLITH_SIDECHAIN_DEMO.html">Open working demo</a></article>
+      <article class="card"><h3>NTRPL</h3><p>The alternate rewrite layer ducks while the main program remains present.</p><p class="tag">Target: music or bass track<br>Key: kick / rhythm key</p><a class="button" href="NTRPL_SIDECHAIN_DEMO.html">Open working demo</a></article>
+      <article class="card"><h3>DrumKrushGlue</h3><p>The key controls impact and glue intensity while remaining inaudible.</p><p class="tag">Target: drum track or drum bus<br>Key: kick or snare transient</p><a class="button" href="DRUMKRUSHGLUE_SIDECHAIN_DEMO.html">Open working demo</a></article>
+      <article class="card"><h3>Balance Restore</h3><p>The external reference guides left/right correction without entering the output.</p><p class="tag">Target: program or mix bus<br>Key: stereo reference track</p><a class="button" href="BALANCE_RESTORE_SIDECHAIN_DEMO.html">Open working demo</a></article>
+    </section>
+  </main>
+</body>
+</html>

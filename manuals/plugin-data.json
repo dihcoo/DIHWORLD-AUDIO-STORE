@@ -3,7 +3,7 @@
     "id": "GOLD",
     "name": "GOLD",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "3.22",
+    "version": "1.0.4",
     "formats": [
       "AU",
       "VST3",
@@ -87,7 +87,7 @@
     "id": "SILVER",
     "name": "SILVER",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -209,7 +209,7 @@
     "id": "WPR",
     "name": "WPR",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "3.22",
+    "version": "1.0.0",
     "formats": [
       "AU",
       "VST3"
@@ -456,7 +456,7 @@
     "id": "AEGIS_NOVA",
     "name": "AEGIS_NOVA",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "3.22",
+    "version": "2.0.0",
     "formats": [
       "AU",
       "VST3"
@@ -574,7 +574,7 @@
     "id": "TRIPLER",
     "name": "TRIPLER",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "3.22",
+    "version": "3.5.7",
     "formats": [
       "AU",
       "VST3"
@@ -731,7 +731,7 @@
     "id": "EchoLocate",
     "name": "EchoLocate",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "3.22",
+    "version": "2.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -858,7 +858,7 @@
     "id": "ANUBIS",
     "name": "ANUBIS",
     "family": "DYNAMICS_GUARD",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -1004,7 +1004,7 @@
     "id": "OTIS",
     "name": "OTIS",
     "family": "DYNAMICS_GUARD",
-    "version": "3.22",
+    "version": "2.1.15",
     "formats": [
       "AU",
       "VST3",
@@ -1094,7 +1094,7 @@
     "id": "DEBO",
     "name": "DeBo",
     "family": "DYNAMICS_GUARD",
-    "version": "3.22",
+    "version": "3.6.9",
     "formats": [
       "AU",
       "VST3",
@@ -1208,7 +1208,7 @@
     "id": "LOOKOUT",
     "name": "LookOut",
     "family": "DYNAMICS_GUARD",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -1298,7 +1298,7 @@
     "id": "MARIANA",
     "name": "MARIANA",
     "family": "BASS_LOW_END",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -1384,7 +1384,7 @@
     "id": "MONOLITH",
     "name": "MONOLITH",
     "family": "BASS_LOW_END",
-    "version": "3.22",
+    "version": "1.0.4",
     "formats": [
       "AU",
       "VST3"
@@ -1518,7 +1518,7 @@
     "id": "DEPTH_BOOST_PRO",
     "name": "DEPTH_BOOST_PRO",
     "family": "BASS_LOW_END",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -1626,7 +1626,7 @@
     "id": "NTRPL",
     "name": "NTRPL",
     "family": "BASS_LOW_END",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -1780,9 +1780,9 @@
   },
   {
     "id": "DIH_DRUM_MORPHER",
-    "name": "Drum",
+    "name": "DIH Drum Morpher",
     "family": "DRUM_INSTRUMENT",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -1790,9 +1790,26 @@
     ],
     "placement": "Creative Transform",
     "placementNote": "instrument/plugin generator",
-    "description": "Sixteen-pad drum sampler and host-synced sequencer with sample loading, pad shaping, restored factory programs, pattern memory, capture, morph, and performance controls. The current AU is registered and uses smoothed output normalization.",
-    "parameters": [],
-    "presets": [],
+    "description": "Sixteen-pad drum instrument with calibrated MIDI-note labels, per-pad SOLO isolation, Sample / Hybrid / Synth engines, host-synced sequencing, capture, morph, and performance controls. Version 1.0.4 adds PHI CALI MOOG BASS and PHI DREAM SYNTH factory programs; it ships inside the DIHWorld Audio Complete installer.",
+    "parameters": [
+      { "id": "padMidiNote", "name": "Pad MIDI Note", "type": "Readout" },
+      { "id": "padSolo", "name": "SOLO", "type": "Bool" },
+      { "id": "engineMode", "name": "Engine Mode: Sample / Hybrid / Synth", "type": "Choice" },
+      { "id": "padPitch", "name": "Pad Pitch", "type": "Continuous" },
+      { "id": "padMorph", "name": "Pad Morph", "type": "Continuous" },
+      { "id": "padEnvelope", "name": "Attack / Decay / Sustain / Release", "type": "Continuous" },
+      { "id": "sequencer", "name": "Pattern, Tempo, Swing & Length", "type": "Choice" },
+      { "id": "samplerCapture", "name": "Sampler Capture / Transfer", "type": "Bool" }
+    ],
+    "presets": [
+      "CANON ATL BOUNCE", "MEMPHIS SWITCH", "GOSPEL POCKET", "ROOTS LOW PULSE",
+      "WEST COAST LAYBACK", "HYBRID DRILL ROLL", "POCKET BREAKBEAT", "SPARK FIELD SYNC",
+      "CLASSIC LOCK", "SWING BODY", "MINIMAL PULSE", "LIVE BREAK BUILDER",
+      "CEREMONIAL ROLL", "SUB RITUAL", "DRILL TENSION", "AFRO ROOTS",
+      "HOUSE FOUNDATION", "POP GLASS", "BOOM BAP DUST", "RNB LATE NIGHT",
+      "CLUB PRESSURE", "CINEMA FX GRID", "HYPER SPARK", "WORLD PERC FIELD",
+      "AFRO PERCUSSION ROOTS", "BRAZIL LATINO SWING", "PHI CALI MOOG BASS", "PHI DREAM SYNTH"
+    ],
     "meters": [
       {
         "display": "L / R output",
@@ -1827,7 +1844,7 @@
     "id": "BALLPARK",
     "name": "Ballpark",
     "family": "DRUM_INSTRUMENT",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -1893,7 +1910,7 @@
     "id": "DRUMKRUSHGLUE",
     "name": "DrumKrushGlue",
     "family": "DRUM_INSTRUMENT",
-    "version": "3.22",
+    "version": "3.6.9",
     "formats": [
       "AU",
       "VST3",
@@ -1970,7 +1987,7 @@
     "id": "APIS",
     "name": "APIS",
     "family": "COLOR_AMP_TAPE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -2047,7 +2064,7 @@
     "id": "PTAHTUBE",
     "name": "PTAHTUBE",
     "family": "COLOR_AMP_TAPE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -2135,7 +2152,7 @@
     "id": "KHEPRI",
     "name": "Khepri",
     "family": "COLOR_AMP_TAPE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -2268,7 +2285,7 @@
     "id": "SOVEREIGN",
     "name": "SOVEREIGN",
     "family": "COLOR_AMP_TAPE",
-    "version": "3.15",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3"
@@ -2367,7 +2384,7 @@
     "id": "AUSET",
     "name": "AUSET",
     "family": "FIELD_TONE_BALANCE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -2452,7 +2469,7 @@
     "id": "AUSAR",
     "name": "AUSAR",
     "family": "FIELD_TONE_BALANCE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -2509,9 +2526,9 @@
   },
   {
     "id": "DEPTH_IMPACT_HYBRID_X",
-    "name": "DEPTH IMPACT HYBRID",
+    "name": "Depth Impact Hybrid X",
     "family": "DIMENSIONAL_IMPACT_MOVE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -2732,7 +2749,7 @@
     "id": "PARALLAX",
     "name": "PARALLAX",
     "family": "DIMENSIONAL_IMPACT_MOVE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -2867,7 +2884,7 @@
     "id": "NSR",
     "name": "NSR",
     "family": "DIMENSIONAL_IMPACT_MOVE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -3001,7 +3018,7 @@
     "id": "NTRSTLLR",
     "name": "NTRSTLLR",
     "family": "FX_SPATIAL",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -3217,7 +3234,7 @@
     "id": "Cathedral",
     "name": "Cathedral",
     "family": "FX_SPATIAL",
-    "version": "3.22",
+    "version": "3.6.9",
     "formats": [
       "VST3",
       "AU"
@@ -3360,7 +3377,7 @@
     "id": "SacredVerb",
     "name": "SacredVerb",
     "family": "FX_SPATIAL",
-    "version": "3.22",
+    "version": "3.5.7",
     "formats": [
       "AU",
       "VST3",
@@ -3670,7 +3687,7 @@
     "id": "THOTH",
     "name": "Thoth",
     "family": "HARMONICS_PITCH",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -3782,7 +3799,7 @@
     "id": "TEHUTI",
     "name": "TEHUTI",
     "family": "HARMONICS_PITCH",
-    "version": "3.22",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3"
@@ -3911,7 +3928,7 @@
     "id": "AU",
     "name": "AU",
     "family": "HARMONICS_PITCH",
-    "version": "3.22",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3"
@@ -4105,7 +4122,7 @@
     "id": "SLOTMACHINE",
     "name": "SlotMachine",
     "family": "CREATIVE_TRANSFORM",
-    "version": "3.22",
+    "version": "2.2.6",
     "formats": [
       "AU",
       "VST3",
@@ -4224,9 +4241,9 @@
   },
   {
     "id": "ARCHAEOLOGIST_X",
-    "name": "ARCHAEOLOGIST",
+    "name": "ARCHAEOLOGIST X",
     "family": "CREATIVE_TRANSFORM",
-    "version": "3.22",
+    "version": "2.0.6",
     "formats": [
       "AU",
       "VST3",
@@ -4373,7 +4390,7 @@
     "id": "SERQET",
     "name": "SERQET",
     "family": "CREATIVE_TRANSFORM",
-    "version": "3.22",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3"
@@ -4478,7 +4495,7 @@
     "id": "ANKH",
     "name": "ANKH",
     "family": "MASTERING_CORE",
-    "version": "3.22",
+    "version": "2.1.4",
     "formats": [
       "AU",
       "VST3",
@@ -4613,7 +4630,7 @@
     "id": "SPHYNX",
     "name": "SPHYNX",
     "family": "MASTERING_CORE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -4734,7 +4751,7 @@
     "id": "MAAT",
     "name": "Maat",
     "family": "MASTERING_CORE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -4916,9 +4933,9 @@
   },
   {
     "id": "HORIZON_X",
-    "name": "Horizon",
+    "name": "HORIZON X",
     "family": "MASTERING_CORE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -5073,7 +5090,7 @@
     "id": "PLATINUM",
     "name": "PLATINUM",
     "family": "MASTERING_CORE",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -5156,7 +5173,7 @@
     "id": "IMHOTEP",
     "name": "IMHOTEP",
     "family": "MASTER_FIELD",
-    "version": "3.22",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -5257,7 +5274,7 @@
     "id": "SESHAT",
     "name": "SESHAT",
     "family": "UTILITY_OBSERVATION",
-    "version": "3.22",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3",

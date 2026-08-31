@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIHWorld Audio Sidechain Routing Center</title>
+  <style>
+    :root{color-scheme:dark;--bg:#07100f;--panel:#0d1817;--line:#35f5d5;--gold:#f0c96b;--text:#f6f2df}
+    body{margin:0;background:radial-gradient(circle at 50% 0,#18332f,#050807 70%);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    header,main{max-width:1120px;margin:auto;padding:34px 24px}
+    h1{margin:0;color:var(--gold);letter-spacing:.08em;text-transform:uppercase}
+    h2{color:var(--gold);letter-spacing:.06em}
+    .note,.card{background:rgba(13,24,23,.88);border:1px solid rgba(53,245,213,.32);border-radius:18px;box-shadow:0 0 34px rgba(53,245,213,.08)}
+    .note{padding:18px 20px;margin:24px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+    .card{padding:20px}
+    .card h3{margin:0 0 8px;color:#66ffe3}
+    .card p{line-height:1.45}
+    a{color:#f7d775;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .button{display:inline-block;margin-top:8px;padding:10px 14px;border:1px solid rgba(240,201,107,.7);border-radius:10px;background:rgba(240,201,107,.08)}
+  </style>
+</head>
+<body>
+  <header>
+    <p><a href="../../index.html">← Back to DIHWorld Audio website</a></p>
+    <h1>DIHWorld Audio Sidechain Routing Center</h1>
+    <p class="note">In Logic Pro, choose the trigger from the native <b>Side Chain</b> menu above the plugin editor. The external key is detector/control data only and is not mixed into the program output.</p>
+  </header>
+  <main>
+    <h2>Confirmed DIHWorld sidechain plugins</h2>
+    <section class="grid">
+      <article class="card"><h3>ANUBIS</h3><p>Gate / expander external key and duck behavior.</p><a class="button" href="ANUBIS_SIDECHAIN_ROUTING.png">Open PNG schematic</a></article>
+      <article class="card"><h3>TEHUTI</h3><p>Three-band spectral sidechain ducking.</p><a class="button" href="TEHUTI_SIDECHAIN_ROUTING.png">Open PNG schematic</a></article>
+      <article class="card"><h3>MARIANA</h3><p>Key-controlled generated low-end layer.</p><a class="button" href="MARIANA_SIDECHAIN_ROUTING.png">Open PNG schematic</a></article>
+      <article class="card"><h3>MONOLITH</h3><p>Key-controlled low-frequency space.</p><a class="button" href="MONOLITH_SIDECHAIN_ROUTING.png">Open PNG schematic</a></article>
+      <article class="card"><h3>NTRPL</h3><p>Rewrite-layer sidechain pocket.</p><a class="button" href="NTRPL_SIDECHAIN_ROUTING.png">Open PNG schematic</a></article>
+      <article class="card"><h3>DrumKrushGlue</h3><p>External transient key for drum impact and glue.</p><a class="button" href="DRUMKRUSHGLUE_SIDECHAIN_ROUTING.png">Open PNG schematic</a></article>
+      <article class="card"><h3>Balance Restore</h3><p>External stereo-balance reference.</p><a class="button" href="BALANCE_RESTORE_SIDECHAIN_ROUTING.png">Open PNG schematic</a></article>
+    </section>
+    <p class="note"><a href="DIHWorld_Sidechain_Routing_Guide_CURRENT.pdf">Download the PDF sidechain routing guide</a> or open the <a href="SIDECHAIN_DEMO_CENTER.html">working demo center</a>.</p>
+  </main>
+</body>
+</html>
