@@ -1,0 +1,6 @@
+DIHWorld Audio Complete Installer
+Mac Release · 2026-08-31
+
+The Complete installer carries the current 42-product DIHWorld Audio collection, including OTIS 2.1.16.
+
+OTIS 2.1.16 calibrates its neutral default output to the DIHWorld bus reference while preserving the Gain Match feature. All other products retain the current Complete release payload. Delivery is through protected customer access.

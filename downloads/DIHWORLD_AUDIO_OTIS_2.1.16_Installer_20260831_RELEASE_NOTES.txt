@@ -1,0 +1,6 @@
+DIHWorld Audio OTIS 2.1.16
+Mac Release · 2026-08-31
+
+OTIS 2.1.16 calibrates the neutral default output level to the DIHWorld bus reference. The default program is now level-matched to the reference at -23.9 LUFS; Gain Match remains unchanged and available for user-controlled input/output matching.
+
+The individual installer includes the universal Mac AU, VST3, and standalone application. Delivery is through protected customer access.

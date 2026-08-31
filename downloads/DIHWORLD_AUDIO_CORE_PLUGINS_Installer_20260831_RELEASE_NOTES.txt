@@ -1,0 +1,6 @@
+DIHWorld Audio Core Plugins Installer
+Mac Release · 2026-08-31
+
+The Core installer includes OTIS 2.1.16, SILVER, NTRPL, PARALLAX, and SacredVerb in universal Mac AU and VST3 formats.
+
+OTIS is updated with the DIHWorld bus-reference calibration. All other Core processors remain at their current released versions. Delivery is through protected customer access.
