@@ -1,0 +1,8 @@
+DIHWorld Audio Complete Installer
+Mac Release · 2026-08-30
+
+DIHWorld Audio Complete Installer 2026.08.30 includes Drum Morpher 1.0.4 along with the current DIHWorld Audio collection.
+
+Drum Morpher 1.0.4 includes calibrated MIDI note labels on each pad, a per-pad SOLO toggle, correctly configured Sample/Hybrid/Synth modes, and Phi Cali Bass / Phi Dream Synth factory programs.
+
+The PKG and branded DMG are delivered through protected customer access. Both are Developer ID signed, Apple-notarized, and stapled. The PKG passed Gatekeeper installation assessment; the DMG image and stapled ticket were validated.
