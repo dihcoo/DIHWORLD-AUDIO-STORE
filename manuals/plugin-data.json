@@ -87,7 +87,7 @@
     "id": "SILVER",
     "name": "SILVER",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "1.0.4",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
