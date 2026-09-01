@@ -1,0 +1,11 @@
+DIHWORLD AUDIO — MAAT 1.0.3 RELEASE NOTES
+Release date: 2026-09-01
+
+MAAT 1.0.3 is the current mastering EQ build.
+
+• Recalibrated the Foundation, Truth, Architecture, Bandwidth, and Output automation-knob positions to the MAAT faceplate.
+• Reduced and moved HPF selection nodes to a clean right-side column so the frequency labels remain fully legible.
+• Retains 42 factory programs: 14 tonal programs across Stereo, Mono, and Dual Mono.
+• Flower of Life harmonic lift and Meter Mode remain host-automatable and functional.
+
+Distribution is owner-managed while the DIHWorld customer delivery system is being completed.
