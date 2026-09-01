@@ -858,7 +858,7 @@
     "id": "ANUBIS",
     "name": "ANUBIS",
     "family": "DYNAMICS_GUARD",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "formats": [
       "AU",
       "VST3",
@@ -866,7 +866,7 @@
     ],
     "placement": "Insert Safe",
     "placementNote": "guard/dynamics",
-    "description": "Dynamics gate and guard with threshold, ratio, attack, hold, release, range, a named stereo host Sidechain bus, independent Sidechain Key and Sidechain Duck operation, protected I/O, and parallel mix.",
+    "description": "Dynamics gate and guard with threshold, ratio, attack, hold, release, range, a named stereo host Sidechain bus, independent Sidechain Key and Sidechain Duck operation, protected I/O, and parallel mix. Version 1.0.2 expands the factory bank to 20 complete gate, key, duck, and dual-mono programs while retaining the original program positions.",
     "parameters": [
       {
         "id": "input",
@@ -952,7 +952,19 @@
       "KEY + DUCK LOCK [Stereo]",
       "DRUM TIGHT GUARD [Stereo]",
       "MONO WALL HOLD [Mono]",
-      "DUAL MONO LOCK [Dual Mono]"
+      "DUAL MONO LOCK [Dual Mono]",
+      "VOCAL ROOM TAIL [Stereo]",
+      "VOCAL HARD EDIT [Stereo]",
+      "RAP PAUSE CLEAN [Stereo]",
+      "KICK SUB KEY [Stereo]",
+      "SNARE SHELL TIGHT [Stereo]",
+      "HAT CHATTER CUT [Stereo]",
+      "BASS KICK POCKET [Stereo]",
+      "PAD BREATH KEY [Stereo]",
+      "MUSIC BUS DUCK [Stereo]",
+      "FX RETURN SHADOW [Stereo]",
+      "DUAL MONO PERC LOCK [Dual Mono]",
+      "DUAL MONO AMBIENCE [Dual Mono]"
     ],
     "meters": [
       {
@@ -998,7 +1010,8 @@
     "imageRefs": [
       "Assets/Images/Anubis.png",
       "Assets/Images/Canopic.png"
-    ]
+    ],
+    "manualPdf": "docs/plugins/ANUBIS_USER_MANUAL.pdf"
   },
   {
     "id": "OTIS",
@@ -3687,7 +3700,7 @@
     "id": "THOTH",
     "name": "Thoth",
     "family": "HARMONICS_PITCH",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "formats": [
       "AU",
       "VST3",
@@ -3695,7 +3708,7 @@
     ],
     "placement": "Insert Safe",
     "placementNote": "harmonics/pitch",
-    "description": "Sacred harmonic EQ with low and high shelves, visible shelf curves, Flower of Life mode, protected I/O, and parallel mix.",
+    "description": "Sacred seven-band harmonic EQ with low and high shelves, visible shelf curves, Flower of Life mode, protected I/O, and parallel mix. Version 1.0.2 expands the bank to 32 complete source, instrument, bus, mastering, and Solfeggio tonal programs while retaining the original program positions.",
     "parameters": [
       {
         "id": "power",
@@ -3767,7 +3780,20 @@
       "SOLFEGGIO 963 FLOWER",
       "THOTH DYNAMIC NOTCH SHOWCASE",
       "THOTH DYNAMIC SMILE SHOWCASE",
-      "THOTH DYNAMIC AIR SHOWCASE"
+      "THOTH DYNAMIC AIR SHOWCASE",
+      "THOTH VOCAL FORWARD FRAME",
+      "THOTH VOCAL SMOKE SILK",
+      "THOTH KICK BODY EDGE",
+      "THOTH SNARE CRACK WEIGHT",
+      "THOTH BASS HARMONIC VOICE",
+      "THOTH PIANO OPEN ROOM",
+      "THOTH GUITAR SPEAK",
+      "THOTH PAD DEPTH VEIL",
+      "THOTH MIX BUS OPEN WINDOW",
+      "THOTH MASTER TILT GOLD",
+      "THOTH CINEMATIC WIDTH",
+      "THOTH SPECTRAL CONTOUR",
+      "THOTH SOLFEGGIO FULL FIELD"
     ],
     "meters": [
       {
@@ -3793,20 +3819,22 @@
     "imageRefs": [
       "source/THOTH_KNOB.PNG",
       "source/Thoth.png"
-    ]
+    ],
+    "manualPdf": "docs/plugins/THOTH_USER_MANUAL.pdf"
   },
   {
     "id": "TEHUTI",
     "name": "TEHUTI",
     "family": "HARMONICS_PITCH",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "formats": [
       "AU",
-      "VST3"
+      "VST3",
+      "Standalone"
     ],
     "placement": "Insert Safe",
     "placementNote": "harmonics/pitch",
-    "description": "Harmonic motion processor using low, mid, and high ducking with depth, speed, mix, and Flower of Life mode.",
+    "description": "Three-band dynamic EQ field using low, mid, and high ducking with depth, speed, mix, Flower of Life mode, gain matching, and channel-mode support. Version 1.0.4 expands the factory bank to 28 complete tonal-motion programs while retaining the first 12 program positions.",
     "parameters": [
       {
         "id": "power",
@@ -3876,7 +3904,23 @@
       "TEHUTI VOCAL CARVE DEEP",
       "TEHUTI PERCUSSIVE SNAP",
       "TEHUTI SLOW WIDE BREATH",
-      "TEHUTI PARALLEL EDGE"
+      "TEHUTI PARALLEL EDGE",
+      "TEHUTI LOW FOUNDATION POCKET",
+      "TEHUTI LOW RELEASE LIFT",
+      "TEHUTI MID VOCAL FRAME",
+      "TEHUTI MID CHORD WINDOW",
+      "TEHUTI HIGH AIR SHELTER",
+      "TEHUTI HIGH HAT WINDOW",
+      "TEHUTI THREE WAY MOVEMENT",
+      "TEHUTI FULL SPECTRUM GATE",
+      "TEHUTI RHYTHM SIDECHAIN",
+      "TEHUTI SLOW SPECTRAL TIDE",
+      "TEHUTI FAST GLOSS CUT",
+      "TEHUTI ORGANIC POCKET",
+      "TEHUTI WIDE FIELD CARVE",
+      "TEHUTI DUAL MONO SCULPT",
+      "TEHUTI MIX BUS AIRWAY",
+      "TEHUTI NIGHT VOX CAVE"
     ],
     "meters": [
       {
@@ -3922,7 +3966,8 @@
     "imageRefs": [
       "source/Tehuti.png",
       "source/Tehuti_knob.png"
-    ]
+    ],
+    "manualPdf": "docs/plugins/TEHUTI_USER_MANUAL.pdf"
   },
   {
     "id": "AU",

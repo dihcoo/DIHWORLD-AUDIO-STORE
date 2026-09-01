@@ -95,7 +95,9 @@ const escapeHtml = (value = "") => String(value).replace(/[&<>'"]/g, (char) => (
 }[char]));
 const familyLabel = (family) => familyNames[family] || family.replaceAll("_", " ");
 const visualPath = (plugin) => `plugins/${encodeURIComponent(plugin.id)}.jpg`;
-const manualPath = (family, kind) => `docs/families/${family}/${family}_${kind}_MANUAL.pdf`;
+const manualPath = (plugin, kind) => kind === "USER" && plugin.manualPdf
+  ? plugin.manualPdf
+  : `docs/families/${plugin.family}/${plugin.family}_${kind}_MANUAL.pdf`;
 
 function controlGuidance(parameter) {
   const id = parameter.id.toLowerCase();
@@ -190,7 +192,7 @@ function renderChapter() {
     chapterContent.innerHTML = chapterFrame("07", "DAW SETUP", "Routing in major hosts", `<div class="daw-grid">${daws.map(([daw, instruction]) => `<div><strong>${daw}</strong><p>${instruction}</p></div>`).join("")}</div>`);
   } else if (activeChapter === "documents") {
     const label = escapeHtml(familyLabel(selected.family));
-    chapterContent.innerHTML = chapterFrame("08", "FAMILY DOCUMENTS", `${label} downloads`, `<p>The customer manual is the primary companion for ${name}. The technical manual preserves advanced implementation and support detail.</p><div class="document-cards"><a class="primary" href="${manualPath(selected.family, "USER")}" target="_blank" rel="noopener"><span>PDF · CUSTOMER MANUAL</span><strong>${label}</strong><p>Use cases, controls, signal flow, presets, and practical operation.</p><b>Open user manual in new tab ↗</b></a><a href="${manualPath(selected.family, "TECHNICAL")}" target="_blank" rel="noopener"><span>PDF · ADVANCED / SUPPORT</span><strong>Technical Manual</strong><p>Engineering-facing behavior, implementation notes, and deeper reference.</p><b>Open technical manual in new tab ↗</b></a></div><div class="related-docs"><a href="docs/templates/42_PLUGIN_PLACEMENT_SCHEMATIC.pdf" target="_blank" rel="noopener">PDF · 42-plugin placement schematic ↗</a><a href="docs/guides/PLUGIN_CATEGORY_CHEAT_SHEET.pdf" target="_blank" rel="noopener">PDF · Plugin category cheat sheet ↗</a><a href="docs/guides/BETTER_BUS_MAP.pdf" target="_blank" rel="noopener">PDF · Better Bus map ↗</a></div>`);
+    chapterContent.innerHTML = chapterFrame("08", "FAMILY DOCUMENTS", `${label} downloads`, `<p>The customer manual is the primary companion for ${name}. The technical manual preserves advanced implementation and support detail.</p><div class="document-cards"><a class="primary" href="${manualPath(selected, "USER")}" target="_blank" rel="noopener"><span>PDF · CUSTOMER MANUAL</span><strong>${label}</strong><p>Use cases, controls, signal flow, presets, and practical operation.</p><b>Open user manual in new tab ↗</b></a><a href="${manualPath(selected, "TECHNICAL")}" target="_blank" rel="noopener"><span>PDF · ADVANCED / SUPPORT</span><strong>Technical Manual</strong><p>Engineering-facing behavior, implementation notes, and deeper reference.</p><b>Open technical manual in new tab ↗</b></a></div><div class="related-docs"><a href="docs/templates/42_PLUGIN_PLACEMENT_SCHEMATIC.pdf" target="_blank" rel="noopener">PDF · 42-plugin placement schematic ↗</a><a href="docs/guides/PLUGIN_CATEGORY_CHEAT_SHEET.pdf" target="_blank" rel="noopener">PDF · Plugin category cheat sheet ↗</a><a href="docs/guides/BETTER_BUS_MAP.pdf" target="_blank" rel="noopener">PDF · Better Bus map ↗</a></div>`);
   } else {
     const generic = ["No sound: confirm the plug-in is enabled, the source reaches the insert, and Output is not fully reduced.", "No audible change: reset, raise one primary control deliberately, and compare using matched loudness.", "Unexpected image or phase change: return width, channel mode, and dual-mono controls to reset, then check mono.", "Session mismatch: confirm the current plug-in version and reload a current preset before rebuilding the setting."];
     const items = specialTroubleshooting[selected.id] || generic;
