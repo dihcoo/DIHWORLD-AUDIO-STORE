@@ -1795,7 +1795,7 @@
     "id": "DIH_DRUM_MORPHER",
     "name": "DIH Drum Morpher",
     "family": "DRUM_INSTRUMENT",
-    "version": "1.0.4",
+    "version": "1.0.7",
     "formats": [
       "AU",
       "VST3",
@@ -1803,7 +1803,7 @@
     ],
     "placement": "Creative Transform",
     "placementNote": "instrument/plugin generator",
-    "description": "Sixteen-pad drum instrument with calibrated MIDI-note labels, per-pad SOLO isolation, Sample / Hybrid / Synth engines, host-synced sequencing, capture, morph, and performance controls. Version 1.0.4 adds PHI CALI MOOG BASS and PHI DREAM SYNTH factory programs; it ships inside the DIHWorld Audio Complete installer.",
+    "description": "Sixteen-pad drum instrument with calibrated MIDI-note labels, per-pad SOLO isolation, Sample / Hybrid / Synth engines, host-synced sequencing, capture, morph, and performance controls. Version 1.0.7 is the current owner-approved beta build; it includes PHI CALI MOOG BASS and PHI DREAM SYNTH factory programs and ships inside the DIHWorld Audio Complete installer.",
     "parameters": [
       { "id": "padMidiNote", "name": "Pad MIDI Note", "type": "Readout" },
       { "id": "padSolo", "name": "SOLO", "type": "Bool" },
@@ -4796,7 +4796,7 @@
     "id": "MAAT",
     "name": "Maat",
     "family": "MASTERING_CORE",
-    "version": "1.0.1",
+    "version": "1.0.12",
     "formats": [
       "AU",
       "VST3",

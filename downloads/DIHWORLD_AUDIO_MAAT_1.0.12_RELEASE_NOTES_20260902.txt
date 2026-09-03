@@ -1,0 +1,7 @@
+DIHWORLD AUDIO — MAAT 1.0.12
+
+Current build: MAAT 1.0.12.
+Validation: Signed AU build version and canonical individual release match.
+Delivery: Included in the current Complete 42 package; public installer delivery is not active.
+
+This release note is a status record only and does not contain an installer.

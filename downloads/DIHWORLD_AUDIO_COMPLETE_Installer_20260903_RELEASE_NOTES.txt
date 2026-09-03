@@ -1,0 +1,6 @@
+DIHWORLD AUDIO — COMPLETE 42
+
+Current package: DIHWORLD_AUDIO_COMPLETE_Installer_20260903.
+Canon sweep: all 42 bundled child installers were version-matched against their individual canonical releases.
+Refreshes included: MAAT 1.0.12 and DIH Drum Morpher 1.0.7.
+Package state: signed installer and signed disk image. Public checkout and installer delivery are not active.

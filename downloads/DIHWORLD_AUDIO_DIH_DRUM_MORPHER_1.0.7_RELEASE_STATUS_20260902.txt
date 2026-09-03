@@ -1,0 +1,7 @@
+DIHWORLD AUDIO — DIH DRUM MORPHER 1.0.7
+
+Status: Owner-approved current beta build.
+Validation: Current signed AU build is version 1.0.7.
+Delivery: Included in the current Complete 42 package; public installer delivery is not active.
+
+This status record intentionally does not contain an installer or a checkout link.
