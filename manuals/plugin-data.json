@@ -1101,8 +1101,8 @@
       "Standalone"
     ],
     "placement": "Insert Safe",
-    "placementNote": "pressure-activated dynamics guard",
-    "description": "Pressure-activated dynamics processor with fourteen canonical programs: pressure progression plus purpose-built Vocal, Drum, Mix Bus, Parallel, and Master programs. The approved powered-on default is unchanged; the named bank uses a warmer depth/pressure progression without runtime preset clamping, topping out at 2.2 dB Maximize.",
+    "placementNote": "pressure-activated dynamics, aggressive drive, density, and controlled output",
+    "description": "Pressure-activated dynamics processor with intentional aggressive Drive excitation, pressure-dependent density, controlled Maximize gain, and ceiling containment. DEBO Output controls delivery after the drive/pressure stage, so deliberate distortion can remain while output is reduced. In the DEBO -> DEPTH_BOOST_PRO hybrid, DEBO creates and controls character first; Depth Boost Pro then places it through DIH Field State and can apply optional post-field Spatial Gain reduction.",
     "parameters": [
       {
         "id": "POWER",
@@ -1529,8 +1529,8 @@
       "VST3"
     ],
     "placement": "Low End Source",
-    "placementNote": "low/depth support; secondarily a spatial gain plugin via its dedicated Spatial Gain control (0dB to -12dB) applied after delay-based depth/width field placement; blue secondary dot",
-    "description": "Focused low-end depth extension built on delay-based mid/side field placement. Primary role is low-end depth and width; secondarily it is a spatial gain stage, with a dedicated Spatial Gain control (0 dB down to -12 dB) applied after the depth field, plus protected input trim.",
+    "placementNote": "multifaceted DIH Field State bass processor; post-field Spatial Gain (0 dB to -12 dB); blue secondary dot",
+    "description": "Multifaceted DIH Field State bass processor built on delay-based mid/side field placement. Spatial Depth drives field width, focus, convergence, energy, and mix while preserving a mono-safe route for mono input. DEPTH_BOOST_PRO provides low-end placement, delayed field depth, controlled width, Input Trim, Gain Match, and post-field Spatial Gain. In the DEBO -> DEPTH_BOOST_PRO hybrid: drive DEBO for character, use DEBO Output for controlled delivery, then use Spatial Gain only to fairly level the chosen field.",
     "parameters": [
       {
         "id": "input",
