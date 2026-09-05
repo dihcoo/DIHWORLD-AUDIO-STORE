@@ -858,7 +858,7 @@
     "id": "ANUBIS",
     "name": "ANUBIS",
     "family": "DYNAMICS_GUARD",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3",
@@ -1017,7 +1017,7 @@
     "id": "OTIS",
     "name": "OTIS",
     "family": "DYNAMICS_GUARD",
-    "version": "2.1.15",
+    "version": "2.1.16",
     "formats": [
       "AU",
       "VST3",
@@ -1318,7 +1318,7 @@
     ],
     "placement": "Low End Source",
     "placementNote": "low-end/sub field",
-    "description": "Sub and foundation processor with depth, sub pressure, kick definition, target mode, and parallel mix.",
+    "description": "Sub and foundation processor with depth, sub pressure, kick definition, target mode, and parallel mix. A named optional Sidechain drives kick-aware reduction only when Sidechain Key is enabled, leaving the audible main path neutral otherwise.",
     "parameters": [
       {
         "id": "power",
@@ -1386,7 +1386,7 @@
     "channelMode": false,
     "dualMono": false,
     "gainMatch": true,
-    "sidechain": false,
+    "sidechain": true,
     "imageRefs": [
       "assets/Mariana.png",
       "source/Mar2.png",
@@ -1397,14 +1397,14 @@
     "id": "MONOLITH",
     "name": "MONOLITH",
     "family": "BASS_LOW_END",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "formats": [
       "AU",
       "VST3"
     ],
     "placement": "Low End Source",
     "placementNote": "low-end mass",
-    "description": "Low-end impact and body shaper with excavation, weight, resonance, reverse motion, drive, and balance.",
+    "description": "Low-end impact and body shaper with excavation, weight, resonance, reverse motion, drive, and balance. A named optional Sidechain supports kick-controlled Stone Duck and remains inactive until Sidechain Key is enabled.",
     "parameters": [
       {
         "id": "gate",
@@ -1522,7 +1522,7 @@
     "channelMode": true,
     "dualMono": true,
     "gainMatch": true,
-    "sidechain": false,
+    "sidechain": true,
     "imageRefs": [
       "source/monolith_bg.png"
     ]
@@ -1639,14 +1639,14 @@
     "id": "NTRPL",
     "name": "NTRPL",
     "family": "BASS_LOW_END",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "formats": [
       "AU",
       "VST3"
     ],
     "placement": "Low End Source",
     "placementNote": "reclassified bass family",
-    "description": "Low-end transformation engine for rewrite map, novelty, interval motion, contour, shape, space, and originality guard.",
+    "description": "Low-end transformation engine for rewrite map, novelty, interval motion, contour, shape, space, and originality guard. A named optional Sidechain supports keyed Rewrite Duck and remains inactive until Sidechain Key is enabled.",
     "parameters": [
       {
         "id": "power",
@@ -1785,7 +1785,7 @@
     "channelMode": true,
     "dualMono": true,
     "gainMatch": true,
-    "sidechain": false,
+    "sidechain": true,
     "imageRefs": [
       "assets/ntrpl.png",
       "assets/ntrpl_knob.png"
@@ -1803,25 +1803,78 @@
     ],
     "placement": "Creative Transform",
     "placementNote": "instrument/plugin generator",
-    "description": "Sixteen-pad drum instrument with calibrated MIDI-note labels, per-pad SOLO isolation, Sample / Hybrid / Synth engines, host-synced sequencing, capture, morph, and performance controls. Version 1.0.7 is the current owner-approved beta build; it includes PHI CALI MOOG BASS and PHI DREAM SYNTH factory programs and ships inside the DIHWorld Audio Complete installer.",
+    "description": "Sixteen-pad drum instrument with calibrated MIDI-note labels, per-pad SOLO isolation, Sample / Hybrid / Synth engines, host-synced sequencing, capture, morph, and performance controls. Version 1.0.7 is the current owner-approved beta build; it includes PHI CALI MOOG BASS and PHI DREAM SYNTH factory programs and ships inside the DIHWorld Audio Complete installer. A named optional Sidechain input accepts live audio for sampler capture; it is not a required main input.",
     "parameters": [
-      { "id": "padMidiNote", "name": "Pad MIDI Note", "type": "Readout" },
-      { "id": "padSolo", "name": "SOLO", "type": "Bool" },
-      { "id": "engineMode", "name": "Engine Mode: Sample / Hybrid / Synth", "type": "Choice" },
-      { "id": "padPitch", "name": "Pad Pitch", "type": "Continuous" },
-      { "id": "padMorph", "name": "Pad Morph", "type": "Continuous" },
-      { "id": "padEnvelope", "name": "Attack / Decay / Sustain / Release", "type": "Continuous" },
-      { "id": "sequencer", "name": "Pattern, Tempo, Swing & Length", "type": "Choice" },
-      { "id": "samplerCapture", "name": "Sampler Capture / Transfer", "type": "Bool" }
+      {
+        "id": "padMidiNote",
+        "name": "Pad MIDI Note",
+        "type": "Readout"
+      },
+      {
+        "id": "padSolo",
+        "name": "SOLO",
+        "type": "Bool"
+      },
+      {
+        "id": "engineMode",
+        "name": "Engine Mode: Sample / Hybrid / Synth",
+        "type": "Choice"
+      },
+      {
+        "id": "padPitch",
+        "name": "Pad Pitch",
+        "type": "Continuous"
+      },
+      {
+        "id": "padMorph",
+        "name": "Pad Morph",
+        "type": "Continuous"
+      },
+      {
+        "id": "padEnvelope",
+        "name": "Attack / Decay / Sustain / Release",
+        "type": "Continuous"
+      },
+      {
+        "id": "sequencer",
+        "name": "Pattern, Tempo, Swing & Length",
+        "type": "Choice"
+      },
+      {
+        "id": "samplerCapture",
+        "name": "Sampler Capture / Transfer",
+        "type": "Bool"
+      }
     ],
     "presets": [
-      "CANON ATL BOUNCE", "MEMPHIS SWITCH", "GOSPEL POCKET", "ROOTS LOW PULSE",
-      "WEST COAST LAYBACK", "HYBRID DRILL ROLL", "POCKET BREAKBEAT", "SPARK FIELD SYNC",
-      "CLASSIC LOCK", "SWING BODY", "MINIMAL PULSE", "LIVE BREAK BUILDER",
-      "CEREMONIAL ROLL", "SUB RITUAL", "DRILL TENSION", "AFRO ROOTS",
-      "HOUSE FOUNDATION", "POP GLASS", "BOOM BAP DUST", "RNB LATE NIGHT",
-      "CLUB PRESSURE", "CINEMA FX GRID", "HYPER SPARK", "WORLD PERC FIELD",
-      "AFRO PERCUSSION ROOTS", "BRAZIL LATINO SWING", "PHI CALI MOOG BASS", "PHI DREAM SYNTH"
+      "CANON ATL BOUNCE",
+      "MEMPHIS SWITCH",
+      "GOSPEL POCKET",
+      "ROOTS LOW PULSE",
+      "WEST COAST LAYBACK",
+      "HYBRID DRILL ROLL",
+      "POCKET BREAKBEAT",
+      "SPARK FIELD SYNC",
+      "CLASSIC LOCK",
+      "SWING BODY",
+      "MINIMAL PULSE",
+      "LIVE BREAK BUILDER",
+      "CEREMONIAL ROLL",
+      "SUB RITUAL",
+      "DRILL TENSION",
+      "AFRO ROOTS",
+      "HOUSE FOUNDATION",
+      "POP GLASS",
+      "BOOM BAP DUST",
+      "RNB LATE NIGHT",
+      "CLUB PRESSURE",
+      "CINEMA FX GRID",
+      "HYPER SPARK",
+      "WORLD PERC FIELD",
+      "AFRO PERCUSSION ROOTS",
+      "BRAZIL LATINO SWING",
+      "PHI CALI MOOG BASS",
+      "PHI DREAM SYNTH"
     ],
     "meters": [
       {
@@ -1848,7 +1901,7 @@
     "channelMode": true,
     "dualMono": true,
     "gainMatch": false,
-    "sidechain": false,
+    "sidechain": true,
     "imageRefs": [
       "source/DrMorph.png"
     ]
@@ -1931,7 +1984,7 @@
     ],
     "placement": "Bus Preferred",
     "placementNote": "drum-family percussion adhesive; use on drum bus or parallel drum-impact return; secondary dynamics guard/cyan dot",
-    "description": "Bus-preferred drum cohesion stage for binding hits into one controlled impact field, with secondary dynamics-guard/cyan-dot behavior.",
+    "description": "Bus-preferred drum cohesion stage for binding hits into one controlled impact field, with secondary dynamics-guard/cyan-dot behavior. A named optional Sidechain enables keyed pocket ducking and remains inactive until Sidechain Key is enabled.",
     "parameters": [
       {
         "id": "power",
@@ -1989,7 +2042,7 @@
     "channelMode": true,
     "dualMono": true,
     "gainMatch": true,
-    "sidechain": false,
+    "sidechain": true,
     "imageRefs": [
       "Assets/Images/DrumKrushGlue.generated_candidate_20260719_0719.png",
       "Assets/Images/DrumKrushGlue.png",
@@ -2541,7 +2594,7 @@
     "id": "DEPTH_IMPACT_HYBRID_X",
     "name": "Depth Impact Hybrid X",
     "family": "DIMENSIONAL_IMPACT_MOVE",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3",
@@ -2762,7 +2815,7 @@
     "id": "PARALLAX",
     "name": "PARALLAX",
     "family": "DIMENSIONAL_IMPACT_MOVE",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3"
@@ -2897,7 +2950,7 @@
     "id": "NSR",
     "name": "NSR",
     "family": "DIMENSIONAL_IMPACT_MOVE",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "formats": [
       "AU",
       "VST3",
@@ -3031,7 +3084,7 @@
     "id": "NTRSTLLR",
     "name": "NTRSTLLR",
     "family": "FX_SPATIAL",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "formats": [
       "AU",
       "VST3",
@@ -3834,7 +3887,7 @@
     ],
     "placement": "Insert Safe",
     "placementNote": "harmonics/pitch",
-    "description": "Three-band dynamic EQ field using low, mid, and high ducking with depth, speed, mix, Flower of Life mode, gain matching, and channel-mode support. Version 1.0.4 expands the factory bank to 28 complete tonal-motion programs while retaining the first 12 program positions.",
+    "description": "Three-band dynamic EQ field using low, mid, and high ducking with depth, speed, mix, Flower of Life mode, gain matching, and channel-mode support. Version 1.0.4 expands the factory bank to 28 complete tonal-motion programs while retaining the first 12 program positions. A named optional Sidechain provides external spectral-key detection; without a routed key, detection follows the main input.",
     "parameters": [
       {
         "id": "power",
@@ -3962,7 +4015,7 @@
     "channelMode": true,
     "dualMono": true,
     "gainMatch": true,
-    "sidechain": false,
+    "sidechain": true,
     "imageRefs": [
       "source/Tehuti.png",
       "source/Tehuti_knob.png"
@@ -4435,7 +4488,7 @@
     "id": "SERQET",
     "name": "SERQET",
     "family": "CREATIVE_TRANSFORM",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "formats": [
       "AU",
       "VST3"
@@ -5319,7 +5372,7 @@
     "id": "SESHAT",
     "name": "SESHAT",
     "family": "UTILITY_OBSERVATION",
-    "version": "1.0.3",
+    "version": "1.0.6",
     "formats": [
       "AU",
       "VST3",
