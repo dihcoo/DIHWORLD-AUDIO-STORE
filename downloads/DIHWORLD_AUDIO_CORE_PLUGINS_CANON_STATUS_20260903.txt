@@ -1,7 +1,7 @@
 DIHWORLD AUDIO — CORE PLUGINS
 
-Canonical audit date: 2026-09-03.
-The current Core installer package is the 2026-08-31 build. Its five components match their current individual canonical releases:
-NTRPL 1.0.2, OTIS 2.1.16, PARALLAX 1.0.1, SILVER 1.0.1, and SacredVerb 3.5.7.
+Canonical audit date: 2026-09-05.
+The individual Core release authority is verified against the installed owner catalog. Its five components match their current individual canonical releases:
+NTRPL 1.0.2, OTIS 2.1.16, PARALLAX 1.0.3, SILVER 1.0.4, and SacredVerb 3.5.7.
 
-Public checkout and installer delivery are not active.
+A refreshed aggregate Core installer must be assembled from those exact releases before customer delivery. Public checkout and installer delivery are not active.

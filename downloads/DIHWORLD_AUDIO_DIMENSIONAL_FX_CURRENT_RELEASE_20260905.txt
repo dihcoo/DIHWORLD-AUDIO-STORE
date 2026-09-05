@@ -1,0 +1,12 @@
+DIHWORLD AUDIO — DIMENSIONAL / FX CURRENT RELEASE
+
+Verified: 2026-09-05
+Delivery: signed installer packages; protected customer delivery.
+
+Depth Impact Hybrid X 1.0.3 — calibrated current build
+NSR 1.0.2 — calibrated current build
+NTRSTLLR 1.0.2 — calibrated Track Safe current build
+PARALLAX 1.0.3 — calibrated current build
+SERQET 1.0.4 — calibrated current build
+
+These builds are installed in the owner Logic environment and match the current DIHWorld Audio release manifest. Public checkout is not active; package delivery remains controlled.
