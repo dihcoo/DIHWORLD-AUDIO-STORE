@@ -2,9 +2,6 @@
   "authority": "Current DIHWorld Audio source and release manifest; notarization state is recorded per product release status.",
   "verified": "2026-09-16",
   "manufacturerCode": "DIHW",
-  "releaseCandidates": {
-    "NTRPL": "1.0.3 — Developer ID signed; Apple notarization pending"
-  },
   "versions": {
     "GOLD": "1.0.4",
     "SILVER": "1.0.5",
