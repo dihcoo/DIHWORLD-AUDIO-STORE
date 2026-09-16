@@ -1,0 +1,17 @@
+DIHWorld Audio — APIS 1.0.2 Release Status
+Date: 2026-09-16
+Status: Current Mac release; Apple-notarized and stapled.
+
+1.0.2 completes the APIS professional release path:
+- The DIH Master Field Governor is active before final output containment.
+- Gain Match is retained in saved sessions.
+- Legacy nonfunctional hidden automation controls were removed.
+- The interface now labels the Gain Match control correctly.
+
+Validation completed:
+- Universal AU and VST3 builds passed the DIH Engine contract test.
+- Developer ID signatures verified for both plug-in bundles, installer package, and disk image.
+- PKG and branded DMG were accepted by Apple notarization, stapled, and validated.
+- The signed AU is installed in the Logic system plug-in folder.
+
+The signed installer package and branded DMG are ready for protected customer delivery.
