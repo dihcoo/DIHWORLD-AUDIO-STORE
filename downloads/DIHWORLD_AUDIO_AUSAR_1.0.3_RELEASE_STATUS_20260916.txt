@@ -1,0 +1,12 @@
+DIHWorld Audio — AUSAR 1.0.3 Release Status
+Date: 2026-09-16
+Status: Current Mac release; Apple-notarized and stapled.
+
+Validation completed:
+- Restoration processing, DIH bridge processing, stereo Master Field governance, final containment, and Gain Match are active.
+- APVTS stores the complete session state.
+- Universal AU and VST3 builds passed the DIH Engine contract test.
+- Individual PKG and branded DMG were Developer ID signed, Apple-notarized, stapled, and validated.
+- The signed AU is installed in the Logic system plug-in folder.
+
+The individual installer package and DMG are ready for protected customer delivery.
