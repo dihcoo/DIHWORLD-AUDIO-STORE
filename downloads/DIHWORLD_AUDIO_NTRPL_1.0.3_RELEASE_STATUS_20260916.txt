@@ -1,0 +1,14 @@
+DIHWorld Audio — NTRPL 1.0.3 Release Status
+Date: 2026-09-16
+Status: Developer ID signed release candidate; Apple notarization pending.
+
+NTRPL 1.0.3 introduces two distinct source-derived processing modes:
+- Interpolation FX: preserves the dry reference while adding harmonic and contour interpolation.
+- Base Interpolator: provides controlled low-register support from fractional delay and source-body interpolation.
+
+Validation completed:
+- Universal AU and VST3 build succeeded.
+- Developer ID signatures verified for both plug-in bundles and the installer package.
+- FX and Base renderer passes completed with distinct output renders.
+
+Public installer delivery remains unavailable until Apple notarization is accepted and the package and DMG are stapled and validated.
