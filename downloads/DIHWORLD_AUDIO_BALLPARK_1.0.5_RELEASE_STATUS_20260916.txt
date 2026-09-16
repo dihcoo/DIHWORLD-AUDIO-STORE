@@ -1,0 +1,9 @@
+DIHWorld Audio — BALLPARK 1.0.5 Release Status
+Date: 2026-09-16
+Status: Current Mac release; Apple-notarized and stapled.
+
+Validation completed:
+- DIH field processing, Master Field governance, output containment, Gain Match, and session persistence are active.
+- Universal AU and VST3 builds passed the DIH Engine contract test.
+- Individual PKG and branded DMG were Developer ID signed, Apple-notarized, stapled, and validated.
+- The signed AU is installed in the Logic system plug-in folder.
