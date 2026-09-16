@@ -1,0 +1,12 @@
+DIHWorld Audio — AU 1.0.5 Release Status
+Date: 2026-09-16
+Status: Current Mac release; Apple-notarized and stapled.
+
+Validation completed:
+- AU uses DIH field-state bridge processing with active master-field governance and output containment.
+- APVTS stores the complete session state, including Gain Match.
+- Universal AU and VST3 builds passed the DIH Engine contract test.
+- Individual PKG and branded DMG were Developer ID signed, Apple-notarized, stapled, and validated.
+- The signed AU is installed in the Logic system plug-in folder.
+
+The individual installer package and DMG are ready for protected customer delivery.
