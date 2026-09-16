@@ -1,0 +1,12 @@
+DIHWorld Audio — ARCHAEOLOGIST X 2.0.7 Release Status
+Date: 2026-09-16
+Status: Current Mac release; Apple-notarized and stapled.
+
+Validation completed:
+- The excavation, recovery, harmonic, and forensic paths map into DIH FieldState processing.
+- Mono, stereo, and dual-mono routing are implemented and saved with the session.
+- Universal AU and VST3 builds passed the DIH Engine contract test.
+- PKG and branded DMG are Developer ID signed, Apple-notarized, stapled, and validated.
+- The signed AU is installed in the Logic system plug-in folder.
+
+The individual installer package and DMG are ready for protected customer delivery.
