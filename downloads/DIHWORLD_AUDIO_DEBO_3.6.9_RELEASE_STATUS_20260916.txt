@@ -1,0 +1,11 @@
+DIHWorld Audio — DEBO 3.6.9 Release Status
+Date: 2026-09-16
+Status: Current sacred-version Mac release; Apple-notarized and stapled.
+
+Release validation completed:
+- DEBO's DIH FieldState path, master governor, output ceiling, gain match, and session state were audited.
+- Universal AU, VST3, and standalone builds passed the DIH Engine contract test.
+- Individual PKG and branded DMG were Developer ID signed, Apple-notarized, stapled, and validated.
+- The signed AU is awaiting the active macOS administrator authorization to replace the Logic system component.
+
+Version 3.6.9 is intentionally fixed.

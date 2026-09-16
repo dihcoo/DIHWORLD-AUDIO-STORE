@@ -1,0 +1,10 @@
+DIHWorld Audio — DEPTH BOOST PRO 1.0.2 Release Status
+Date: 2026-09-16
+Status: Current Mac release; Apple-notarized and stapled.
+
+Release validation completed:
+- The DIH FieldState, output ceiling, momentum bend, gain match, and state persistence paths were audited.
+- The delay tail now reports accurately, and the processor explicitly supports mono/stereo layouts rather than partially processing wider buses.
+- Universal AU and VST3 builds passed the DIH Engine contract test.
+- Individual PKG and branded DMG were Developer ID signed, Apple-notarized, stapled, and validated.
+- The signed AU is awaiting the active macOS administrator authorization to replace the Logic system component.
