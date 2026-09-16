@@ -3,7 +3,7 @@
     "id": "GOLD",
     "name": "GOLD",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "formats": [
       "AU",
       "VST3",
@@ -87,7 +87,7 @@
     "id": "SILVER",
     "name": "SILVER",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "formats": [
       "AU",
       "VST3"
@@ -209,7 +209,7 @@
     "id": "WPR",
     "name": "WPR",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3"
@@ -858,7 +858,7 @@
     "id": "ANUBIS",
     "name": "ANUBIS",
     "family": "DYNAMICS_GUARD",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "formats": [
       "AU",
       "VST3",
@@ -1303,7 +1303,7 @@
     "id": "MARIANA",
     "name": "MARIANA",
     "family": "BASS_LOW_END",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "formats": [
       "AU",
       "VST3"
@@ -1787,7 +1787,7 @@
     "id": "DIH_DRUM_MORPHER",
     "name": "DIH Drum Morpher",
     "family": "DRUM_INSTRUMENT",
-    "version": "1.0.7",
+    "version": "1.0.18",
     "formats": [
       "AU",
       "VST3",
@@ -1795,7 +1795,7 @@
     ],
     "placement": "Creative Transform",
     "placementNote": "instrument/plugin generator",
-    "description": "Sixteen-pad drum sampler and host-synced sequencer with sample loading, pad shaping, restored factory programs, pattern memory, capture, morph, and performance controls. The current AU is registered and uses smoothed output normalization. A named optional Sidechain input accepts live audio for sampler capture; it is not a required main input.",
+    "description": "Sixteen-pad drum sampler and host-synced sequencer with sample loading, pad shaping, restored factory programs, pattern memory, capture, morph, and performance controls. Afro Roots and Afro Percussion Roots provide 108 BPM low-anchor and percussion-forward starting points with deterministic accent contour. The current AU is registered and uses smoothed output normalization. A named optional Sidechain input accepts live audio for sampler capture; it is not a required main input.",
     "parameters": [],
     "presets": [],
     "meters": [
@@ -2737,7 +2737,7 @@
     "id": "PARALLAX",
     "name": "PARALLAX",
     "family": "DIMENSIONAL_IMPACT_MOVE",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "formats": [
       "AU",
       "VST3"
@@ -2872,7 +2872,7 @@
     "id": "NSR",
     "name": "NSR",
     "family": "DIMENSIONAL_IMPACT_MOVE",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3",
@@ -3006,7 +3006,7 @@
     "id": "NTRSTLLR",
     "name": "NTRSTLLR",
     "family": "FX_SPATIAL",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "formats": [
       "AU",
       "VST3",
@@ -3675,7 +3675,7 @@
     "id": "THOTH",
     "name": "Thoth",
     "family": "HARMONICS_PITCH",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3",
@@ -3787,7 +3787,7 @@
     "id": "TEHUTI",
     "name": "TEHUTI",
     "family": "HARMONICS_PITCH",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "formats": [
       "AU",
       "VST3"
@@ -3916,14 +3916,14 @@
     "id": "AU",
     "name": "AU",
     "family": "HARMONICS_PITCH",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "formats": [
       "AU",
       "VST3"
     ],
     "placement": "Insert Safe",
     "placementNote": "instrument/harmonic utility",
-    "description": "DIHWorld instrument and synth with factory sound selection, drag-and-drop source support, nine Neter voices, modulation, space, glide, sustain, and master control. The current AU is registered and uses smoothed output normalization.",
+    "description": "DIHWorld instrument and synth with eight verified embedded factory sounds, optional user-source drag-and-drop, root detection, modulation, space, glide, sustain, and master control. Afro Horn Lift uses the embedded Warm Brass source for playable brass leads, lifts, and response lines. No Santuri source is claimed or exposed.",
     "parameters": [
       {
         "id": "SOUND",
@@ -4094,7 +4094,7 @@
       "Motion Pluck",
       "Horizon Pad",
       "Root Foundation",
-      "Santuri Full"
+      "Afro Horn Lift"
     ],
     "meters": [],
     "channelMode": true,
@@ -4483,7 +4483,7 @@
     "id": "ANKH",
     "name": "ANKH",
     "family": "MASTERING_CORE",
-    "version": "2.1.4",
+    "version": "2.1.5",
     "formats": [
       "AU",
       "VST3",
@@ -4618,7 +4618,7 @@
     "id": "SPHYNX",
     "name": "SPHYNX",
     "family": "MASTERING_CORE",
-    "version": "1.0.1",
+    "version": "2.2.0",
     "formats": [
       "AU",
       "VST3",
@@ -4739,7 +4739,7 @@
     "id": "MAAT",
     "name": "Maat",
     "family": "MASTERING_CORE",
-    "version": "1.0.12",
+    "version": "1.0.14",
     "formats": [
       "AU",
       "VST3",

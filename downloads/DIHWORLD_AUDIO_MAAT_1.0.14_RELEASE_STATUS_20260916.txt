@@ -1,0 +1,6 @@
+DIHWORLD AUDIO — MAAT 1.0.14
+
+Status: Current mastering-EQ release candidate.
+Changes: Tube/Tape saturation is now level-matched, anti-aliased, DC-protected, and Meter Mode is a manual, non-automatable session preference.
+Validation: Universal AU, VST3, and standalone builds are Developer ID signed. Complete 42 and Core delivery packages are in Apple notarization.
+Delivery: Public installer delivery is not active.

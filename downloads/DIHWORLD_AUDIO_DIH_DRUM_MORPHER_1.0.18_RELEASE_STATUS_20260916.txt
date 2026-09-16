@@ -1,0 +1,11 @@
+DIHWORLD AUDIO — DRUM MORPHER 1.0.18
+
+Status: Current Mac release; Apple-notarized and stapled.
+
+Highlights:
+- Drum/Voice MORPH is targeted exclusively to the highlighted pad.
+- BUS MORPH remains intentionally Pad 1-controlled for the summed kit.
+- MORPHDOM transitions through gain-managed body, driven transient, digital lattice, and spectral-fold states.
+- The morph stage follows the Sample/Hybrid/Synth blend, so each engine receives the same targeted transformation.
+
+Delivery: The PKG and DMG are Developer-ID signed, Apple-notarized, and stapled. The PKG passed Gatekeeper installation assessment and the DMG image/ticket were validated. Public customer checkout remains inactive.
