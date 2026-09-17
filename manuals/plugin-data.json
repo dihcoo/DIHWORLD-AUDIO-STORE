@@ -1213,7 +1213,7 @@
     "id": "LOOKOUT",
     "name": "LookOut",
     "family": "DYNAMICS_GUARD",
-    "version": "1.0.3",
+    "version": "1.0.2",
     "formats": [
       "AU",
       "VST3",
@@ -1303,7 +1303,7 @@
     "id": "MARIANA",
     "name": "MARIANA",
     "family": "BASS_LOW_END",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3",
