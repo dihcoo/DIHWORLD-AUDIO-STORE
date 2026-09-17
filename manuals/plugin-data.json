@@ -1213,7 +1213,7 @@
     "id": "LOOKOUT",
     "name": "LookOut",
     "family": "DYNAMICS_GUARD",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3",
@@ -1306,7 +1306,8 @@
     "version": "1.0.2",
     "formats": [
       "AU",
-      "VST3"
+      "VST3",
+      "Standalone"
     ],
     "placement": "Low End Source",
     "placementNote": "low-end/sub field",

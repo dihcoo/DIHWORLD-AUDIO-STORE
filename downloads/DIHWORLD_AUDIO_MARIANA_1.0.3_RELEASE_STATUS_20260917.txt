@@ -1,0 +1,9 @@
+DIHWorld Audio — MARIANA 1.0.3 Release Status
+Date: 2026-09-17
+Status: Apple-notarized, stapled, installed for Logic, and AU-validated.
+
+Gain Match now compares true dry-input RMS with processed-output RMS and resets safely. Smoothed controls initialize from restored parameter values, mono-to-stereo input is implemented correctly, host layout claims are limited to supported mono/stereo paths, and external sidechain buffers are checked before reading. The canonical DIHWorld Audio URL is restored.
+
+Universal AU, VST3, and standalone builds passed the DIH Engine contract. The signed AU installed in the user Logic component folder reports 1.0.3 and passed auval, including mono, stereo, mono-to-stereo, parameter recall, and render tests. The signed PKG and DIH-image DMG are Apple-notarized and stapled.
+
+SILVER is the neutral M50 reference. GOLD is the color processor.
