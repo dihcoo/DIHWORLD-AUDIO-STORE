@@ -1,0 +1,7 @@
+DIHWorld Audio — LOOKOUT 1.0.2 Release Status
+Date: 2026-09-17
+Status: Apple-notarized, stapled, installed for Logic, and AU-validated.
+
+The complete processor/editor and live DIH Engine path were audited. Gain Match now uses true RMS, resets safely at host preparation, persists in session state, and stays synchronized with the UI. Power-off now returns the dry signal without a gain-match or ceiling stage.
+Universal x86_64 / arm64 AU, VST3, and standalone builds passed the DIH Engine contract test. The installed AU reports 1.0.2 and passed Apple's validation. Signed PKG and DIH-image DMG were Apple-notarized and stapled.
+Ready for protected customer delivery.

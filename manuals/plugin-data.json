@@ -1213,7 +1213,7 @@
     "id": "LOOKOUT",
     "name": "LookOut",
     "family": "DYNAMICS_GUARD",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "formats": [
       "AU",
       "VST3",
