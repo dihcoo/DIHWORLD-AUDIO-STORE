@@ -1390,7 +1390,7 @@
     "id": "MONOLITH",
     "name": "MONOLITH",
     "family": "BASS_LOW_END",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "formats": [
       "AU",
       "VST3"

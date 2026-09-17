@@ -1,0 +1,9 @@
+DIHWorld Audio — MONOLITH 1.0.6 Release Status
+Date: 2026-09-17
+Status: Apple-notarized, stapled, installed for Logic, and AU-validated.
+
+MONOLITH now isolates DSP and preset transitions to the main output bus so external sidechain topology cannot contaminate, multiply, or accelerate audible program material. The sidechain remains detector-only, Gate is a true dry bypass, mono-to-stereo input is copied correctly, and Gain Match uses true RMS with safe reset behavior.
+
+Universal AU, VST3, and standalone builds passed the DIH Engine contract. The signed AU installed in Logic reports 1.0.6 and passed auval, including mono, stereo, mono-to-stereo, render, and parameter tests. The signed PKG and DIH-image DMG are Apple-notarized and stapled.
+
+SILVER is the neutral M50 reference. GOLD is the color processor.
