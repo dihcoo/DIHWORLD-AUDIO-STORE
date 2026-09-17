@@ -1,0 +1,13 @@
+DIHWorld Audio — Drum Morpher 1.0.20
+Date: 2026-09-17
+Status: Apple-notarized, stapled, and installed for Logic.
+
+Sidechain safety:
+- Regular sidechain is capture-only: no automatic source audio return, pad distortion, or source duplication.
+- Settings > LIVE MPC AUDIO: ENABLE MORPH RETURN explicitly enables live processing. Mute the source's direct output for a processed-only return, and never feed the return back into its sidechain.
+- Live-input and summed-bus filters now have independent state.
+- Loaded samples preserve source sample rate for host-rate-correct playback.
+- Host preparation clears stale sampler capture/playback state.
+
+Validation: universal x86_64 / arm64 signed AU, VST3, and standalone; DIH contract and executable sync/vintage/live-input regressions passed. Regular sidechain stayed silent with BUS CRUSH enabled; zero-morph live input remained sample-for-sample at 44.1, 48, and 96 kHz.
+Both signed installer artifacts were Apple-notarized and stapled. Restart Logic and reload the plug-in after installation.

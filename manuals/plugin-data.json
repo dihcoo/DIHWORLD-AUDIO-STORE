@@ -1787,7 +1787,7 @@
     "id": "DIH_DRUM_MORPHER",
     "name": "DIH Drum Morpher",
     "family": "DRUM_INSTRUMENT",
-    "version": "1.0.18",
+    "version": "1.0.20",
     "formats": [
       "AU",
       "VST3",
