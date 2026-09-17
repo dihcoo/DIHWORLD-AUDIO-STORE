@@ -1,0 +1,11 @@
+DIHWorld Audio — DEPTH IMPACT HYBRID X 1.0.5 Release Status
+Date: 2026-09-16
+Status: Current Mac release; Apple-notarized, stapled, and installed in Logic.
+
+Release validation completed:
+- The active DIH FieldState bridge, output ceiling, momentum protection, gain match, factory state, and preset-transition paths were audited.
+- The processor now truthfully accepts mono/stereo layouts only; it no longer advertises partial wider-bus processing.
+- Its temporal tail is reported to hosts from the actual Event buffer duration.
+- Universal AU, VST3, and standalone builds passed the DIH Engine contract test.
+- Individual PKG and branded DMG were Developer ID signed, Apple-notarized, stapled, and validated.
+- The signed AU is installed and signature-verified in Logic's system component folder.
