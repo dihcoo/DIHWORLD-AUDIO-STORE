@@ -1,0 +1,8 @@
+DIHWorld Audio — KHEPRI 1.0.2 Release Status
+Date: 2026-09-17
+Status: Apple-notarized, stapled, installed for Logic, and AU-validated.
+
+Corrected head-bump filter gain units, sub-Nyquist filter bounds, Power-off dry return, true RMS gain matching, gain-match preparation reset, dual-mono crosstalk isolation, and mono/stereo bus claims.
+The live DIH Engine integration was audited. Universal x86_64 / arm64 AU, VST3, and standalone builds passed the DIH Engine source-contract test.
+The installed AU reports 1.0.2 after registration refresh and passed Apple's AU validation. Individual signed PKG and DIH-image DMG were Apple-notarized and stapled.
+Ready for protected customer delivery. Save and quit audio hosts before installation; relaunch afterward.
