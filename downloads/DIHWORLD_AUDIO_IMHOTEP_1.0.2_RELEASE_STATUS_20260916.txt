@@ -1,0 +1,14 @@
+DIHWorld Audio — IMHOTEP 1.0.2 Release Status
+Date: 2026-09-16
+Status: Current Mac release; Apple-notarized, stapled, and installed for Logic.
+
+Release validation completed:
+- The full processor and editor were audited, and the DIH Engine is now active in the audio path.
+- Mono-to-stereo input handling and truthful mono/stereo bus support were corrected.
+- Gain Match compares true RMS, resets during preparation, and the output meter measures the final signal.
+- Universal x86_64 / arm64 AU, VST3, and standalone builds passed the DIH Engine contract test.
+- The installed AU reports version 1.0.2 after Audio Unit registration refresh and passed Apple's Audio Unit validation.
+- Individual PKG and DIH-image DMG were Developer ID signed, Apple-notarized, stapled, and Gatekeeper-validated.
+- The installed AU passed strict signature and universal architecture verification.
+
+The signed installer package and DMG are ready for protected customer delivery.
