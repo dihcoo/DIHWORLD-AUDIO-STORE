@@ -1,0 +1,9 @@
+DIHWorld Audio — NTRPL 1.0.4 Release Status
+Date: 2026-09-17
+Status: Apple-notarized, stapled, installed for Logic, and AU-validated.
+
+Gain Match now resets safely at prepare and compares the correct signal energy. External sidechain processing is guarded against short or invalid host buffers so it cannot read beyond the active block or contaminate the main signal. Saved session state is restored directly without applying a factory preset over recalled parameters.
+
+Universal AU, VST3, and standalone builds passed the NTRPL vocal regression renderer and DIH Engine contract. The signed AU installed in Logic passed auval. The signed PKG and DIH-image DMG are Apple-notarized and stapled.
+
+SILVER is the neutral M50 reference. GOLD is the color processor.

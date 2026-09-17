@@ -2274,10 +2274,11 @@
     "id": "SOVEREIGN",
     "name": "SOVEREIGN",
     "family": "COLOR_AMP_TAPE",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "formats": [
       "AU",
-      "VST3"
+      "VST3",
+      "Standalone"
     ],
     "placement": "Mix Bus",
     "placementNote": "stronger color and bus authority; secondary silver mastering-support dot",
