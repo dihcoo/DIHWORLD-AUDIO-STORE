@@ -1,0 +1,17 @@
+DIHWorld Audio — HORIZON X 1.0.3 Release Status
+Date: 2026-09-16
+Status: Current Mac release; Apple-notarized, stapled, and installed in Logic.
+
+Release validation completed:
+- The full Horizon/Event processor and live DIH Engine handoff were audited.
+- The Volume control now affects the audio path instead of being ignored.
+- Stateful filters and delays are isolated per physical channel, eliminating stereo cross-contamination.
+- Independent dual-mono mode now uses independent field governors.
+- Gain Match now compares true RMS rather than peak values.
+- Host bus claims now match the real mono/stereo implementation, and the event tail is reported.
+- Universal AU, VST3, and standalone builds passed the DIH Engine contract test.
+- The AU passed Apple's Audio Unit validation across mono, stereo, sample-rate, render-slice, state, and parameter tests.
+- Individual PKG and DIH-image DMG were Developer ID signed, Apple-notarized, stapled, and validated.
+- The signed AU is installed and signature-verified in Logic's system component folder.
+
+The signed installer package and DMG are ready for protected customer delivery.

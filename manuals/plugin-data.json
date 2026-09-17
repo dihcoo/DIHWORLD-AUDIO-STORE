@@ -4923,7 +4923,7 @@
     "id": "HORIZON_X",
     "name": "HORIZON X",
     "family": "MASTERING_CORE",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "formats": [
       "AU",
       "VST3",
