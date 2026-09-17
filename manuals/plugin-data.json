@@ -3,7 +3,7 @@
     "id": "GOLD",
     "name": "GOLD",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "formats": [
       "AU",
       "VST3",

@@ -1,0 +1,20 @@
+DIHWorld Audio — GOLD 1.0.5 Release Status
+Date: 2026-09-16
+Status: Current Mac release; Apple-notarized, stapled, and installed in Logic.
+
+Product position:
+- SILVER is the neutral M50 reference.
+- GOLD is the deliberate color voice: Au presence, Cu body, Fe weight, air, focus, authority, and harmonic character.
+- GOLD uses a clean M50-derived input baseline internally, but it is not presented or sold as the reference processor.
+
+Release validation completed:
+- The full processor path and live DIH Engine bridge were audited.
+- A reversed output calibration was corrected so GOLD no longer boosts while claiming to apply a 5.1 dB reduction.
+- Bus claims now match the real mono/stereo DSP implementation.
+- The M50-derived input shelf is stable at low host sample rates.
+- Universal AU, VST3, and standalone builds passed the DIH Engine contract test.
+- The AU passed Apple's Audio Unit validation, including mono/stereo, 11.025–192 kHz, render slicing, state, and parameter tests.
+- Individual PKG and DIH-image DMG were Developer ID signed, Apple-notarized, stapled, and validated.
+- The signed AU is installed and signature-verified in Logic's system component folder.
+
+The signed installer package and DMG are ready for protected customer delivery.
