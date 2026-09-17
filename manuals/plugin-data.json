@@ -731,7 +731,7 @@
     "id": "EchoLocate",
     "name": "EchoLocate",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "formats": [
       "AU",
       "VST3"
@@ -848,7 +848,7 @@
     "meters": [],
     "channelMode": true,
     "dualMono": true,
-    "gainMatch": false,
+    "gainMatch": true,
     "sidechain": false,
     "imageRefs": [
       "resources/echolocate.png"

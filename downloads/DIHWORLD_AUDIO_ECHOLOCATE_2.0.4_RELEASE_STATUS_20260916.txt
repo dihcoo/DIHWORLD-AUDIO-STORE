@@ -1,0 +1,13 @@
+DIHWorld Audio — EchoLocate 2.0.4 Release Status
+Date: 2026-09-16
+Status: Current Mac release; Apple-notarized, stapled, and installed in Logic.
+
+Release validation completed:
+- The complete processor path and live DIH Engine bridge were audited, including the protected output ceiling.
+- Universal AU and VST3 builds passed the DIH Engine contract test.
+- The AU passed Apple's Audio Unit validation across mono, stereo, sample-rate, render-slice, state, and parameter tests.
+- Individual PKG and branded DMG were Developer ID signed, Apple-notarized, stapled, and validated.
+- The signed AU is installed and signature-verified in Logic's system component folder.
+- EchoLocate's documented gain-match capability is confirmed by its current AU parameter surface.
+
+The signed installer package and DMG are ready for protected customer delivery.
