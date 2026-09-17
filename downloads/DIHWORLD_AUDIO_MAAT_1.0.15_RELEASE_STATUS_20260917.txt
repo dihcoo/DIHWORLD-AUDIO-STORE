@@ -1,0 +1,9 @@
+DIHWorld Audio — MAAT 1.0.15 Release Status
+Date: 2026-09-17
+Status: Apple-notarized, stapled, installed for Logic, and AU-validated.
+
+Session restoration now preserves saved parameter state instead of reapplying and overwriting it with a factory preset. Gain Match now compares true dry-input RMS with processed-output RMS, resets safely, and disengages cleanly in bypass. Mono-to-stereo input is copied correctly and host layout claims are limited to implemented mono/stereo paths. Canonical URL restored.
+
+Universal AU, VST3, and standalone builds passed the DIH Engine contract. The signed AU installed in the user Logic component folder reports 1.0.15 and passed auval. The signed PKG and DIH-image DMG are Apple-notarized and stapled.
+
+SILVER is the neutral M50 reference. GOLD is the color processor.
