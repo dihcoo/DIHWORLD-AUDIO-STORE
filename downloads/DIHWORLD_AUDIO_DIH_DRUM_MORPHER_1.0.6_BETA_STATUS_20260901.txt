@@ -1,7 +1,0 @@
-DIHWorld Audio — Drum Morpher 1.0.6
-Release status: owner-approved beta candidate
-Date: 2026-09-01
-
-Drum Morpher 1.0.6 has completed owner inspection. It remains in final release validation while the public delivery system is being prepared.
-
-This page does not offer a public installer. Public customer access will begin only after release signing, notarization, final installation validation, and the launch of DIHWorld Audio customer delivery.
