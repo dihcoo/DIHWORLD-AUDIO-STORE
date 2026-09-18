@@ -1,0 +1,8 @@
+Drum Morpher 1.0.21 — 2026-09-18
+Developer ID signed. Apple notarization Accepted. PKG and DMG stapled and validated.
+Refined Classic-inspired darker surface, restrained accents, live labels and pad strike glow.
+Larger knob captions above controls; readable MPC map button with C1/GM selection on its face; styled settings menu.
+Updated contemporary preset patterns.
+This is an incremental implementation, not a pixel-identical recreation of the three design mockups.
+Current installers: DIHWORLD_AUDIO_DIH_DRUM_MORPHER_1.0.21_Installer_20260918.pkg / .dmg
+Protected customer download URLs are not configured. Binaries are not published on the public static preview.

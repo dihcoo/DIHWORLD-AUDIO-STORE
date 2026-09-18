@@ -1,0 +1,4 @@
+AU 1.0.6 — 2026-09-18
+Developer ID signed. Apple notarization Accepted. PKG and DMG stapled and validated.
+Current installers: DIHWORLD_AUDIO_AU_1.0.6_Installer_20260918.pkg / .dmg
+Protected customer download URLs are not configured. Binaries are not published on the public static preview.
