@@ -1631,14 +1631,14 @@
   {
     "id": "NTRPL",
     "name": "NTRPL",
-    "family": "BASS_LOW_END",
+    "family": "HARMONICS_PITCH",
     "version": "1.0.2",
     "formats": [
       "AU",
       "VST3"
     ],
-    "placement": "Low End Source",
-    "placementNote": "reclassified bass family",
+    "placement": "Insert Safe",
+    "placementNote": "harmonics/pitch",
     "description": "Low-end transformation engine for rewrite map, novelty, interval motion, contour, shape, space, and originality guard. A named optional Sidechain supports keyed Rewrite Duck and remains inactive until Sidechain Key is enabled.",
     "parameters": [
       {
