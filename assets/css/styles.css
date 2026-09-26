@@ -230,21 +230,34 @@ h1 {
   text-transform: uppercase;
 }
 
+.launch-panel p {
+  margin-bottom: 14px;
+  color: #e8e3db;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
 .launch-panel ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 8px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .launch-panel li {
-  min-height: 44px;
-  padding: 12px;
-  border-radius: 12px;
-  background: rgba(244, 239, 228, 0.09);
-  font-weight: 600;
+  position: relative;
+  padding-left: 18px;
+  color: rgba(244, 239, 228, 0.82);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.launch-panel li::before {
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  content: "•";
 }
 
 .launch-panel small {
@@ -1244,7 +1257,7 @@ h1 {
   }
 
   .hero-actions .optional-action {
-    display: none;
+    display: inline-flex;
   }
 
   .section-heading h2,

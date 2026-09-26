@@ -256,21 +256,34 @@ h1 {
   text-transform: uppercase;
 }
 
+.launch-panel p {
+  margin-bottom: 14px;
+  color: #e8e3db;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
 .launch-panel ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 8px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .launch-panel li {
-  min-height: 44px;
-  padding: 12px;
-  border-radius: 12px;
-  background: rgba(244, 239, 228, 0.09);
-  font-weight: 600;
+  position: relative;
+  padding-left: 18px;
+  color: rgba(244, 239, 228, 0.82);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.launch-panel li::before {
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  content: "•";
 }
 
 .launch-panel small {
@@ -1270,7 +1283,7 @@ h1 {
   }
 
   .hero-actions .optional-action {
-    display: none;
+    display: inline-flex;
   }
 
   .section-heading h2,
@@ -1440,21 +1453,19 @@ h1 {
           <h1 id="hero-title">DIHWorld Audio</h1>
           <p class="hero-copy">Intelligence you can hear. A current 42-plugin mixing ecosystem built around harmonic structure, spatial intelligence, low-end authority, dynamics, color, and mastering containment.</p>
           <div class="hero-actions" aria-label="Storefront actions">
-            <a class="button button-primary" href="#plugins">Explore Plugins</a>
-            <a class="button button-secondary" href="manuals/">Open Visual Manuals</a>
-            <a class="button button-secondary optional-action" href="#delivery">Open Delivery Center</a>
-            <a class="button button-secondary optional-action" href="downloads/dihworld_templates.zip" download>Download DIHTemplates</a>
+            <a class="button button-primary" href="#plugins">Core Bundle</a>
+            <a class="button button-secondary" href="#demos">Short Demos</a>
+            <a class="button button-secondary optional-action" href="#bundles">Family Bundles</a>
+            <a class="button button-secondary optional-action" href="manuals/">42 Visual Manuals</a>
           </div>
         </div>
-        <aside class="launch-panel" aria-label="Featured launch products">
-          <span class="panel-label">Start here</span>
+        <aside class="launch-panel" aria-label="Current release status">
+          <span class="panel-label">Current status</span>
+          <p>Use the buttons above to choose a path. Manuals, templates, and release notes are available now; public sales and installer delivery are still in development.</p>
           <ul>
-            <li>Core Bundle</li>
-            <li>Short Demos</li>
-            <li>Family Bundles</li>
-            <li>42 Visual Manuals</li>
-            <li>Mac + Windows Roadmap</li>
-            <li>DIHTemplates</li>
+            <li>Start with the Core Bundle if you want the practical entry system.</li>
+            <li>Open Short Demos if you want to hear the roles quickly.</li>
+            <li>Use Visual Manuals for plugin controls, families, and routing.</li>
           </ul>
         </aside>
       </section>
