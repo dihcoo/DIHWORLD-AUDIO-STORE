@@ -3,7 +3,7 @@
     "id": "GOLD",
     "name": "GOLD",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "1.0.5",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -87,7 +87,7 @@
     "id": "SILVER",
     "name": "SILVER",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "1.0.5",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -209,7 +209,7 @@
     "id": "WPR",
     "name": "WPR",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "1.0.3",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -456,7 +456,7 @@
     "id": "AEGIS_NOVA",
     "name": "AEGIS_NOVA",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "1.0.3",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -731,7 +731,7 @@
     "id": "EchoLocate",
     "name": "EchoLocate",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "2.0.4",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -858,7 +858,7 @@
     "id": "ANUBIS",
     "name": "ANUBIS",
     "family": "DYNAMICS_GUARD",
-    "version": "1.0.4",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -1004,7 +1004,7 @@
     "id": "OTIS",
     "name": "OTIS",
     "family": "DYNAMICS_GUARD",
-    "version": "2.1.16",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -1213,7 +1213,7 @@
     "id": "LOOKOUT",
     "name": "LookOut",
     "family": "DYNAMICS_GUARD",
-    "version": "1.0.2",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -1303,7 +1303,7 @@
     "id": "MARIANA",
     "name": "MARIANA",
     "family": "BASS_LOW_END",
-    "version": "1.0.3",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -1390,7 +1390,7 @@
     "id": "MONOLITH",
     "name": "MONOLITH",
     "family": "BASS_LOW_END",
-    "version": "1.0.6",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -1632,7 +1632,7 @@
     "id": "NTRPL",
     "name": "NTRPL",
     "family": "HARMONICS_PITCH",
-    "version": "1.0.2",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -1788,7 +1788,7 @@
     "id": "DIH_DRUM_MORPHER",
     "name": "DIH Drum Morpher",
     "family": "DRUM_INSTRUMENT",
-    "version": "1.0.20",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -2141,7 +2141,7 @@
     "id": "KHEPRI",
     "name": "Khepri",
     "family": "COLOR_AMP_TAPE",
-    "version": "1.0.2",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -2274,7 +2274,7 @@
     "id": "SOVEREIGN",
     "name": "SOVEREIGN",
     "family": "COLOR_AMP_TAPE",
-    "version": "1.0.4",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -2518,7 +2518,7 @@
     "id": "DEPTH_IMPACT_HYBRID_X",
     "name": "Depth Impact Hybrid X",
     "family": "DIMENSIONAL_IMPACT_MOVE",
-    "version": "1.0.3",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -2739,7 +2739,7 @@
     "id": "PARALLAX",
     "name": "PARALLAX",
     "family": "DIMENSIONAL_IMPACT_MOVE",
-    "version": "1.0.4",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -2874,7 +2874,7 @@
     "id": "NSR",
     "name": "NSR",
     "family": "DIMENSIONAL_IMPACT_MOVE",
-    "version": "1.0.3",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -3008,7 +3008,7 @@
     "id": "NTRSTLLR",
     "name": "NTRSTLLR",
     "family": "FX_SPATIAL",
-    "version": "1.0.4",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -3375,7 +3375,7 @@
     ],
     "placement": "Bus Preferred",
     "placementNote": "reverb and spatial aux",
-    "description": "Sacred spatial reverb with pre-delay, chamber size, damping, rate, depth, Neter blend, resonance, chamber and pattern modes, and protected presets.",
+    "description": "Sacred spatial reverb with pre-delay, chamber size, damping, rate, depth, Neter blend, resonance, protected presets, and an optional external key that ducks only the reverb and Solfeggio wet layer while preserving the dry path.",
     "parameters": [
       {
         "id": "PRE_DELAY",
@@ -3395,6 +3395,21 @@
       {
         "id": "REVERB_MIX",
         "name": "WET MIX",
+        "type": "Float"
+      },
+      {
+        "id": "sidechain_enable",
+        "name": "Sidechain Key",
+        "type": "Bool"
+      },
+      {
+        "id": "sidechain_duck",
+        "name": "Reverb Duck",
+        "type": "Float"
+      },
+      {
+        "id": "sidechain_recovery",
+        "name": "Key Recovery",
         "type": "Float"
       },
       {
@@ -3662,12 +3677,17 @@
         "display": "3-6-9 modulator",
         "measures": "Active modulation/pattern state",
         "reading": "Shows motion settings; it is not a loudness meter."
+      },
+      {
+        "display": "KEY button",
+        "measures": "External sidechain state and active wet reduction",
+        "reading": "KEY ON enables the host key; the button brightens as the wet layer is reduced."
       }
     ],
     "channelMode": true,
     "dualMono": true,
     "gainMatch": true,
-    "sidechain": false,
+    "sidechain": true,
     "imageRefs": [
       "Assets/Images/SacredVerb.png",
       "Assets/Knobs/SacredVerb_Knob.png"
@@ -3677,7 +3697,7 @@
     "id": "THOTH",
     "name": "Thoth",
     "family": "HARMONICS_PITCH",
-    "version": "1.0.3",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -3789,7 +3809,7 @@
     "id": "TEHUTI",
     "name": "TEHUTI",
     "family": "HARMONICS_PITCH",
-    "version": "1.0.5",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -3918,7 +3938,7 @@
     "id": "AU",
     "name": "AU",
     "family": "HARMONICS_PITCH",
-    "version": "1.0.4",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -4112,7 +4132,7 @@
     "id": "SLOTMACHINE",
     "name": "SlotMachine",
     "family": "CREATIVE_TRANSFORM",
-    "version": "2.2.6",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -4233,7 +4253,7 @@
     "id": "ARCHAEOLOGIST_X",
     "name": "ARCHAEOLOGIST X",
     "family": "CREATIVE_TRANSFORM",
-    "version": "2.0.6",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -4380,7 +4400,7 @@
     "id": "SERQET",
     "name": "SERQET",
     "family": "CREATIVE_TRANSFORM",
-    "version": "1.0.4",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
@@ -4485,7 +4505,7 @@
     "id": "ANKH",
     "name": "ANKH",
     "family": "MASTERING_CORE",
-    "version": "2.1.5",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -4620,7 +4640,7 @@
     "id": "SPHYNX",
     "name": "SPHYNX",
     "family": "MASTERING_CORE",
-    "version": "2.2.0",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -4741,7 +4761,7 @@
     "id": "MAAT",
     "name": "Maat",
     "family": "MASTERING_CORE",
-    "version": "1.0.15",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -4925,7 +4945,7 @@
     "id": "HORIZON_X",
     "name": "HORIZON X",
     "family": "MASTERING_CORE",
-    "version": "1.0.3",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -5080,7 +5100,7 @@
     "id": "PLATINUM",
     "name": "PLATINUM",
     "family": "MASTERING_CORE",
-    "version": "1.0.2",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
@@ -5264,7 +5284,7 @@
     "id": "SESHAT",
     "name": "SESHAT",
     "family": "UTILITY_OBSERVATION",
-    "version": "1.0.6",
+    "version": "1.0.1",
     "formats": [
       "AU",
       "VST3",
