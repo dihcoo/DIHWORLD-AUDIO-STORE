@@ -574,7 +574,7 @@
     "id": "TRIPLER",
     "name": "TRIPLER",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "3.5.7",
+    "version": "3.6.9",
     "formats": [
       "AU",
       "VST3"

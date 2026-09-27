@@ -1,0 +1,25 @@
+DIHWorld Audio — Complete 42 System Build Status
+Verified: 2026-09-27
+
+The authoritative 42-product rebuild completed with 42 passed and 0 failed in the corrected summary.
+
+Formats and installation
+- AU and VST3 bundles were rebuilt, Developer ID signed, installed to the system plugin locations, and verified with strict deep signature checks.
+- System inventory result: 42 AU/VST3 pairs verified, 0 signature failures.
+- User-level DIH plugin copies were removed from the active user plugin folders. A recoverable prior ANUBIS copy is retained in the local administrator backup area.
+
+ANUBIS correction
+- The catalog build failure was isolated to ANUBIS preset recall code calling a reset path that does not exist for its local gain-match state.
+- The preset transition now clears ANUBIS's local gain-match dB state before applying a factory program, preventing compensation from carrying between presets.
+
+Release versions
+- Non-Sacred products: 1.0.1.
+- Locked Sacred releases: Cathedral 3.5.7, SacredVerb 3.5.7, TRIPLER 3.6.9, DEBO 3.6.9, and DrumKrushGlue 3.6.9.
+
+Delivery state
+- This status covers the signed system AU/VST3 rebuild and installation. It does not claim that a new 42-product installer package has been notarized or made publicly downloadable.
+- Customer delivery remains protected until a package-level notarization and deployment pass is completed.
+
+Authoritative local records:
+SUMMARY_20260926_235337.txt
+BULK_REBUILD_INSTALL_20260926_235337.log
