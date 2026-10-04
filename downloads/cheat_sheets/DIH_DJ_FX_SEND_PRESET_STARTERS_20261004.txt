@@ -1,0 +1,46 @@
+DIHWorld Audio — DJ FX Send Preset Starters
+Release: 2026-10-04
+
+These are starter definitions for DJ mixer effect sends. Load the plugin on a return, keep it 100% wet, leave the return at unity, and perform intensity from the mixer send.
+
+DELIVERY CATEGORIES
+DJ RETURN / SPACE: SACREDVERB, PARALLAX
+DJ RETURN / MOTION: NSR, NTRSTLLR, EchoLocate
+DJ RETURN / KEYED SPECTRAL: TEHUTI (separate key optional)
+DJ PREP / INSERT OR STEM: OTIS, ANUBIS, MARIANA, MONOLITH, DrumKrushGlue, MAAT, SPHYNX, PLATINUM, IMHOTEP
+
+SINGLE-RETURN BANK
+This is one host-facing bank for a single DJ FX return. Each entry loads one plugin; it is not a new multi-effect plugin.
+
+DJ VOCAL THROW
+Target: SACREDVERB
+Concept: Short-to-medium transition tail for a final word, stab, or phrase.
+Guardrail: Keep the dry deck path present; match the return level before the set.
+
+TRANSITION SPACE
+Target: SACREDVERB or EchoLocate
+Concept: A controlled lift into the next section with send automation.
+Guardrail: The send is the performance control; avoid riding plugin output live.
+
+WIDE BREAK
+Target: PARALLAX
+Concept: Moderate width/depth for an intro, breakdown, or atmospheric handoff.
+Guardrail: Check mono and keep low-frequency content centered.
+
+DEEP RETURN
+Target: SACREDVERB or NSR
+Concept: Darker, deeper return that adds space without masking the dry deck.
+Guardrail: Use a conservative ceiling and reduce the send if punch softens.
+
+CLUB SAFE FX
+Target: SACREDVERB or PARALLAX
+Concept: Matched-level, restrained return for a full-range club system.
+Guardrail: Compare bypassed and engaged states at equal perceived loudness.
+
+DRY/WET CUT
+Target: Any send-friendly return
+Concept: Fast host automation on the send for rhythmic cuts and fills.
+Guardrail: Do not automate the dry deck away; verify the return is truly wet-only.
+
+MACHINE-READABLE CONTRACT
+See DIH_DJ_FX_SEND_PRESET_CATALOG_20261004.json for category IDs, eligible plugins, wet defaults, and safety flags.

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIHWorld Audio — DJ FX Send Routing</title>
+  <meta name="description" content="Current DIHWorld Audio DJ workflow: route plugins through your DJ system's effect sends and returns.">
+  <style>
+    :root { color-scheme: dark; --ink:#08111d; --panel:#112139; --line:#3f688e; --gold:#f3c86b; --cyan:#55eaff; --text:#edf7ff; --muted:#b2c8db; --blue:#143b64; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:radial-gradient(circle at 15% 0%,#1b4770 0,#07111f 42%,#03070d 100%); color:var(--text); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { max-width:1120px; margin:0 auto; padding:48px 24px 80px; }
+    .eyebrow { color:var(--cyan); letter-spacing:.16em; font-size:.76rem; font-weight:800; }
+    h1 { margin:.15em 0 .3em; color:var(--gold); font-size:clamp(2.3rem,6vw,4.8rem); line-height:1.02; }
+    h2 { color:var(--gold); margin:2.2rem 0 .45rem; font-size:1.55rem; }
+    h3 { color:var(--cyan); margin:1.4rem 0 .3rem; }
+    p { color:var(--muted); max-width:890px; }
+    .hero { max-width:900px; }
+    .notice, .panel { border:1px solid var(--line); border-radius:16px; padding:20px 22px; background:rgba(17,33,57,.87); box-shadow:0 18px 48px rgba(0,0,0,.2); }
+    .notice { margin-top:24px; border-color:var(--gold); }
+    .notice strong { color:var(--text); }
+    .flow { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin:22px 0; }
+    .flow span { border:1px solid var(--cyan); border-radius:10px; padding:13px 15px; background:rgba(10,31,54,.92); color:var(--text); font-weight:700; }
+    .flow b { color:var(--gold); font-size:1.3rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:18px; }
+    .card { border:1px solid var(--line); border-radius:14px; padding:18px; background:rgba(17,33,57,.78); }
+    .card strong { display:block; color:var(--text); font-size:1.05rem; }
+    .card p { margin:.35rem 0 0; font-size:.94rem; }
+    ul { color:var(--muted); padding-left:1.35rem; }
+    li { margin:.35rem 0; }
+    a { color:var(--cyan); }
+    .links { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
+    .button { display:inline-block; padding:11px 15px; border:1px solid var(--gold); border-radius:9px; text-decoration:none; color:var(--gold); background:rgba(15,30,50,.8); }
+    footer { margin-top:48px; color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); padding-top:18px; }
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <p class="eyebrow">DIHWORLD AUDIO · CHEAT SHEETS · DJ WORKFLOW</p>
+    <h1>DJ FX Send Routing</h1>
+    <p>Use DIHWorld Audio in the DJ system you already have. This current workflow keeps the dry deck path in the mixer and places a DIHWorld plugin on a dedicated effect return for transitions, vocal throws, width, depth, and movement.</p>
+    <div class="notice"><strong>Current boundary:</strong> DIH Live is not in production yet. This guide does not promise direct Serato, Rekordbox, Traktor, or controller integration. It documents the effect-send/return workflow available now. Preset categories are a verification-gated delivery blueprint until each plugin passes its individual return test.</div>
+  </section>
+
+  <h2>Reference signal flow</h2>
+  <div class="flow" aria-label="DJ effect send routing diagram">
+    <span>Deck A / B</span><b>→</b><span>DJ mixer FX Send</span><b>→</b><span>DIHWorld plugin return</span><b>→</b><span>FX Return</span><b>→</b><span>Master</span>
+  </div>
+  <p>The mixer remains authoritative for the dry signal. Put the plugin on an effect return, set it 100% wet, keep the return at unity, and perform intensity from the mixer send.</p>
+
+  <h2>Logic Pro wiring</h2>
+  <div class="panel">
+    <ul>
+      <li>Connect the mixer FX Send to interface inputs 1–2, and interface outputs 1–2 to the mixer FX Return.</li>
+      <li>Create a stereo audio track, choose inputs 1–2, enable input monitoring, and route its output to the return pair.</li>
+      <li>Start at a 128-sample buffer (64 if stable), load one DIH effect, and set it 100% wet.</li>
+      <li>Set the mixer return to unity, then raise the channel send. Never route the FX Return back into the FX Send.</li>
+    </ul>
+    <p>Ableton Live uses the same topology: monitored live input on the send pair and output on the return pair. Aim for interface peaks around –12 to –6 dBFS. The deck BPM is not automatically known to the Mac, so use free-time settings, tap tempo, or a manually set host tempo.</p>
+  </div>
+
+  <h2>Best first returns</h2>
+  <div class="grid">
+    <div class="card"><strong>SACREDVERB</strong><p>Transition tails and vocal throws. Start 100% wet with a short-to-medium decay.</p></div>
+    <div class="card"><strong>PARALLAX</strong><p>Controlled width and depth for breaks. Check mono and keep the low end centered.</p></div>
+    <div class="card"><strong>NSR / NTRSTLLR</strong><p>Spatial movement returns. Keep motion moderate on a club system.</p></div>
+    <div class="card"><strong>EchoLocate</strong><p>Source-position and vocal movement. Automate the send, not the dry source.</p></div>
+    <div class="card"><strong>TEHUTI</strong><p>Spectral movement when the host exposes a separate key/sidechain input.</p></div>
+  </div>
+
+  <h2>Preset categories</h2>
+  <p>The DJ delivery uses plugin-specific categories plus one single-return bank. That keeps each plugin’s purpose clear while giving a DJ one predictable place to start.</p>
+  <div class="grid">
+    <div class="card"><strong>DJ RETURN / SPACE</strong><p>SACREDVERB and PARALLAX. One wet return per plugin for tails, transitions, width, and depth.</p></div>
+    <div class="card"><strong>DJ RETURN / MOTION</strong><p>NSR, NTRSTLLR, and EchoLocate. Movement and source-position returns with send automation.</p></div>
+    <div class="card"><strong>DJ RETURN / KEYED SPECTRAL</strong><p>TEHUTI. Use when the host exposes a separate key/sidechain input.</p></div>
+    <div class="card"><strong>DJ PREP / INSERT OR STEM</strong><p>OTIS, ANUBIS, MARIANA, MONOLITH, DrumKrushGlue, MAAT, SPHYNX, PLATINUM, and IMHOTEP.</p></div>
+  </div>
+  <p><strong>Single-return bank:</strong> DJ VOCAL THROW, TRANSITION SPACE, WIDE BREAK, DEEP RETURN, CLUB SAFE FX, and DRY/WET CUT. Each entry loads one existing plugin on one return lane; it is a delivery category, not a new multi-effect processor.</p>
+
+  <h2>DJ rules that keep the return safe</h2>
+  <ul>
+    <li>Return plugins are 100% wet; the dry deck stays in the mixer.</li>
+    <li>Start with one processor per return; two is the live maximum for a first pass.</li>
+    <li>Leave the return at unity and use the send as the performance control.</li>
+    <li>Match perceived level before deciding that an effect is louder or “better.”</li>
+    <li>Check mono/correlation and output headroom before a club set.</li>
+    <li>Use sidechain only when the host provides a separate detector/key input.</li>
+  </ul>
+
+  <h2>Verification gate</h2>
+  <p>Category entries become factory presets only after an individual plugin test confirms wet-only output, no feedback loop, matched return level, acceptable latency, mono/correlation safety, and click-free preset recall. Until then, use the catalog as a host-template and delivery blueprint.</p>
+
+  <h2>Starter workflows</h2>
+  <div class="grid">
+    <div class="card"><strong>DJ VOCAL THROW</strong><p>SACREDVERB on a wet return. Raise the send for the last phrase, then pull it back before the downbeat.</p></div>
+    <div class="card"><strong>TRANSITION SPACE</strong><p>SACREDVERB or EchoLocate with send automation for an intentional handoff between sections.</p></div>
+    <div class="card"><strong>WIDE BREAK</strong><p>PARALLAX at moderate width/depth for an intro or breakdown; verify mono first.</p></div>
+    <div class="card"><strong>CLUB SAFE FX</strong><p>SACREDVERB or PARALLAX with a conservative ceiling and matched return level.</p></div>
+  </div>
+
+  <h2>Better as inserts or prepared stems</h2>
+  <p>OTIS, ANUBIS, MARIANA, MONOLITH, DrumKrushGlue, MAAT, SPHYNX, PLATINUM, and IMHOTEP are usually better as inserts, family-bus processors, or pre-rendered DJ stems. Prepare a dry reference alongside the processed version so the DJ can choose confidently.</p>
+
+  <div class="links">
+    <a class="button" href="DIH_DJ_FX_SEND_PACK_HANDOFF_20261004.pdf">Open full handoff PDF ↗</a>
+    <a class="button" href="DIH_DJ_FX_SEND_PRESET_STARTERS_20261004.txt">Open preset starters ↗</a>
+    <a class="button" href="DIH_DJ_FX_SEND_PRESET_CATALOG_20261004.json">Open preset catalog ↗</a>
+    <a class="button" href="DIH_DJ_FX_SEND_PRESET_CATALOG_20261004.json">Open preset catalog ↗</a>
+    <a class="button" href="../../manuals/#documents">Complete documentation ↗</a>
+  </div>
+  <footer>DIHWorld Audio · DJ FX Send Pack v1.0 · Current workflow only. DIH Live and direct DJ software integration remain future roadmap items.</footer>
+</main>
+</body>
+</html>
