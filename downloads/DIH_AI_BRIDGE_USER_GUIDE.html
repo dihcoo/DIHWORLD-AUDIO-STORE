@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIH AI Bridge | DIHWorld Audio</title>
+  <style>
+    :root{color-scheme:dark;--bg:#07100f;--panel:#0d1817;--line:#35f5d5;--gold:#f0c96b;--text:#f6f2df;--muted:#c8d5cf}
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at 50% 0,#18332f,#050807 72%);color:var(--text);font:16px/1.55 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    header,main{max-width:980px;margin:auto;padding:34px 24px}
+    a{color:#f7d775;text-decoration:none}a:hover{text-decoration:underline}
+    h1,h2{color:var(--gold);letter-spacing:.06em;text-transform:uppercase}h1{margin:0 0 12px}h2{margin-top:34px}
+    .eyebrow{color:#66ffe3;text-transform:uppercase;letter-spacing:.12em;font-size:.82rem;font-weight:700}
+    .lead,.card{background:rgba(13,24,23,.9);border:1px solid rgba(53,245,213,.32);border-radius:18px;box-shadow:0 0 34px rgba(53,245,213,.08)}
+    .lead{padding:22px;margin:22px 0}.card{padding:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+    .card h3{margin:0 0 8px;color:#66ffe3}.muted{color:var(--muted)}code{color:#a7fff0}
+    .back{display:inline-block;margin-bottom:28px}.notice{border-left:3px solid var(--gold);padding-left:16px}
+    ul{padding-left:22px}li{margin:8px 0}.footer{margin-top:36px;padding-top:18px;border-top:1px solid rgba(53,245,213,.25);color:var(--muted);font-size:.92rem}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back" href="../index.html">← Back to DIHWorld Audio</a>
+    <p class="eyebrow">DIHWorld Audio companion service</p>
+    <h1>DIH AI Bridge</h1>
+    <p class="lead">The DIH AI Bridge is a native macOS companion that reads a captured DIHWorld Audio plugin state and returns reviewable Ma’at direction plus Imhotep build suggestions. It is designed to make the user’s next decision more precise without taking control away from the engineer.</p>
+    <p class="notice"><strong>DIHWorld scope:</strong> this service is currently for DIHWorld Audio plugin sessions. DMI TRACK is not connected to the bridge yet.</p>
+  </header>
+  <main>
+    <h2>What it reads</h2>
+    <div class="grid">
+      <article class="card"><h3>Plugin context</h3><p>Family, plugin identity, preset name/index, and the controls exposed by the current editor.</p></article>
+      <article class="card"><h3>Live readouts</h3><p>Host-authoritative input/output peaks, level delta when available, and parameter positions that need a second look.</p></article>
+      <article class="card"><h3>Signal-flow role</h3><p>The bridge uses the plugin’s DIH family and lane context to keep source, bus, send, and master decisions separate.</p></article>
+    </div>
+
+    <h2>What it returns</h2>
+    <div class="grid">
+      <article class="card"><h3>Ma’at — direction + balance</h3><p>A concise corrective direction: protect the source, check low-center stability, verify stereo integrity, or choose the lightest corrective stage.</p></article>
+      <article class="card"><h3>Imhotep — build suggestions</h3><p>A practical next move grounded in the captured state, such as preparing one source, assigning the correct family bus, or containing a combined program.</p></article>
+      <article class="card"><h3>Review before commit</h3><p>Suggestions are guidance, not automatic mixing. The user reviews the proposal, then explicitly applies or undoes any supported change.</p></article>
+    </div>
+
+    <h2>Safety and privacy boundary</h2>
+    <ul>
+      <li>Native delivery; no JUCE wrapper is required for the bridge.</li>
+      <li>The current provider is <code>offline-canon</code>. The bridge does not make network model calls or require provider credentials.</li>
+      <li>The bridge never runs from the audio thread or from <code>processBlock</code>; audio remains under the host and plugin DSP.</li>
+      <li>Normal production responses are review-only. Protected controls are not eligible for automatic patching.</li>
+      <li>The host meters remain authoritative. A bridge comment cannot override a DAW meter or a deliberate user decision.</li>
+    </ul>
+
+    <h2>Session flow</h2>
+    <ol>
+      <li>Open a DIHWorld Audio plugin in the DAW.</li>
+      <li>Capture/read the current editor state and signal readouts.</li>
+      <li>Review Ma’at’s balance note and Imhotep’s build suggestion.</li>
+      <li>Make the change manually or apply a supported proposal, then use the plugin’s undo path if needed.</li>
+    </ol>
+
+    <p class="footer">The bridge is an optional assistant layer for DIHWorld Audio. It does not replace the manuals, host meters, or the engineer’s ears.</p>
+  </main>
+</body>
+</html>

@@ -1,7 +1,8 @@
 DIHWORLD AUDIO — CORE PLUGINS
 
-Canonical audit date: 2026-09-05.
-The current Core installer and branded disk image are signed, notarized, stapled, Gatekeeper-accepted, and verified against the installed owner catalog. Its five components match their current individual canonical releases:
-NTRPL 1.0.2, OTIS 2.1.16, PARALLAX 1.0.3, SILVER 1.0.4, and SacredVerb 3.5.7.
+Canonical audit date: 2026-09-05. Superseded by the 2026-10-04 Core storefront correction.
+The current Core authority is OTIS, MARIANA, SACREDVERB, PARALLAX, and SILVER. NTRPL remains a valid Bass / Low End catalog product, but is not a Core member.
+
+The historical Core installer and branded disk image were signed, notarized, stapled, Gatekeeper-accepted, and verified against the installed owner catalog. Do not use its older membership list for current storefront or delivery decisions.
 
 Protected customer delivery uses the verified 2026-09-05 Core release. Public checkout is not active.
