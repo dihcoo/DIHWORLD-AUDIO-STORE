@@ -2,8 +2,8 @@
   "pack": "DIH DJ FX Send Pack",
   "version": "1.0",
   "releaseDate": "2026-10-04",
-  "deliveryModel": "plugin-specific categories plus a single DJ FX Return bank (verification-gated blueprint)",
-  "verificationStatus": "Category metadata and starter names are published; factory preset promotion requires plugin-by-plugin return testing.",
+  "deliveryModel": "plugin-specific factory categories plus a single DJ FX Return bank",
+  "verificationStatus": "Factory programs are implemented in the relevant AU/VST3 browsers; audio-return audition and loudness verification remain release QA.",
   "currentBoundary": {
     "availableNow": "Use AU or VST3 plugins through the DJ system's effect send and return path.",
     "future": "DIH Live and direct DJ-software/controller integration are not included."
@@ -23,21 +23,21 @@
       "label": "DJ RETURN / SPACE",
       "delivery": "single-plugin return",
       "plugins": ["SACREDVERB", "PARALLAX"],
-      "presets": ["DJ VOCAL THROW", "TRANSITION SPACE", "WIDE BREAK", "CLUB SAFE FX"]
+      "presets": ["DJ RETURN / VOCAL THROW", "DJ RETURN / CLUB SAFE FX", "DJ RETURN / WIDE BREAK"]
     },
     {
       "id": "dj-return-motion",
       "label": "DJ RETURN / MOTION",
       "delivery": "single-plugin return",
       "plugins": ["NSR", "NTRSTLLR", "EchoLocate"],
-      "presets": ["MOTION THROW", "VOCAL POSITION", "RHYTHMIC FIELD"]
+      "presets": ["DJ RETURN / DEEP RETURN", "DJ RETURN / DRY/WET CUT", "DJ RETURN / TRANSITION SPACE"]
     },
     {
       "id": "dj-return-keyed",
       "label": "DJ RETURN / KEYED SPECTRAL",
       "delivery": "single-plugin return with optional external key",
       "plugins": ["TEHUTI"],
-      "presets": ["KEYED CARVE", "SPECTRAL LIFT"]
+      "presets": ["DJ RETURN / KEYED CARVE", "DJ RETURN / SPECTRAL LIFT"]
     },
     {
       "id": "dj-insert-stem",
@@ -51,12 +51,12 @@
     "label": "DJ FX RETURN / SINGLE PLUGIN",
     "description": "A host-facing category that exposes the six safest first-return choices without requiring a multi-plugin chain.",
     "presets": [
-      {"name": "DJ VOCAL THROW", "plugin": "SACREDVERB", "wet": 1.0, "sendAutomation": true},
-      {"name": "TRANSITION SPACE", "plugin": "EchoLocate", "wet": 1.0, "sendAutomation": true},
-      {"name": "WIDE BREAK", "plugin": "PARALLAX", "wet": 1.0, "monoCheck": true},
-      {"name": "DEEP RETURN", "plugin": "NSR", "wet": 1.0, "monoCheck": true},
-      {"name": "CLUB SAFE FX", "plugin": "SACREDVERB", "wet": 1.0, "matchedLevel": true},
-      {"name": "DRY/WET CUT", "plugin": "NTRSTLLR", "wet": 1.0, "sendAutomation": true}
+      {"name": "DJ RETURN / VOCAL THROW", "plugin": "SACREDVERB", "wet": 1.0, "sendAutomation": true},
+      {"name": "DJ RETURN / TRANSITION SPACE", "plugin": "EchoLocate", "wet": 1.0, "sendAutomation": true},
+      {"name": "DJ RETURN / WIDE BREAK", "plugin": "PARALLAX", "wet": 1.0, "monoCheck": true},
+      {"name": "DJ RETURN / DEEP RETURN", "plugin": "NSR", "wet": 1.0, "monoCheck": true},
+      {"name": "DJ RETURN / CLUB SAFE FX", "plugin": "SACREDVERB", "wet": 1.0, "matchedLevel": true},
+      {"name": "DJ RETURN / DRY/WET CUT", "plugin": "NTRSTLLR", "wet": 1.0, "sendAutomation": true}
     ]
   }
 }

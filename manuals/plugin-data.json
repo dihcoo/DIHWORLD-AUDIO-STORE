@@ -10,8 +10,8 @@
       "Standalone"
     ],
     "placement": "Insert Safe",
-    "placementNote": "Color stage for a source or vocal after a level-matched Silver reference comparison; use only when deliberate harmonic character is wanted.",
-    "description": "Color microphone voicing for deliberate harmonic body, presence, soul, weight, and dimensional lift. GOLD is the creative color choice, not the neutral reference microphone.",
+    "placementNote": "Creative mic-color stage after a level-matched reference comparison; use only when deliberate harmonic character is wanted.",
+    "description": "M50-referenced input response followed by deliberate harmonic color for body, presence, soul, weight, and dimensional lift. GOLD is a creative color stage, not an automatic correction or neutral reference.",
     "parameters": [
       {
         "id": "channelmode",
@@ -93,8 +93,8 @@
       "VST3"
     ],
     "placement": "Insert Safe",
-    "placementNote": "Reference stage: establish the level-matched baseline before deciding whether GOLD color is musically useful.",
-    "description": "Neutral M50 reference microphone voicing for truthful level and tone comparisons: air, articulation, transient precision, and spatial reveal. SILVER is the reference, not a color stage.",
+    "placementNote": "Neutral reference stage: establish a level-matched baseline before deciding whether GOLD color is musically useful.",
+    "description": "M50-referenced neutral source voicing for truthful level and tone comparisons: air, articulation, transient precision, and spatial reveal. SILVER is a reference voicing, not an automatic correction or universal flat-response promise.",
     "parameters": [
       {
         "id": "channelmode",
@@ -215,8 +215,8 @@
       "VST3"
     ],
     "placement": "Insert Safe",
-    "placementNote": "ribbon mic source shaping",
-    "description": "Phi ribbon microphone channel with transformer family, core material, winding, lamination, polar pattern, ribbon mass, proximity, and magnetic behavior.",
+    "placementNote": "adaptive ribbon source shaping; use after level-matching the user mic",
+    "description": "Pressure-responsive Phi ribbon channel for any user microphone: a mechanical pressure/excursion stage responds to the incoming signal before the transformer/core model. Ribbon Damping, Ribbon Excursion, and Ribbon Guard shape recovery and transient protection without assuming a microphone price, brand, or hidden flat-response correction.",
     "parameters": [
       {
         "id": "DRIVE",
@@ -262,6 +262,21 @@
         "id": "CONVERGENCE",
         "name": "Proximity",
         "type": "Float"
+      },
+      {
+        "id": "DAMPING",
+        "name": "Ribbon Damping",
+        "type": "Float"
+      },
+      {
+        "id": "EXCURSION",
+        "name": "Ribbon Excursion",
+        "type": "Float"
+      },
+      {
+        "id": "RIBBON_GUARD",
+        "name": "Ribbon Guard",
+        "type": "Choice"
       },
       {
         "id": "IRON_DRIVE",
@@ -442,7 +457,18 @@
       "DIH WORLD AUDIO [Dual Mono]",
       "ULTRA CEILING 369 [Dual Mono]"
     ],
-    "meters": [],
+    "meters": [
+      {
+        "display": "PEAK",
+        "measures": "Protected output peak",
+        "reading": "Use with Gain Match and bypass to judge level fairly; it is not a gain-reduction meter."
+      },
+      {
+        "display": "STEREO FIELD",
+        "measures": "Polar outline plus live mid/side position",
+        "reading": "Confirm the chosen polar pattern and check mono before widening a return."
+      }
+    ],
     "channelMode": true,
     "dualMono": true,
     "gainMatch": true,
@@ -450,7 +476,8 @@
     "imageRefs": [
       "source/WP.PNG",
       "source/WPR.png"
-    ]
+    ],
+    "manualPdf": "docs/plugins/WPR_USER_MANUAL.pdf"
   },
   {
     "id": "AEGIS_NOVA",
@@ -574,7 +601,7 @@
     "id": "TRIPLER",
     "name": "TRIPLER",
     "family": "VOCAL_MIC_SOURCE",
-    "version": "3.6.9",
+    "version": "3.5.7",
     "formats": [
       "AU",
       "VST3"
@@ -848,7 +875,7 @@
     "meters": [],
     "channelMode": true,
     "dualMono": true,
-    "gainMatch": true,
+    "gainMatch": false,
     "sidechain": false,
     "imageRefs": [
       "resources/echolocate.png"
@@ -1306,8 +1333,7 @@
     "version": "1.0.1",
     "formats": [
       "AU",
-      "VST3",
-      "Standalone"
+      "VST3"
     ],
     "placement": "Low End Source",
     "placementNote": "low-end/sub field",
@@ -1631,14 +1657,14 @@
   {
     "id": "NTRPL",
     "name": "NTRPL",
-    "family": "HARMONICS_PITCH",
+    "family": "BASS_LOW_END",
     "version": "1.0.1",
     "formats": [
       "AU",
       "VST3"
     ],
-    "placement": "Insert Safe",
-    "placementNote": "harmonics/pitch",
+    "placement": "Low End Source",
+    "placementNote": "reclassified bass family",
     "description": "Low-end transformation engine for rewrite map, novelty, interval motion, contour, shape, space, and originality guard. A named optional Sidechain supports keyed Rewrite Duck and remains inactive until Sidechain Key is enabled.",
     "parameters": [
       {
@@ -1796,9 +1822,38 @@
     ],
     "placement": "Creative Transform",
     "placementNote": "instrument/plugin generator",
-    "description": "Sixteen-pad drum sampler and host-synced sequencer with sample loading, pad shaping, restored factory programs, pattern memory, capture, morph, and performance controls. Afro Roots and Afro Percussion Roots provide 108 BPM low-anchor and percussion-forward starting points with deterministic accent contour. The current AU is registered and uses smoothed output normalization. A named optional Sidechain input accepts live audio for sampler capture; it is not a required main input.",
+    "description": "Sixteen-pad DIH drum sampler and host-timeline sequencer with sample loading, pad shaping, restored factory programs, pattern memory, capture, live sidechain/MPC morph, and performance controls. The current 1.0.1 factory bank is organized around distinct modern patterns including 808, trap, R&B, drill, Afro, Latin, house, pop, cinema, and Bay Area grooves. Selectable MPC C1 chromatic mapping covers Bank A Pads 1-16 on MIDI notes 36-51 while the released GM map remains available for existing sessions. WAV, AIFF, CAF, FLAC, MP3, and OGG loading plus live sidechain return are supported; user-owned third-party samples remain local and are not embedded in public installers.",
     "parameters": [],
-    "presets": [],
+    "presets": [
+      "808 POCKET",
+      "OFF-GRID TRAP",
+      "DARK RNB",
+      "SUBWEIGHT",
+      "HALF-TIME GLIDE",
+      "DRILL POCKET",
+      "BROKEN HATS",
+      "SPARSE SPARK",
+      "SPACEY TRAP",
+      "STRAIGHT BOUNCE",
+      "MINIMAL PULSE",
+      "RIMSHOT CUT",
+      "PERC DRIFT",
+      "SUB SPACE",
+      "DRILL TENSION",
+      "AFRO INTERLOCK",
+      "FOUR FLOOR MODERN",
+      "ALT POP POCKET",
+      "LATE DROP",
+      "RNB LATE NIGHT",
+      "DEMBOW TRAP",
+      "CINEMA DRILL",
+      "FAST HAT MODE",
+      "GLOBAL INTERLOCK",
+      "AFRO POLYRHYTHM",
+      "LATIN MODERN",
+      "SLIDE POCKET",
+      "BAY AREA HYPHY"
+    ],
     "meters": [
       {
         "display": "L / R output",
@@ -2237,7 +2292,22 @@
         "type": "Float"
       }
     ],
-    "presets": [],
+    "presets": [
+      "KHEPRI CANON RESET",
+      "KHEPRI CLEAN PRINT",
+      "KHEPRI VOCAL SILK",
+      "KHEPRI BASS FOUNDATION",
+      "KHEPRI DRUM PUNCH",
+      "KHEPRI BUS GLUE",
+      "KHEPRI AIR REPRO",
+      "KHEPRI VINTAGE DRIFT",
+      "KHEPRI DUAL REEL",
+      "Chain: Pre-PtahTube",
+      "Chain: Vocal Body",
+      "Chain: Drum Bus Pre-Glue",
+      "Chain: Music Bus Foundation",
+      "Chain: Clean Print Finish"
+    ],
     "meters": [
       {
         "display": "INPUT VU",
@@ -2277,8 +2347,7 @@
     "version": "1.0.1",
     "formats": [
       "AU",
-      "VST3",
-      "Standalone"
+      "VST3"
     ],
     "placement": "Mix Bus",
     "placementNote": "stronger color and bus authority; secondary silver mastering-support dot",
@@ -2949,7 +3018,18 @@
       "Seshat Trace",
       "Thoth Phase Door",
       "Sekhem Phi Orbit",
-      "Neteru Full Field"
+      "Neteru Full Field",
+      "Chain: Depth Parallax Finish",
+      "Chain: Vocal Halo Motion",
+      "Chain: Music Bus Tuck",
+      "Chain: Drum Return Motion",
+      "Chain: Parallel Bloom",
+      "Studio Vocal - Focus 40/55 ms",
+      "Studio Vocal - Double 75/105 ms",
+      "Studio Vocal - Throw 165/230 ms",
+      "Studio Instrument - Pocket 60/85 ms",
+      "Studio Guitar - Spread 100/140 ms",
+      "Studio Keys - Bloom 210/295 ms"
     ],
     "meters": [
       {
@@ -3158,7 +3238,22 @@
       "Mono Wormhole Probe",
       "Dual Mono Split Probe",
       "Nebula Only Bloom",
-      "Wormhole Only Pull"
+      "Wormhole Only Pull",
+      "Track Safe Tight Space",
+      "Track Safe Vocal Lift",
+      "Track Safe Wide Return",
+      "Chain: Halo 2 Pre-Cathedral",
+      "Chain: Halo 2 Wide Tail",
+      "Chain: Vocal Insert Safe",
+      "Chain: Instrument Bus Air",
+      "Chain: Drum FX Return",
+      "Chain: Music Bus Tuck",
+      "Studio Vocal - Tight 85 ms",
+      "Studio Vocal - Pocket 120 ms",
+      "Studio Vocal - Open 170 ms",
+      "Studio Instrument - Slap 110 ms",
+      "Studio Guitar - Repeat 160 ms",
+      "Studio Keys - Air 210 ms"
     ],
     "meters": [
       {

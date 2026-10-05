@@ -31,11 +31,19 @@ const sidechainIllustrations = {
 
 const specialFlows = {
   DIH_DRUM_MORPHER: ["MIDI / PAD TRIGGER", "SAMPLE · HYBRID · SYNTH ENGINE", "PAD ENVELOPE & MORPH", "SEQUENCER / PERFORMANCE", "DIH FIELD & GOVERNOR", "STEREO OUTPUT"],
+  WPR: ["USER MIC INPUT", "PROXIMITY / POLAR FIELD", "RIBBON ELEMENT", "MECHANICAL PRESSURE / EXCURSION", "TRANSFORMER / IRON CORE", "PROTECTED OUTPUT"],
   TEHUTI: ["MAIN INPUT", "SIDECHAIN DETECTOR", "3-BAND SPLITTER", "ENVELOPE FOLLOWERS", "GAIN REDUCTION", "FLOWER ENGINE", "MIX", "OUTPUT"],
   ANUBIS: ["MAIN / KEY INPUT", "THRESHOLD", "ATTACK", "HOLD", "RELEASE", "EXPANSION CURVE", "DYNAMICS GUARD", "TRANSPARENT PASS", "OUTPUT"],
 };
 
 const specialWorkflows = {
+  WPR: [
+    "Begin with Gain Match on and set the host preamp so the mic has healthy headroom; WPR does not identify a mic by price or apply a hidden flat-response correction.",
+    "Use Ribbon Damping to set recovery and Ribbon Excursion to set how strongly the element follows pressure movement; make small, level-matched changes.",
+    "Set Ribbon Guard to OFF for open transients, SOFT for normal close-mic work, MEDIUM for vocal pressure, or HARD only when plosives and strong bursts require containment.",
+    "Choose Polar Pattern, Proximity, and Side Width together; confirm the Stereo Field display and check mono before widening a return.",
+    "Use Iron Drive, Flux, and Hysteresis for deliberate transformer color after the ribbon response is stable; keep one prep stage active before stacking another color mic.",
+  ],
   DIH_DRUM_MORPHER: [
     "Start from PHI CALI MOOG BASS for a tight bass-led pocket, or PHI DREAM SYNTH for a spacious synthetic drum field.",
     "Use the calibrated note shown in the upper-left of the target pad when programming or playing MIDI.",
@@ -60,6 +68,13 @@ const specialWorkflows = {
 };
 
 const specialTroubleshooting = {
+  WPR: [
+    "No audible change: confirm Ribbon Blend is above zero, then move Damping or Excursion in small steps while comparing at matched loudness.",
+    "Plosive or burst feels uncontrolled: raise Ribbon Guard one step before reaching for Output or a static low-cut.",
+    "Response feels too slow or dark: lower Damping slightly and verify that Proximity and Polar Pattern are not creating the impression of excess body.",
+    "Stereo image collapses or wanders: return Side Width and Polar Focus toward reset, verify the selected pattern, and check mono.",
+    "The mic still needs exact frequency correction: use a measured mic calibration profile; WPR is signal-adaptive and cannot infer a model or price from audio alone.",
+  ],
   DIH_DRUM_MORPHER: [
     "A pad is silent: clear any active SOLO buttons to restore the full kit.",
     "Sample mode needs audio loaded on that pad; select Hybrid or Synth for model-generated sound without a sample.",
@@ -108,6 +123,42 @@ function controlGuidance(parameter) {
   if (parameter.type === "Bool") return "Touch control: toggle the function on or off.";
   if (parameter.type === "Choice") return "Selects a discrete operating mode stored with the session.";
   return "Adjust from reset in small moves, then verify in context and at matched loudness.";
+}
+
+const presetIntentRules = [
+  [/canon|reset|default|reference|true|prep|align|open/, "a neutral reference point for level-matched setup"],
+  [/808|sub|low|bass|foundation|root|ground|weight|kick|bedrock|mass/, "a controlled low-end foundation and center"],
+  [/air|edge|bright|sheen|lift|crown|shimmer|glass|presence|head air/, "upper-range openness and source definition"],
+  [/body|warm|bloom|throne|velvet|iron|color|gold|tape|tube|soul/, "body and deliberate harmonic color"],
+  [/wide|space|field|room|ambience|halo|portal|orbit|depth|dimension|stereo/, "depth, width, or return-space placement"],
+  [/vocal|voice|lead|gospel|harmony|choir|stack/, "vocal placement or harmonic support"],
+  [/drum|trap|drill|rnb|pocket|hat|groove|bounce|afro|latin|dembow|hyphy/, "a genre- or pocket-oriented rhythmic starting point"],
+  [/guard|shield|repair|clean|tight|focus|clarity|mercy|control|polish|tame/, "containment, cleanup, or translation"],
+  [/motion|move|glide|sweep|warp|speed|pump|rewrite|collision|wormhole|parallax|reverse|impact|rift/, "audible movement or transformation"],
+  [/mono|dual/, "a channel-specific mono or dual-mono layout"],
+];
+
+function presetPurpose(plugin, preset) {
+  const base = String(preset)
+    .replace(/\s*\[(?:Stereo|Mono|Dual Mono|Dual|Major|Minor)\]/gi, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  const lower = base.toLowerCase();
+  const intents = presetIntentRules
+    .filter(([pattern]) => pattern.test(lower))
+    .map(([, purpose]) => purpose)
+    .filter((purpose, index, all) => all.indexOf(purpose) === index)
+    .slice(0, 2);
+  const purpose = intents.length
+    ? intents.join(" plus ")
+    : `the ${familyLabel(plugin.family).toLowerCase()} role named by this program`;
+  const controls = plugin.parameters
+    .filter((parameter) => !/gain|output|input|mix|power|bypass/i.test(parameter.id))
+    .slice(0, 2)
+    .map((parameter) => parameter.name)
+    .join(" and ");
+  const tuning = controls ? ` Fine-tune ${controls} after the source is level-matched.` : " Level-match before fine-tuning.";
+  return `Use ${base} when you want ${purpose}; it is a ${plugin.name} starting point, not a loudness target.${tuning}`;
 }
 
 function filteredPlugins() {
@@ -181,7 +232,7 @@ function renderChapter() {
     const body = selected.meters.length ? `<div class="meter-table">${selected.meters.map((meter) => `<div><strong>${escapeHtml(meter.display)}</strong><span>${escapeHtml(meter.measures)}</span><p>${escapeHtml(meter.reading)}</p></div>`).join("")}</div>` : `<div class="canon-note">No nonstandard reactive display requires a separate interpretation guide. Standard host and input/output meters retain their conventional meaning.</div>`;
     chapterContent.innerHTML = chapterFrame("04", "ANALYZER & METERING", "Read the interface correctly", `${body}<p class="fineprint">Meters observe; they do not improve audio by themselves. Bypass-match, check mono where relevant, and investigate sustained warnings before changing controls.</p>`);
   } else if (activeChapter === "presets") {
-    const body = selected.presets.length ? `<ol class="preset-list">${selected.presets.map((preset, index) => `<li><span>${String(index).padStart(2, "0")}</span><strong>${escapeHtml(preset)}</strong><p>Load, level-match, then refine the primary controls for the source and arrangement.</p></li>`).join("")}</ol>` : `<div class="canon-note">No named factory preset list is currently published for this processor. Use Reset and the parameter map as your starting point.</div>`;
+    const body = selected.presets.length ? `<ol class="preset-list">${selected.presets.map((preset, index) => `<li><span>${String(index).padStart(2, "0")}</span><strong>${escapeHtml(preset)}</strong><p>${escapeHtml(presetPurpose(selected, preset))}</p></li>`).join("")}</ol>` : `<div class="canon-note">No named factory preset list is currently published for this processor. Use Reset and the parameter map as your starting point.</div>`;
     chapterContent.innerHTML = chapterFrame("05", "FACTORY PRESETS", "Purpose-built starting points", body);
   } else if (activeChapter === "workflows") {
     const fallback = [`Insert ${selected.name} at its recommended ${selected.placement.toLowerCase()} position.`, "Load Canon Reset or the closest factory preset and establish level-matched bypass.", `Use ${selected.parameters.slice(0, 3).map((p) => p.name).join(", ")} to shape the result.`, "Automate only after the static sound works in the full arrangement."];
@@ -214,7 +265,7 @@ document.querySelector("#chapter-nav").addEventListener("click", (event) => {
 search.addEventListener("input", renderList);
 familyFilter.addEventListener("change", renderList);
 
-fetch("plugin-data.json")
+fetch("plugin-data.json?v=20261005")
   .then((response) => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return response.json();

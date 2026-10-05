@@ -12,33 +12,33 @@ DJ PREP / INSERT OR STEM: OTIS, ANUBIS, MARIANA, MONOLITH, DrumKrushGlue, MAAT, 
 SINGLE-RETURN BANK
 This is one host-facing bank for a single DJ FX return. Each entry loads one plugin; it is not a new multi-effect plugin.
 
-DJ VOCAL THROW
+DJ RETURN / VOCAL THROW
 Target: SACREDVERB
 Concept: Short-to-medium transition tail for a final word, stab, or phrase.
 Guardrail: Keep the dry deck path present; match the return level before the set.
 
-TRANSITION SPACE
-Target: SACREDVERB or EchoLocate
+DJ RETURN / TRANSITION SPACE
+Target: EchoLocate
 Concept: A controlled lift into the next section with send automation.
 Guardrail: The send is the performance control; avoid riding plugin output live.
 
-WIDE BREAK
+DJ RETURN / WIDE BREAK
 Target: PARALLAX
 Concept: Moderate width/depth for an intro, breakdown, or atmospheric handoff.
 Guardrail: Check mono and keep low-frequency content centered.
 
-DEEP RETURN
-Target: SACREDVERB or NSR
+DJ RETURN / DEEP RETURN
+Target: NSR
 Concept: Darker, deeper return that adds space without masking the dry deck.
 Guardrail: Use a conservative ceiling and reduce the send if punch softens.
 
-CLUB SAFE FX
-Target: SACREDVERB or PARALLAX
+DJ RETURN / CLUB SAFE FX
+Target: SACREDVERB
 Concept: Matched-level, restrained return for a full-range club system.
 Guardrail: Compare bypassed and engaged states at equal perceived loudness.
 
-DRY/WET CUT
-Target: Any send-friendly return
+DJ RETURN / DRY/WET CUT
+Target: NTRSTLLR
 Concept: Fast host automation on the send for rhythmic cuts and fills.
 Guardrail: Do not automate the dry deck away; verify the return is truly wet-only.
 
