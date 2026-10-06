@@ -24,7 +24,7 @@
     <a class="back" href="../index.html">← Back to DIHWorld Audio</a>
     <p class="eyebrow">DIHWorld Audio companion service</p>
     <h1>DIH AI Bridge</h1>
-    <p class="lead">The DIH AI Bridge is a native macOS companion that reads a captured DIHWorld Audio plugin state and returns reviewable Ma’at direction plus Imhotep build suggestions. It is designed to make the user’s next decision more precise without taking control away from the engineer.</p>
+    <p class="lead">The DIH AI Bridge is a native macOS companion that reads a captured DIHWorld Audio plugin state and live readouts, then returns Ma’at direction plus Imhotep build suggestions. When it can identify a safe correction, it returns an exact parameter-level before/after patch so the plug-in can apply the change and keep it undoable.</p>
     <p class="notice"><strong>DIHWorld scope:</strong> this service is currently for DIHWorld Audio plugin sessions. DMI TRACK is not connected to the bridge yet.</p>
   </header>
   <main>
@@ -39,7 +39,7 @@
     <div class="grid">
       <article class="card"><h3>Ma’at — direction + balance</h3><p>A concise corrective direction: protect the source, check low-center stability, verify stereo integrity, or choose the lightest corrective stage.</p></article>
       <article class="card"><h3>Imhotep — build suggestions</h3><p>A practical next move grounded in the captured state, such as preparing one source, assigning the correct family bus, or containing a combined program.</p></article>
-      <article class="card"><h3>Review before commit</h3><p>Suggestions are guidance, not automatic mixing. The user reviews the proposal, then explicitly applies or undoes any supported change.</p></article>
+      <article class="card"><h3>Capture → apply → undo</h3><p>Read Signal captures the current state. Build returns the grounded correction and its before/after values. Apply commits a supported patch in the plug-in; Undo restores the exact prior values. If no safe correction is found, the bridge stays review-only and does not guess.</p></article>
     </div>
 
     <h2>Safety and privacy boundary</h2>
@@ -47,7 +47,7 @@
       <li>Native delivery; no JUCE wrapper is required for the bridge.</li>
       <li>The current provider is <code>offline-canon</code>. The bridge does not make network model calls or require provider credentials.</li>
       <li>The bridge never runs from the audio thread or from <code>processBlock</code>; audio remains under the host and plugin DSP.</li>
-      <li>Normal production responses are review-only. Protected controls are not eligible for automatic patching.</li>
+      <li>A captured signal can produce a bounded, reviewable parameter patch; protected controls are never eligible for patching, and no change is made until the user presses Apply.</li>
       <li>The host meters remain authoritative. A bridge comment cannot override a DAW meter or a deliberate user decision.</li>
     </ul>
 

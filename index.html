@@ -1554,7 +1554,7 @@ h1 {
         <div class="section-heading">
           <p class="eyebrow">DIHWorld Audio companion service</p>
           <h2 id="ai-bridge-title">DIH AI Bridge — Reviewable Guidance Inside Your Session</h2>
-          <p>The optional native macOS bridge turns a captured DIHWorld plugin state and its readouts into precise Ma’at direction and Imhotep build suggestions. It is a companion service, not an audio processor, and it does not replace the host meters or alter the audio path.</p>
+          <p>The optional native macOS bridge turns a captured DIHWorld plugin state and its live readouts into precise Ma’at direction and Imhotep build suggestions. When a safe correction is found, the proposal carries the exact parameter before/after values so the user can apply that change in the plug-in and undo it if needed. It is a companion service, not an audio processor, and it does not replace the host meters or alter the audio path.</p>
         </div>
         <div class="ops-grid">
           <div class="ops-column">
@@ -1570,7 +1570,7 @@ h1 {
             <ul class="ops-list">
               <li><strong>Native delivery</strong><span>Delivered as a DIH-owned service without a JUCE wrapper.</span></li>
               <li><strong>Offline by default</strong><span>The current provider is <code>offline-canon</code>; no network model calls or provider credentials are required.</span></li>
-              <li><strong>Explicit review</strong><span>Suggestions are reviewable. Applying a proposal remains an explicit, undoable plugin action, and the bridge never runs in <code>processBlock</code>.</span></li>
+              <li><strong>Capture → apply → undo</strong><span>Read Signal captures the current plug-in state; Build returns any safe parameter correction with its before/after values; Apply commits it in the plug-in and Undo restores the captured state. There is no silent mutation, and the bridge never runs in <code>processBlock</code>.</span></li>
             </ul>
           </div>
           <div class="ops-column">
@@ -2028,7 +2028,7 @@ h1 {
               </tr>
               <tr>
                 <td>DIH AI Bridge</td>
-                <td>Native macOS companion · offline-canon review guidance</td>
+                <td>Native macOS companion · offline-canon capture → apply → undo</td>
                 <td><a href="downloads/DIH_AI_BRIDGE_USER_GUIDE.html">Read guide</a></td>
               </tr>
               <tr>

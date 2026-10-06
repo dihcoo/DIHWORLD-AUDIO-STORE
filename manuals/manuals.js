@@ -125,40 +125,10 @@ function controlGuidance(parameter) {
   return "Adjust from reset in small moves, then verify in context and at matched loudness.";
 }
 
-const presetIntentRules = [
-  [/canon|reset|default|reference|true|prep|align|open/, "a neutral reference point for level-matched setup"],
-  [/808|sub|low|bass|foundation|root|ground|weight|kick|bedrock|mass/, "a controlled low-end foundation and center"],
-  [/air|edge|bright|sheen|lift|crown|shimmer|glass|presence|head air/, "upper-range openness and source definition"],
-  [/body|warm|bloom|throne|velvet|iron|color|gold|tape|tube|soul/, "body and deliberate harmonic color"],
-  [/wide|space|field|room|ambience|halo|portal|orbit|depth|dimension|stereo/, "depth, width, or return-space placement"],
-  [/vocal|voice|lead|gospel|harmony|choir|stack/, "vocal placement or harmonic support"],
-  [/drum|trap|drill|rnb|pocket|hat|groove|bounce|afro|latin|dembow|hyphy/, "a genre- or pocket-oriented rhythmic starting point"],
-  [/guard|shield|repair|clean|tight|focus|clarity|mercy|control|polish|tame/, "containment, cleanup, or translation"],
-  [/motion|move|glide|sweep|warp|speed|pump|rewrite|collision|wormhole|parallax|reverse|impact|rift/, "audible movement or transformation"],
-  [/mono|dual/, "a channel-specific mono or dual-mono layout"],
-];
-
 function presetPurpose(plugin, preset) {
-  const base = String(preset)
-    .replace(/\s*\[(?:Stereo|Mono|Dual Mono|Dual|Major|Minor)\]/gi, "")
-    .replace(/\s+/g, " ")
-    .trim();
-  const lower = base.toLowerCase();
-  const intents = presetIntentRules
-    .filter(([pattern]) => pattern.test(lower))
-    .map(([, purpose]) => purpose)
-    .filter((purpose, index, all) => all.indexOf(purpose) === index)
-    .slice(0, 2);
-  const purpose = intents.length
-    ? intents.join(" plus ")
-    : `the ${familyLabel(plugin.family).toLowerCase()} role named by this program`;
-  const controls = plugin.parameters
-    .filter((parameter) => !/gain|output|input|mix|power|bypass/i.test(parameter.id))
-    .slice(0, 2)
-    .map((parameter) => parameter.name)
-    .join(" and ");
-  const tuning = controls ? ` Fine-tune ${controls} after the source is level-matched.` : " Level-match before fine-tuning.";
-  return `Use ${base} when you want ${purpose}; it is a ${plugin.name} starting point, not a loudness target.${tuning}`;
+  const description = plugin.presetDescriptions?.[preset];
+  if (description) return description;
+  return `${preset} — source-derived description pending for this catalog entry. Use the exposed controls and compare at matched loudness.`;
 }
 
 function filteredPlugins() {
