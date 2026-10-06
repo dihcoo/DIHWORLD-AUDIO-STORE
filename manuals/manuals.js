@@ -235,7 +235,7 @@ document.querySelector("#chapter-nav").addEventListener("click", (event) => {
 search.addEventListener("input", renderList);
 familyFilter.addEventListener("change", renderList);
 
-fetch("plugin-data.json?v=20261005")
+fetch("plugin-data.json?v=20261005-ai-presets-r4")
   .then((response) => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return response.json();
