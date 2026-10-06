@@ -1,0 +1,26 @@
+DIHWorld Audio — Complete 42 Current Release Manifest
+Verified: 2026-10-05
+
+This is the current storefront-facing release record for the DIHWorld Audio catalog. The manifest tracks 42 AU/VST3 products and is synchronized with the current visual manuals, preset-purpose descriptions, WPR microphone documentation, and DIH AI Bridge guidance.
+
+Release versions
+- Standard catalog products: 1.0.1 unless listed below.
+- Locked Sacred releases: Cathedral 3.5.7, SacredVerb 3.5.7, and TRIPLER 3.5.7.
+- DEBO: 3.6.9.
+- DrumKrushGlue: 3.6.9.
+
+Documentation included in this release
+- Visual manual library for all 42 plugins.
+- Customer and technical family manuals with purpose-aware preset descriptions.
+- WPR and WPR MKVI Signature microphone manuals covering adaptive ribbon response, damping, excursion, ribbon guard, and correction workflow.
+- DIH AI Bridge user guide and current signal-flow guidance.
+- DJ FX-send routing guide, preset catalog, starter sheet, and DIHTemplates starter pack.
+
+Delivery state
+- The storefront and GitHub source are current as of 2026-10-05.
+- Package-level notarization and protected customer installer delivery are separate release gates; this record does not claim that a public installer is available.
+
+Authoritative storefront records:
+- manuals/current-release-versions.json
+- manuals/plugin-data.json
+- manuals/index.html
