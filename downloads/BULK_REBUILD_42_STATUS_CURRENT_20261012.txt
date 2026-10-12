@@ -1,0 +1,13 @@
+DIHWorld Audio — Complete 42 Current Release
+Verified: 2026-10-12
+
+All 42 DIHWorld Audio products have current individual AU and VST3 builds. This release adds AU Synth 1.0.7 and Drum Morpher 1.1.0 to the 2026-10-10 set. Each individual PKG and DMG is signed with the DIHWorld Developer ID, notarized by Apple, stapled, and validated before delivery.
+
+The Complete 42 bulk installer is the matching current release: DIHWORLD_AUDIO_COMPLETE_Installer_20261012_123308.dmg / DIHWORLD_AUDIO_COMPLETE_Installer_20261012_123308.pkg. It contains the same verified AU/VST3 payload and is delivered as a signed PKG plus a signed/notarized/stapled DMG.
+
+Release policy
+- Only the current release is retained in the active release folders; older release folders are archived outside the active release path.
+- Sacred version exceptions remain Cathedral 3.5.7, SacredVerb 3.5.7, TRIPLER 3.5.7, DEBO 3.6.9, and DrumKrushGlue 3.6.9.
+- Core bundle roster: SILVER, OTIS, MARIANA, PARALLAX, SacredVerb.
+
+Authoritative source: ~/Development/DIH_BUILDS/DIH_FINISHED

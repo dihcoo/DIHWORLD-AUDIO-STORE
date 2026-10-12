@@ -1,0 +1,5 @@
+Drum Morpher 1.1.0 — 2026-10-12
+Developer ID signed. Apple notarization Accepted. PKG and DMG stapled and validated.
+Block Train 144 Perc 4 pattern moved one step left to match the session reference.
+Current installers: DIHWORLD_AUDIO_DIH_DRUM_MORPHER_Installer_20261012.dmg / DIHWORLD_AUDIO_DIH_DRUM_MORPHER_Installer_20261012.pkg
+Protected customer download URLs are not configured. Binaries are not published on the public static preview.

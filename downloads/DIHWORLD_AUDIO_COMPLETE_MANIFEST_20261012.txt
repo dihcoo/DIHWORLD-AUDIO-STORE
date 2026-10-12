@@ -1,0 +1,44 @@
+DIHWORLD AUDIO COMPLETE — 20261012_123308
+Current system-wide AU and VST3 builds. DMI TRACK and Sirius products are excluded.
+ANKH\t1.0.1\tcom.dihworld.ankh
+ANUBIS\t1.0.1\tcom.dihworld.anubis
+APIS\t1.0.1\tcom.dihworld.apis
+ARCHAEOLOGIST X\t1.0.1\tcom.dihworld.archaeologistx
+AU\t1.0.7\tcom.dihworld.au
+AUSAR\t1.0.1\tcom.dihworld.ausar
+AUSET\t1.0.1\tcom.dihworld.auset
+AegisNova\t1.0.1\tcom.dihworld.aegisnova
+Ballpark\t1.0.1\tcom.dihworld.ballpark
+Cathedral\t3.5.7\tcom.dihworld.cathedral
+DEPTH_BOOST_PRO\t1.0.1\tcom.dihworld.depthboostpro
+DeBo\t3.6.9\tcom.dihworld.debo
+Depth Impact Hybrid X\t1.0.1\tcom.dihworld.depthimpacthybridx
+Drum Morpher\t1.1.0\tcom.dihworld.drummorpher
+DrumKrushGlue\t3.6.9\tcom.dihworld.drumkrushglue
+EchoLocate\t1.0.1\tcom.dihworld.echolocate
+GOLD\t1.0.1\tcom.dihworld.gold
+Horizon X\t1.0.1\tcom.dihworld.horizonx
+IMHOTEP\t1.0.1\tcom.dihworld.imhotep
+Khepri Sacred Tape Machine\t1.0.1\tcom.dihworld.khepri
+LookOut\t1.0.1\tcom.dihworld.lookout
+MARIANA\t1.0.1\tcom.dihworld.mariana
+MONOLITH\t1.0.1\tcom.dihworld.monolith
+Maat\t1.0.1\tcom.dihworld.maat
+NSR\t1.0.1\tcom.dihworld.nsr
+NTRPL\t1.0.1\tcom.dihworld.ntrpl
+NTRSTLLR\t1.0.1\tcom.dihworld.ntrstllr
+OTIS\t1.0.1\tcom.dihworld.otis
+PARALLAX\t1.0.1\tcom.dihworld.parallax
+PLATINUM\t1.0.1\tcom.dihworld.platinum
+PTAHTUBE\t1.0.1\tcom.dihworld.ptahtube
+SERQET\t1.0.1\tcom.dihworld.serqet
+SESHAT\t1.0.1\tcom.dihworld.seshat
+SILVER\t1.0.1\tcom.dihworld.silver
+SOVEREIGN\t1.0.1\tcom.dihworld.sovereign
+SPHYNX\t1.0.1\tcom.dihworld.sphynx
+SacredVerb\t3.5.7\tcom.dihworld.sacredverb
+SlotMachine\t1.0.1\tcom.dihworld.slotmachine
+TEHUTI\t1.0.1\tcom.dihworld.tehuti
+TRIPLER\t3.5.7\tcom.dihworld.tripler
+Thoth\t1.0.1\tcom.dihworld.thoth
+WPR\t1.0.1\tcom.dihworld.wpr

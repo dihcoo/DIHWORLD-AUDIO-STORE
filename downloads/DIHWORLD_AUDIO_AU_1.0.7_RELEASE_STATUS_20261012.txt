@@ -1,0 +1,7 @@
+AU Synth 1.0.7 — 2026-10-12
+Developer ID signed. Apple notarization Accepted. PKG and DMG stapled and validated.
+TIME is now a plain decay length (0.35 s to 4.2 s) with no repeats; GLIDE, pitch wheel and mod wheel work.
+Warmer, less harsh voicing on every sound; factory sound levels balanced to one loudness.
+New and updated sources: GOLDEN CHOIR, FLUTE MID and FLUTE HI one-shots, ANGEL VOICE, SIREN CHOIR and the heavy west-coast CALI BASS.
+Current installers: DIHWORLD_AUDIO_AU_Installer_20261012.dmg / DIHWORLD_AUDIO_AU_Installer_20261012.pkg
+Protected customer download URLs are not configured. Binaries are not published on the public static preview.
