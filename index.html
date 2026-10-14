@@ -839,8 +839,13 @@ h1 {
 
 .ops-column {
   padding: 24px;
-  border-color: rgba(244, 239, 228, 0.16);
-  background: #23211e;
+  border-color: rgba(244, 239, 228, 0.24);
+  background: #2d2a25;
+  color: #f0e6d1;
+}
+
+.ops-column h3 {
+  color: var(--gold);
 }
 
 .ops-wide {
@@ -862,11 +867,20 @@ h1 {
   min-height: 52px;
   padding: 13px;
   border-radius: 8px;
-  background: rgba(244, 239, 228, 0.08);
+  background: rgba(244, 239, 228, 0.11);
 }
 
 .ops-list strong {
   color: var(--gold);
+}
+
+.ops-list span {
+  color: #ead7a4;
+}
+
+.ops-list code {
+  color: #f0d486;
+  background: rgba(201, 163, 72, 0.14);
 }
 
 .delivery-band {
@@ -1411,7 +1425,54 @@ h1 {
   }
 }
 
-    </style>
+    
+.hub-media {
+  display: grid;
+  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  margin: 0 auto 24px;
+  max-width: 1100px;
+}
+
+.hub-media figure {
+  margin: 0;
+}
+
+.hub-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(201, 163, 72, 0.35);
+}
+
+.hub-media figcaption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.hub-foot {
+  margin-top: 20px;
+}
+
+@media (max-width: 760px) {
+  .hub-media {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hub-band .ops-grid:not(.hub-foot) {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1000px) {
+  .hub-band .ops-grid:not(.hub-foot) {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
   </head>
   <body>
     <header class="site-header" id="home">
@@ -1424,6 +1485,7 @@ h1 {
         <a href="#bundles">Bundles</a>
         <a href="#pricing">Pricing</a>
         <a href="#demos">Demos</a>
+        <a href="#control-hub">Control Hub</a>
         <a href="#ai-bridge">AI Bridge</a>
         <a href="manuals/">Manuals</a>
         <a href="#delivery">Delivery</a>
@@ -1438,7 +1500,8 @@ h1 {
           <a href="#bundles">Bundles</a>
           <a href="#pricing">Pricing</a>
           <a href="#demos">Demos</a>
-          <a href="#ai-bridge">AI Bridge</a>
+          <a href="#control-hub">Control Hub</a>
+        <a href="#ai-bridge">AI Bridge</a>
           <a href="manuals/">Manuals</a>
           <a href="#delivery">Downloads</a>
           <a href="#support">About Us</a>
@@ -1468,6 +1531,7 @@ h1 {
             <li>Start with the Core Bundle if you want the practical entry system.</li>
             <li>Open Short Demos if you want to hear the roles quickly.</li>
             <li>Use Visual Manuals for plugin controls, families, and routing.</li>
+            <li>New: the DIH Control Hub puts pads, transport, and an iPad remote on every DIH plugin.</li>
           </ul>
         </aside>
       </section>
@@ -1481,7 +1545,8 @@ h1 {
         <div class="release-strip" aria-label="Current release status">
           <span>13 primary families</span>
           <span>42 plugins</span>
-          <span>release manifest verified 2026-10-05</span>
+            <span>release manifest verified 2026-10-12</span>
+          <span>new: DIH Control Hub 1.3.0</span>
           <span>public sales + delivery in development</span>
         </div>
         <div class="proof-grid">
@@ -1547,6 +1612,55 @@ h1 {
               <p>Depth, spread, focus, and perspective build a dimensional field around the protected center.</p>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section class="section hub-band" id="control-hub" aria-labelledby="hub-title">
+        <div class="section-heading">
+          <p class="eyebrow">New &middot; DIH Control Hub 1.3.0</p>
+          <h2 id="hub-title">One Control Surface For Every DIH Plugin</h2>
+          <p>Put the Hub on one Logic track. It follows whichever DIH plugin you last clicked, on any track, and turns your pad controller into hands-on, recordable controls for it. Add transport buttons and an iPad or iPhone remote, with nothing to install on the device.</p>
+        </div>
+        <div class="hub-media">
+          <figure><img src="assets/images/hub-window.jpg" width="640" height="604" loading="lazy" alt="The DIH Control Hub window with a 4 by 4 pad grid, transport row, link switch and QR code"><figcaption>The Hub window: pad grid, transport row, iPad link and QR code.</figcaption></figure>
+          <figure><img src="assets/images/hub-ipad.jpg" width="1400" height="978" loading="lazy" alt="The DIH Control Hub web page as it appears on an iPad"><figcaption>The iPad page: live control names and values, pads, presets and transport.</figcaption></figure>
+        </div>
+        <div class="ops-grid">
+          <div class="ops-column">
+            <h3>Pads</h3>
+            <ul class="ops-list">
+              <li><strong>Follows your focus</strong><span>Click any DIH plugin and the Hub switches to that plugin's pad layout.</span></li>
+              <li><strong>Pressure sensitive</strong><span>Toggle, hold and pressure pads on a 4 by 4 grid, with PERFORM and DSP banks and previous/next preset. Built around Akai MPC pads.</span></li>
+              <li><strong>Recorded by Logic</strong><span>Every move is a host-visible gesture, so your DAW records it as automation.</span></li>
+            </ul>
+          </div>
+          <div class="ops-column">
+            <h3>Transport</h3>
+            <ul class="ops-list">
+              <li><strong>Play, stop, record</strong><span>Sent to Logic through a virtual MIDI port as MIDI Machine Control.</span></li>
+              <li><strong>Loop and bar steps</strong><span>Loop, previous bar and next bar work through Logic Key Commands. Map each one once with Learn.</span></li>
+              <li><strong>Editable</strong><span>Change the key channel, notes and MMC device ID in the Hub window. Settings save with the project.</span></li>
+            </ul>
+          </div>
+          <div class="ops-column">
+            <h3>iPad and iPhone remote</h3>
+            <ul class="ops-list">
+              <li><strong>Safari, no app</strong><span>Switch on the link, scan the QR code on the same Wi-Fi, and enter the 6-digit PIN once.</span></li>
+              <li><strong>Live values</strong><span>See the focused plugin's real control names and values, plus pads, presets and transport.</span></li>
+              <li><strong>Private by default</strong><span>Off until you switch it on, PIN protected, and meant for your own network.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ops-grid hub-foot">
+          <div class="ops-column">
+            <h3>Works with all 42 DIHWorld plugins</h3>
+            <p>The Hub bridge is built into every plugin in the 42-plugin DIHWorld Audio catalog, with many more plugins across the DIH ecosystem to come. Mac AU and VST3; the Hub loads as a MIDI FX plugin in Logic.</p>
+          </div>
+          <div class="ops-column">
+            <h3>Pricing and availability</h3>
+            <p><strong>$49 launch</strong> <s>$79 regular</s>. Included free with the Complete Collection and every Lifetime tier. Pre-launch: the Hub passes Apple's auval validation, and checkout and installer delivery are not live yet.</p>
+            <a class="button button-primary" href="downloads/DIH_Control_Hub_Quick_Guide_CURRENT.pdf">Read the 2-page quick guide</a>
+          </div>
         </div>
       </section>
 
@@ -1790,6 +1904,13 @@ h1 {
             <span class="sale-badge">Pre-launch collection</span>
           </article>
           <article class="price-card">
+            <span>DIH Control Hub</span>
+            <h3>$49</h3>
+            <small class="regular-price">Regular <s>$79</s></small>
+            <p>Pads, transport, and an iPad remote for every DIH plugin. Included free with the Complete Collection and all Lifetime tiers.</p>
+            <span class="sale-badge">New &middot; pre-launch</span>
+          </article>
+          <article class="price-card">
             <span>Founder Lifetime</span>
             <h3>$1,499</h3>
             <small class="regular-price">Then Standard Lifetime $1,999</small>
@@ -1946,7 +2067,7 @@ h1 {
         <div class="section-heading">
           <p class="eyebrow">Downloads &amp; documents</p>
           <h2 id="delivery-title">One Connected Delivery Center.</h2>
-          <p>Open visual manuals, customer guides, templates, and current release status. Public plugin sales and customer installer delivery are being prepared.</p>
+          <p>Open visual manuals, customer guides, templates, and the current signed 42-plugin release status. Individual and Complete installers are published only after signature, notarization, stapling, and payload checks pass.</p>
         </div>
 
         <div class="delivery-actions" aria-label="Delivery options">
@@ -1954,8 +2075,9 @@ h1 {
           <a class="button button-secondary light" href="manuals/">Open Visual Manuals</a>
           <a class="button button-secondary light" href="downloads/00A_DIHWorld_Customer_Quick_Guide_CURRENT.pdf">Open Customer Quick Guide</a>
           <a class="button button-secondary light" href="downloads/DIHWorld_Audio_Complete_Manual_CURRENT.pdf">Open Current Manual</a>
-          <a class="button button-secondary light" href="downloads/BULK_REBUILD_42_STATUS_CURRENT_20261005.txt">Complete 42 Build Status</a>
+          <a class="button button-secondary light" href="downloads/BULK_REBUILD_42_STATUS_CURRENT_20261012.txt">Complete 42 Build Status</a>
           <a class="button button-secondary light" href="downloads/DIH_AI_BRIDGE_USER_GUIDE.html">DIH AI Bridge Guide</a>
+          <a class="button button-secondary light" href="downloads/DIH_Control_Hub_Quick_Guide_CURRENT.pdf">DIH Control Hub Guide</a>
         </div>
 
         <div class="delivery-grid">
@@ -1982,7 +2104,7 @@ h1 {
           <article class="delivery-card">
             <span>Install &amp; return</span>
             <h3>Customer Delivery</h3>
-            <p>The current Complete 42 release manifest was verified 2026-10-05 against the signed AU/VST3 catalog. Package-level notarization and protected installer delivery remain a separate release gate.</p>
+            <p>The current Complete 42 release manifest is verified against the signed AU/VST3 catalog on 2026-10-12. Apple notarization, stapling, and protected installer delivery are recorded in the linked current status manifest.</p>
             <ul>
               <li>Public releases will be signed, notarized, and verified before delivery.</li>
               <li>Customer accounts and entitled downloads are not live yet.</li>
@@ -2003,13 +2125,13 @@ h1 {
             <tbody>
               <tr>
                 <td>Complete 42 system rebuild</td>
-                <td>42 AU/VST3 products tracked in the current signed release manifest verified 2026-10-05 · protected delivery</td>
-                <td><a href="downloads/BULK_REBUILD_42_STATUS_CURRENT_20261005.txt">Build status</a></td>
+                <td>42 AU/VST3 products with current individual builds (AU Synth 1.0.7 and Drum Morpher 1.1.0 added 2026-10-12); current PKG/DMG release is signed, notarized, stapled, and payload-checked</td>
+                <td><a href="downloads/BULK_REBUILD_42_STATUS_CURRENT_20261012.txt">Build status</a></td>
               </tr>
               <tr>
                 <td>Locked Sacred releases</td>
                 <td>Cathedral 3.5.7 · SacredVerb 3.5.7 · TRIPLER 3.5.7 · DEBO and DrumKrushGlue 3.6.9</td>
-                <td><a href="downloads/BULK_REBUILD_42_STATUS_CURRENT_20261005.txt">Release matrix</a></td>
+                <td><a href="downloads/BULK_REBUILD_42_STATUS_CURRENT_20261012.txt">Release matrix</a></td>
               </tr>
               <tr>
                 <td>DIHTemplates ZIP</td>
@@ -2027,14 +2149,19 @@ h1 {
                 <td><a href="downloads/DIHWorld_Audio_Complete_Manual_CURRENT.pdf">Open PDF</a></td>
               </tr>
               <tr>
+                <td>DIH Control Hub</td>
+                <td>Pad controller, transport and iPad remote for every DIH plug-in · quick guide, 2 pages</td>
+                <td><a href="downloads/DIH_Control_Hub_Quick_Guide_CURRENT.pdf">Open PDF</a></td>
+              </tr>
+              <tr>
                 <td>DIH AI Bridge</td>
                 <td>Native macOS companion · offline-canon capture → apply → undo</td>
                 <td><a href="downloads/DIH_AI_BRIDGE_USER_GUIDE.html">Read guide</a></td>
               </tr>
               <tr>
                 <td>Mac AU/VST3</td>
-                <td>Public customer library in development</td>
-                <td><a href="#contact">Contact us</a></td>
+                <td>Current signed AU/VST3 Complete release · protected delivery</td>
+                <td><a href="downloads/BULK_REBUILD_42_STATUS_CURRENT_20261012.txt">Release status</a></td>
               </tr>
               <tr>
                 <td>Windows VST3</td>
