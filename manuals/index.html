@@ -83,8 +83,8 @@
           <a href="../downloads/cheat_sheets/DIH_Hybrid_Chain_Library_20260904.pdf" target="_blank" rel="noopener"><span>PDF · HYBRID CHAINS</span><strong>Hybrid Chain Library</strong><p>Vocal, drum, bass, and instrument recipes with controlled parallel lanes.</p><b>Open chain library ↗</b></a>
           <a href="../downloads/cheat_sheets/DIH_DJ_FX_SEND_ROUTING_GUIDE.html" target="_blank" rel="noopener"><span>HTML · DJ FX SENDS</span><strong>DJ FX Send Routing</strong><p>Current mixer-send workflow for transitions, throws, width, depth, and movement.</p><b>Open DJ guide ↗</b></a>
           <a href="../downloads/cheat_sheets/DIH_DJ_FX_SEND_PACK_HANDOFF_20261004.pdf" target="_blank" rel="noopener"><span>PDF · DJ PACK</span><strong>DJ FX Send Pack</strong><p>Detailed routing handoff, return roles, guardrails, and acceptance criteria.</p><b>Open handoff ↗</b></a>
-          <a href="../downloads/cheat_sheets/DIH_DJ_FX_SEND_PRESET_STARTERS_20261004.txt" target="_blank" rel="noopener"><span>TXT · PRESET STARTERS</span><strong>DJ Return Presets</strong><p>Six starter definitions for wet-only returns and live send automation.</p><b>Open preset starters ↗</b></a>
-          <a href="../downloads/cheat_sheets/DIH_DJ_FX_SEND_PRESET_CATALOG_20261004.json" target="_blank" rel="noopener"><span>JSON · DELIVERY CONTRACT</span><strong>DJ Preset Catalog</strong><p>Categories, eligible plugins, wet defaults, and single-return routing metadata.</p><b>Open preset catalog ↗</b></a>
+          <a href="../downloads/cheat_sheets/DIH_DJ_FX_SEND_PRESET_STARTERS_20261004.pdf" target="_blank" rel="noopener"><span>PDF · PRESET STARTERS</span><strong>DJ Return Presets</strong><p>Six starter definitions for wet-only returns and live send automation.</p><b>Open preset starters ↗</b></a>
+          <a href="../downloads/cheat_sheets/DIH_DJ_FX_SEND_PRESET_CATALOG_20261004.pdf" target="_blank" rel="noopener"><span>PDF · DELIVERY CONTRACT</span><strong>DJ Preset Catalog</strong><p>Categories, eligible plugins, wet defaults, and single-return routing metadata.</p><b>Open preset catalog ↗</b></a>
           <a href="../downloads/cheat_sheets/DIH_Cheat_Sheet_Chain_Maps.html" target="_blank" rel="noopener"><span>HTML · VISUAL MAPS</span><strong>DIH Chain Maps</strong><p>Open all five visual chain maps in one focused cheat-sheet view.</p><b>Open chain maps ↗</b></a>
           <a href="../downloads/cheat_sheets/DIH_Producer_Beat_Core_Chains_20260908.png" target="_blank" rel="noopener"><span>PNG · PRODUCER / BEAT</span><strong>Producer / Beat Chains</strong><p>Fast drum, bass, and pocket starting points.</p><b>Open visual map ↗</b></a>
           <a href="../downloads/cheat_sheets/DIH_Dialogue_Content_Core_Chains_20260908.png" target="_blank" rel="noopener"><span>PNG · DIALOGUE / CONTENT</span><strong>Dialogue / Content Chains</strong><p>Voice-forward source, protection, and clarity paths.</p><b>Open visual map ↗</b></a>
@@ -127,5 +127,25 @@
       <a href="../">Storefront</a><a href="#documents">Documents</a><a href="#cheat-sheets">Cheat sheets</a><a href="#manual-library">Manuals</a>
     </footer>
     <script src="manuals.js?v=20261005"></script>
-  </body>
+  <!-- DIH close button v1 -->
+<style>
+.dih-close{position:fixed;top:14px;right:14px;z-index:2147483000;width:44px;height:44px;padding:0;display:grid;place-items:center;border-radius:50%;border:1px solid #f0c96b;background:rgba(7,16,15,.92);color:#f0c96b;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,.5);-webkit-tap-highlight-color:transparent}
+.dih-close svg{width:18px;height:18px;display:block}
+.dih-close:hover,.dih-close:focus-visible{background:#f0c96b;color:#07100f;outline:none}
+.dih-close:focus-visible{box-shadow:0 0 0 3px rgba(240,201,107,.45)}
+.masthead{padding-right:calc(clamp(18px,4vw,68px) + 60px)}
+@media (max-width:720px){.dih-close{top:10px;right:10px;width:40px;height:40px}}
+@media print{.dih-close{display:none}}
+</style>
+<button type="button" class="dih-close" id="dih-close" aria-label="Close this page and go back" title="Close (Esc)"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 3l12 12M15 3L3 15"/></svg></button>
+<script>
+(function(){var b=document.getElementById("dih-close");if(!b)return;var home="../index.html",hops=0;
+window.addEventListener("hashchange",function(){hops++;});
+function ref(){try{var r=document.referrer;if(!r)return null;var u=new URL(r);return(u.origin===location.origin&&u.pathname!==location.pathname)?r:null;}catch(e){return null;}}
+function go(){var r=ref();if(r){if(hops===0&&history.length>1){history.back();}else{location.assign(r);}return;}location.assign(new URL(home,location.href).href);}
+b.addEventListener("click",go);
+document.addEventListener("keydown",function(e){if(e.key!=="Escape"||e.defaultPrevented)return;var a=document.activeElement;if(a&&/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName))return;go();});
+})();
+</script>
+</body>
 </html>

@@ -23,7 +23,7 @@
       "label": "DJ RETURN / SPACE",
       "delivery": "single-plugin return",
       "plugins": ["SACREDVERB", "PARALLAX"],
-      "presets": ["DJ RETURN / VOCAL THROW", "DJ RETURN / CLUB SAFE FX", "DJ RETURN / WIDE BREAK"]
+      "presets": ["DJ RETURN / VOCAL THROW", "DJ RETURN / CLUB SAFE FX", "DJ RETURN / WIDE BREAK", "DJ RETURN / CLUB SAFE WIDTH"]
     },
     {
       "id": "dj-return-motion",
@@ -44,7 +44,8 @@
       "label": "DJ PREP / INSERT OR STEM",
       "delivery": "insert, family bus, or pre-rendered stem",
       "plugins": ["OTIS", "ANUBIS", "MARIANA", "MONOLITH", "DrumKrushGlue", "MAAT", "SPHYNX", "PLATINUM", "IMHOTEP"],
-      "presets": ["STEM CLEAN", "STEM WEIGHT", "STEM SPACE PREP", "CLUB SAFE PRINT"]
+      "presets": ["STEM CLEAN", "STEM WEIGHT", "STEM SPACE PREP", "CLUB SAFE PRINT"],
+      "presetStatus": "planned: category blueprint, not yet in the plugin preset browsers"
     }
   ],
   "singleReturnBank": {
