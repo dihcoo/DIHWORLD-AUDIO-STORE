@@ -398,6 +398,34 @@ h1 {
   line-height: 1.55;
 }
 
+.proof-card-video {
+  grid-column: 1 / -1;
+}
+
+.proof-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.proof-videos figure {
+  margin: 0;
+}
+
+.proof-videos video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.proof-videos figcaption {
+  margin-top: 8px;
+  color: #4f463b;
+  font-size: 14px;
+}
+
 .interface-proof {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1550,10 +1578,24 @@ h1 {
           <span>public sales + delivery in development</span>
         </div>
         <div class="proof-grid">
-          <article class="proof-card">
+          <article class="proof-card proof-card-video">
             <span>75 sec</span>
             <h3>Core Bundle Proof</h3>
             <p>OTIS controls energy, MARIANA builds the low-end foundation, SACREDVERB creates living space, PARALLAX adds dimensional movement, and SILVER provides source polish.</p>
+            <div class="proof-videos">
+              <figure>
+                <video controls playsinline preload="none" poster="assets/video/DIH_FLAGSHIP_CORE-BUNDLE_BADDIE-THUG_v03.jpg" aria-label="Core Bundle demo: Baddie Thug">
+                  <source src="assets/video/DIH_FLAGSHIP_CORE-BUNDLE_BADDIE-THUG_v03.mp4" type="video/mp4">
+                </video>
+                <figcaption>Baddie Thug</figcaption>
+              </figure>
+              <figure>
+                <video controls playsinline preload="none" poster="assets/video/DIH_FLAGSHIP_CORE-BUNDLE_BYG-ENOFF_v03.jpg" aria-label="Core Bundle demo: BYG ENOFF">
+                  <source src="assets/video/DIH_FLAGSHIP_CORE-BUNDLE_BYG-ENOFF_v03.mp4" type="video/mp4">
+                </video>
+                <figcaption>BYG ENOFF</figcaption>
+              </figure>
+            </div>
           </article>
           <article class="proof-card">
             <span>45 sec</span>
